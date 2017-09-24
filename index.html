@@ -11,131 +11,160 @@
         <div class="header-main__popup-button"></div>
       </div>
 
-        /* NAV-POPUP */
+      <img class="header-main__img" src="http://placehold.it/150x100" alt="arm">
 
-          <nav class="nav-popup-button__menu nav-popup-button__menu--active">
-            <ul class="nav-popup-button__box">
-              <li class="nav-popup-button__wrap"><a class="nav-popup-button__link">ГЛАВНАЯ</a></li>
-              <li class="nav-popup-button__wrap"><a href="photo.html" class="nav-popup-button__link">ФОТОГРАФИИ</a></li>
-              <li class="nav-popup-button__wrap"><a href="#" class="nav-popup-button__link">КОНКУРС</a></li>
-              <li class="nav-popup-button__wrap"><a href="#" class="nav-popup-button__link">HTML ACADEMY</a></li>
-            </ul>
-          </nav>
+      <!--NAV-POPUP -->
 
+      <nav class="main-nav button-popup--active">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__item-link">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">фотографии</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__item-link">конкурс</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__item-link">html academy</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
+    <main class="main">
       <section class="download">
+        <h2 class="hidden-title">hidden-title</h2>
         <a href="https://www.apple.com/ru/itunes/download" class="download__button" target="_blank">Скачать приложение</a>
 
-        <ul class="download__box">
-          <li class="download__platform"><a href="https://www.apple.com/ru/itunes/download" target="_blank" class="download__apple"></a></li>
-          <li class="download__platform"><a href="https://play.google.com/store" target="_blank" class="download__android"></a></li>
-          <li class="download__platform"><a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__window" target="_blank"></a></li>
+        <ul class="download__items">
+          <li class="download__platform"><a href="https://www.apple.com/ru/itunes/download" target="_blank" class="download__apple">
+            <img class="download__apple-img" alt="apple" src="#"></a></li>
+
+          <li class="download__platform"><a href="https://play.google.com/store" target="_blank" class="download__android">
+            <img class="download__android-img" alt="android" src="#">
+          </a></li>
+
+          <li class="download__platform"><a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__window" target="_blank">
+            <img class="download__window-img" alt="window" src="#">
+          </a></li>
         </ul>
 
         <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
       </section>
 
-      <section class="question">
-        <span class="question__one">Устали от серости мегаполиса?</span>
-        <span class="question__two">Нам есть, что вам предложить!</span>
-      </section>
+      <section class="information">
+        <h2 class="hidden-title">hidden-title</h2>
+        <span class="information__item">Устали от серости мегаполиса?</span>
+        <span class="information__item">Нам есть, что вам предложить!</span>
 
-      <section class="description">
-        <div class="description__one">
-          <h3 class="description__title">Поднимает настроение</h3>
-          <p class="description__text">
-            Приложение позволит вам победить осеннюю хандру
-            и депрессию буквально в несколько кликов
-          </p>
-        </div>
+        <ul class="information__description description">
+          <li class="description__item">
+            <h2 class="description__title">Поднимает настроение</h2>
+            <p class="description__text">
+              Приложение позволит вам победить осеннюю хандру
+              и депрессию буквально в несколько кликов
+          </li>
 
-        <div class="description__two">
-          <h3 class="description__title">Меняет мир вокруг</h3>
-          <p class="description__text">
-            Сделайте снимок и украсьте его смайликом или
-            текстовой подписью, чтобы усилить эффект
-          </p>
-        </div>
+          <li class="description__item">
+            <h2 class="description__title">Меняет мир вокруг</h2>
+            <p class="description__text">
+              Сделайте снимок и украсьте его смайликом или
+              текстовой подписью, чтобы усилить эффект
+          </li>
 
-        <div class="description__three">
-          <h3 class="description__title">Заводит новых друзей</h3>
-          <p class="description__text">
-            Ставьте лайки, комментируйте, делитесь фотографиями
-            с друзьями и заводите новых
-          </p>
-        </div>
+          <li class="description__item">
+            <h2 class="description__title">Заводит новых друзей</h2>
+            <p class="description__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями
+              с друзьями и заводите новых
+          </li>
+        </ul>
 
         <div class="description__img"></div>
       </section>
 
       <section class="reviews">
+        <h2 class="hidden-title">hidden-title</h2>
         <div class="reviews__slider slider">
 
-          <div class="slider__slide">
-            <h4 class="slider__title">Николай Петров</h4>
-            <p class="slider__text">
+          <div class="slider__blockquote">
+            <span class="slider__title">Николай Петров</span>
+            <p class="slider__description">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой
               в комментариях к выложенной фотографии!»
             </p>
           </div>
-          <div class="slider__slide"></div>
-          <div class="slider__slide"></div>
+          <div class="slider__blockquote"></div>
+          <div class="slider__blockquote"></div>
 
           <div class="slider__buttons">
-            <button class="slider__btn slider__btn--active" type="button"></button>
-            <button class="slider__btn" type="button"></button>
-            <button class="slider__btn" type="button"></button>
+            <form class="slider__buttons">
+              <input class="slider__btn slider__btn--active" id="slider__btn4" name="slider__btn1" type="radio">
+              <label for="slider__btn4"></label>
+              <input class="slider__btn " id="slider__btn5" name="slider__btn1" type="radio">
+              <label for="slider__btn5"></label>
+              <input class="slider__btn" id="slider__btn6" name="slider__btn1" type="radio">
+              <label for="slider__btn6"></label>
+            </form>
           </div>
         </div>
       </section>
 
       <section class="price">
+        <h2 class="hidden-title">hidden-title</h2>
         <div class="price__slider slider">
+
           <div class="slider__slide">
-            <div class="slider__heading">
-              <span class="slider-title">СТАНДАРТ</span>
-              <span class="slider-price">3,99 USD</span>
-            </div>
-            <ul class="slider__box">
-              <li class="slider__menu">РОЗОВЫЙ ФИЛЬТР</li>
-              <li class="slider__menu">СМАЙЛИКИ</li>
-              <li class="slider__menu">КОММЕНТАРИИ</li>
-            </ul>
+            <table>
+              <tr>
+                <td class="slider__heading">
+                  <span class="slider-title">стандарт</span>
+                  <span class="slider-price">3,99 USD</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="slider__menu">розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="slider__menu">смайлики</td>
+              </tr>
+              <tr>
+                <td class="slider__menu">комментарии</td>
+              </tr>
+            </table>
           </div>
           <div class="slider__slide"></div>
           <div class="slider__slide"></div>
 
-          <div class="slider__buttons">
-            <button class="slider__btn" type="button"></button>
-            <button class="slider__btn slider__btn--active" type="button"></button>
-            <button class="slider__btn" type="button"></button>
-          </div>
+          <form class="slider__buttons">
+            <input class="slider__btn" id="slider__btn1" name="slider__btn" type="radio">
+            <label for="slider__btn1"></label>
+            <input class="slider__btn slider__btn--active" id="slider__btn2" name="slider__btn" type="radio">
+            <label for="slider__btn2"></label>
+            <input class="slider__btn" id="slider__btn3" name="slider__btn" type="radio">
+            <label for="slider__btn3"></label>
+          </form>
         </div>
       </section>
     </main>
 
     <section class="contact">
+      <h2 class="hidden-title">hidden-title</h2>
       <p class="contact__heading">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contact__tel">
-        <p class="contact__tel-title">Звоните:</p>
-        <p class="contact__tel-text">+7 (812) 555-66-66</p>
+      <div class="contact__tel contact-info">
+        <p class="contact-info__tel-title">Звоните:</p>
+        <p class="contact-info__tel-text">+7 (812) 555-66-66</p>
       </div>
 
-      <div class="contact__email">
-        <p class="contact__email-title">Пишите:</p>
-        <p class="contact__email-text">mail@htmlacademy.ru</p>
+      <div class="contact__email contact-info">
+        <p class="contact-info__email-title">Пишите:</p>
+        <p class="contact-info__email-text">mail@htmlacademy.ru</p>
       </div>
 
-      <div class="contact__address">
-        <p class="contact__address-title">Приезжайте в гости:</p>
-        <p class="contact__address-text">ул. Большая Конюшенная, 19/8</p>
+      <div class="contact__address contact-info">
+        <p class="contact-info__address-title">Приезжайте в гости:</p>
+        <p class="contact-info__address-text">ул. Большая Конюшенная, 19/8</p>
       </div>
 
       <div class="contact__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2240.886957428933!2d37.632889803017385!3d55.82992136559617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506155557154" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2240.886957428933!2d37.632889803017385!3d55.82992136559617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506155557154" width="600" height="450" style="border:0" allowfullscreen></iframe>
+
+        <div class="marker"></div>
       </div>
     </section>
   </body>
