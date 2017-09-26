@@ -13,12 +13,12 @@
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav button-popup">
+      <nav class="button-popup">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__item-link">главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link">фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link">конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link">html academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">html academy</a></li>
         </ul>
       </nav>
 
@@ -35,84 +35,84 @@
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__items user-info">
-          <div class="user-info__surname user-info__item">
-            <label class="user-info__label" for="user-info__sur-named">фамилия:</label>
-            <input class="user-info__input" id="user-info__sur-named" type="text" required placeholder="Укажите фамилию *">
-          </div>
+          <p class="user-info__item">
+            <label class="user-info__label" for="user-info-1">фамилия:</label>
+            <input class="user-info__input" id="user-info-1" type="text" required placeholder="Укажите фамилию *">
+          </p>
 
-          <div class="user-info__name user-info__item">
-            <label class="user-info__label" for="user-info__named">имя:</label>
-            <input class="user-info__input" id="user-info__named" type="text" required placeholder="Введите ваше имя *">
-          </div>
+          <p class="user-info__item">
+            <label class="user-info__label" for="user-info-2">имя:</label>
+            <input class="user-info__input" id="user-info-2" type="text" required placeholder="Введите ваше имя *">
+          </p>
 
-          <div class="user-info__patronymic user-info__item">
-            <label class="user-info__label" for="user-info__user-patronymic">отчество:</label>
-            <input class="user-info__input" id="user-info__user-patronymic" type="text" placeholder="Ну и отчество тоже">
-          </div>
+          <p class="user-info__item">
+            <label class="user-info__label" for="user-info-3">отчество:</label>
+            <input class="user-info__input" id="user-info-3" type="text" placeholder="Ну и отчество тоже">
+          </p>
         </div>
 
         <div class="form__items achievements">
           <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-selfie" type="checkbox">
+            <input class="achievements__input" id="achievements-selfie" type="checkbox">
             <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
           </p>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-scorched" type="checkbox">
+            <input class="achievements__input" id="achievements-scorched" type="checkbox">
             <label class="achievements__label" for="achievements-scorched">Обгорел на пляже</label>
           </p>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-chuck" type="checkbox">
+            <input class="achievements__input" id="achievements-chuck" type="checkbox">
             <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
           </p>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-souvenirs" type="checkbox">
+            <input class="achievements__input" id="achievements-souvenirs" type="checkbox">
             <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
           </p>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-tower" type="checkbox">
+            <input class="achievements__input" id="achievements-tower" type="checkbox">
             <label class="achievements__label" for="achievements-tower">Удержал башню</label>
           </p>
 
           <p class="achievements__items">
-            <input class="achievements__item" id="achievements-hotel" type="checkbox">
+            <input class="achievements__input" id="achievements-hotel" type="checkbox">
             <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
           </p>
         </div>
 
         <div class="form__items contact">
-          <div class="contact__items">
+          <p class="contact__item">
             <label class="contact__label" for="contact-number">НОМЕР ТЕЛЕФОНА</label>
             <input class="contact__input" id="contact-number" type="tel" placeholder="Номер, пожалуйста" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-          </div>
+          </p>
 
-          <div class="contact__item">
+          <p class="contact__item">
             <label class="contact__label" for="contact-email">АДРЕС ПОЧТЫ</label>
             <input class="contact__input" id="contact-email" type="email" required placeholder="Введите почту *" pattern=" /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
-          </div>
+          </p>
         </div>
 
         <div class="form__items os-select">
           <h2 class="os-select">С каким приложением путешествовали?</h2>
-          <div class="os-select__items">
+          <p class="os-select__item">
             <input class="os-select__choice" id="choice-ios" type="radio" name="form__choice">
             <label class="os-select__label" for="choice-ios">Pink для IOS</label>
-          </div>
+          </p>
 
-          <div class="os-select__item">
+          <p class="os-select__item">
             <input class="os-select__choice" id="choice-android" type="radio" name="form__choice">
             <label class="os-select__label" for="choice-android">Pink на Android</label>
-          </div>
+          </p>
 
-          <div class="os-select__item">
+          <p class="os-select__item">
             <input class="os-select__choice" id="choice-window" type="radio" name="form__choice">
             <label class="os-select__label" for="choice-window">Windows Phone</label>
-          </div>
+          </p>
         </div>
 
         <div class="form__items textarea">
@@ -132,9 +132,9 @@
       </div>
 
       <ul class="footer-main__link link-social">
-        <li class="link-social__item"><a href="#" id="link-social link-social__twitter"></a></li>
-        <li class="link-social__item" ><a href="#" id="link-social__facebook"></a></li>
-        <li class="link-social__item"><a href="#" id="link-social__play"></a></li>
+        <li class="link-social__item"><a href="#" id="link-social link-social--twitter">twitter</a></li>
+        <li class="link-social__item" ><a href="#" id="link-social link-social--facebook">facebook</a></li>
+        <li class="link-social__item"><a href="#" id="link-social link-social--play">play</a></li>
       </ul>
       <a class="footer-main__address" href="#"><img src="#" alt="logo-html">Разработано</a>
     </footer>

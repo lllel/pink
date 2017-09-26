@@ -13,12 +13,12 @@
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav button-popup">
+      <nav class="button-popup">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__item-link">главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">фотографии</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">конкурс</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">html academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
         </ul>
       </nav>
 
@@ -34,22 +34,22 @@
 
         <ul class="download__items">
           <li class="download__platform">
-            <a href="https://www.apple.com/ru/itunes/download" target="_blank" class="download__apple">
+            <a href="https://www.apple.com/ru/itunes/download" target="_blank" class="download__lnk">
             <img class="download__img download__img--apple" alt="apple" src="#"></a>
           </li>
 
           <li class="download__platform">
-            <a href="https://play.google.com/store" target="_blank" class="download__android">
+            <a href="https://play.google.com/store" target="_blank" class="download__lnk">
             <img class="download__img download__img--android" alt="android" src="#"></a>
           </li>
 
           <li class="download__platform">
-            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__window" target="_blank">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__lnk" target="_blank">
             <img class="download__img download__img--window" alt="window" src="#"></a>
           </li>
         </ul>
 
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="information">
@@ -79,30 +79,30 @@
 
       <section class="reviews">
         <h2 class="hidden-title">Отзывы</h2>
-        <div class="reviews__slider slider">
-          <blockquote class="slider__blockquote">
-            <span class="slider__title">Николай Петров</span>
-            <p class="slider__description">
+        <div class="reviews__slider slider-reviews">
+          <blockquote class="slider-reviews__item">
+            <span class="slider-reviews__title">Николай Петров</span>
+            <p class="slider-reviews__description">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой
               в комментариях к выложенной фотографии!»
             </p>
           </blockquote>
-          <blockquote class="slider__blockquote"></blockquote>
-          <blockquote class="slider__blockquote"></blockquote>
+          <blockquote class="slider-reviews"></blockquote>
+          <blockquote class="slider-reviews"></blockquote>
 
-          <ul class="slider__buttons">
+          <ul class="slider__controls">
             <li class="slider__button">
-              <input class="slider__btn slider__btn--active" id="slider__previous-prev" name="slider__btn-reviews" type="radio">
-              <label for="slider__previous-prev"></label>
+              <input class="slider__btn slider__btn--active" id=" review-slide-1" name="slider__btn-reviews" type="radio">
+              <label for=" review-slide-1"></label>
             </li>
             <li class="slider__button">
-              <input class="slider__btn" id="slider__current-cur" name="slider__btn-reviews" type="radio">
-              <label for="slider__current-cur"></label>
+              <input class="slider__btn" id=" review-slide-2" name="slider__btn-reviews" type="radio">
+              <label for=" review-slide-2"></label>
             </li>
             <li class="slider__button">
-              <input class="slider__btn" id="slider__following-foll" name="slider__btn-reviews" type="radio">
-              <label for="slider__following-foll"></label>
+              <input class="slider__btn" id=" review-slide-3" name="slider__btn-reviews" type="radio">
+              <label for=" review-slide-3"></label>
             </li>
           </ul>
         </div>
@@ -110,68 +110,64 @@
 
       <section class="price">
         <h2 class="hidden-title">Цена</h2>
-        <div class="price__slider slider">
+        <div class="price__slider slider-price">
 
-          <div class="slider__slide">
-            <table class="slider__table">
-              <tr class="slider__row">
-                <th class="slider__heading">
-                  <span class="slider-title">стандарт</span>
-                  <span class="slider-price">3,99 USD</span>
-                  <p>хит</p>
+            <table class="slider-price__table">
+              <tr class="slider-price__row">
+                <th class="slider-price__heading">
+                  <span class="slider-price__title">стандарт</span>
+                  <span class="slider-price__price">3,99 USD</span>
+                  <p class="slider-price__feature">хит</p>
                 </th>
               </tr>
-              <tr class="slider__row">
-                <td class="slider__menu">розовый фильтр</td>
+              <tr class="slider-price__row">
+                <td class="slider-price__column">розовый фильтр</td>
               </tr>
-              <tr class="slider__row">
-                <td class="slider__menu">смайлики</td>
+              <tr class="slider-price__row">
+                <td class="slider-price__column">смайлики</td>
               </tr>
-              <tr class="slider__row">
-                <td class="slider__menu">комментарии</td>
+              <tr class="slider-price__row">
+                <td class="slider-price__column">комментарии</td>
               </tr>
             </table>
-          </div>
-          <div class="slider__slide"></div>
-          <div class="slider__slide"></div>
 
           <ul class="slider__buttons">
             <li class="slider__button">
-              <input class="slider__btn" id="slider__previous" name="slider__btn-price" type="radio">
-              <label for="slider__previous"></label>
+              <input class="slider__btn" id="price-slide-1" name="slider__btn-price" type="radio">
+              <label for="price-slide-1">Слайд цены 1</label>
             </li>
             <li class="slider__button">
-              <input class="slider__btn slider__btn--active" id="slider__current" name="slider__btn-price" type="radio">
-              <label for="slider__current"></label>
+              <input class="slider__btn slider__btn--active" id="price-slide-2" name="slider__btn-price" type="radio">
+              <label for="price-slide-2">Слайд цены 2</label>
             </li>
             <li class="slider__button">
-              <input class="slider__btn" id="slider__following" name="slider__btn-price" type="radio">
-              <label for="slider__following"></label>
+              <input class="slider__btn" id="price-slide-3" name="slider__btn-price" type="radio">
+              <label for="price-slide-3">Слайд цены 3</label>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <section class="contact">
+    <section class="contacts">
       <h2 class="hidden-title">Контакты</h2>
-      <p class="contact__heading">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contact__tel contact-info">
-        <p class="contact-info__tel-title">Звоните:</p>
-        <p class="contact-info__tel-text">+7 (812) 555-66-66</p>
+      <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts__tel contacts-info">
+        <p class="contacts-info__tel-title">Звоните:</p>
+        <p class="contacts-info__tel-text">+7 (812) 555-66-66</p>
       </div>
 
-      <div class="contact__email contact-info">
-        <p class="contact-info__email-title">Пишите:</p>
-        <p class="contact-info__email-text">mail@htmlacademy.ru</p>
+      <div class="contacts__email contacts-info">
+        <p class="contacts-info__email-title">Пишите:</p>
+        <p class="contacts-info__email-text">mail@htmlacademy.ru</p>
       </div>
 
-      <div class="contact__address contact-info">
-        <p class="contact-info__address-title">Приезжайте в гости:</p>
-        <p class="contact-info__address-text">ул. Большая Конюшенная, 19/8</p>
+      <div class="contacts__address contacts-info">
+        <p class="contacts-info__address-title">Приезжайте в гости:</p>
+        <p class="contacts-info__address-text">ул. Большая Конюшенная, 19/8</p>
       </div>
 
-      <div class="contact__map">
+      <div class="contacts__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2240.886957428933!2d37.632889803017385!3d55.82992136559617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506155557154" width="600" height="450" style="border:0" allowfullscreen></iframe>
 
         <div class="marker"></div>
