@@ -11,9 +11,9 @@
         <div class="header-main__popup-button"></div>
       </div>
 
-      <!--NAV-POPUP -->
+      <!--NAV-POPUP-->
 
-      <nav class="main-nav button-popup--active">
+      <nav class="main-nav button-popup">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__item-link">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__item-link">фотографии</a></li>
@@ -22,127 +22,101 @@
         </ul>
       </nav>
 
-
-      <h1 class="header-main__title">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </h1>
+      <div class="header-main__intro">
+        <h1 class="header-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </header>
 
     <main class="main">
       <section class="presentation">
-        <h2 class="hidden-title">hidden-title</h2>
-        <p class="presentation__text">
-          Поделитесь своей историей и получите шанс выиграть ценный
-          приз — 1000 миль на вашу бонусную карту!
-        </p>
+        <h2 class="hidden-title">Презентация</h2>
+        <p class="presentation__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__items user-info">
-          <div class="form__surname user-info__item">
-            <label for="form__sur-named">ФАМИЛИЯ:</label>
-            <input class="form__sur-named" id="form__sur-named" type="text" required placeholder="Укажите фамилию *">
+          <div class="user-info__surname user-info__item">
+            <label class="user-info__label" for="user-info__sur-named">фамилия:</label>
+            <input class="user-info__input" id="user-info__sur-named" type="text" required placeholder="Укажите фамилию *">
           </div>
 
-          <div class="form__name user-info__item">
-            <label for="form__named">ИМЯ:</label>
-            <input class="form__named" id="form__named" type="text" required placeholder="Введите ваше имя *">
+          <div class="user-info__name user-info__item">
+            <label class="user-info__label" for="user-info__named">имя:</label>
+            <input class="user-info__input" id="user-info__named" type="text" required placeholder="Введите ваше имя *">
           </div>
 
-          <div class="form__patronymic user-info__item">
-            <label for="form__user-patronymic">ОТЧЕСТВО:</label>
-            <input class="form__named" id="form__user-patronymic" type="text" placeholder="Ну и отчество тоже">
+          <div class="user-info__patronymic user-info__item">
+            <label class="user-info__label" for="user-info__user-patronymic">отчество:</label>
+            <input class="user-info__input" id="user-info__user-patronymic" type="text" placeholder="Ну и отчество тоже">
           </div>
         </div>
 
         <div class="form__items achievements">
-          <h3 class="form__title">
-            Ваши безбашенные
-            достижения в путешествии
-          </h3>
+          <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
 
-          <div class="achievements__item">
-            <input class="achievements-1" id="achievements-1" type="checkbox">
-            <label class="achievements-label-1" for="achievements-1">Сделал селфи с акулой</label>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-selfie" type="checkbox">
+            <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
+          </p>
 
-          <div class="achievements__item">
-            <input class="achievements-2" id="achievements-2" type="checkbox">
-            <label class="achievements-label-2" for="achievements-2">Обгорел на пляже</label>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-scorched" type="checkbox">
+            <label class="achievements__label" for="achievements-scorched">Обгорел на пляже</label>
+          </p>
 
-          <div class="achievements__item">
-            <input class="achievements-3" id="achievements-3" type="checkbox">
-            <label class="achievements-label-3" for="achievements-3">Видел Чака Норриса</label>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-chuck" type="checkbox">
+            <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
+          </p>
 
-          <div class="achievements__item">
-            <input class="achievements-4" id="achievements-4" type="checkbox">
-            <label class="achievements-label-4" for="achievements-4">Накупил сувениров</label>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-souvenirs" type="checkbox">
+            <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
+          </p>
 
-          <div class="achievements__item">
-            <input class="achievements-5" id="achievements-5" type="checkbox">
-            <label class="achievements-label-5" for="achievements-5">Удержал башню</label>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-tower" type="checkbox">
+            <label class="achievements__label" for="achievements-tower">Удержал башню</label>
+          </p>
 
-          <div class="achievements__item">
-            <input class="achievements-6" id="achievements-6" type="checkbox">
-            <label class="achievements-label-6" for="achievements-6">Разгромил отель</label>
-          </div>
-
-          <!--POPUP ERROR-->
-
-          <div class="form__error popup-error">
-            <span class="popup-error__heading">Что-то пошло не так!</span>
-            <span class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</span>
-            <button class="popup-error__button" type="button">ок</button>
-          </div>
+          <p class="achievements__items">
+            <input class="achievements__item" id="achievements-hotel" type="checkbox">
+            <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
+          </p>
         </div>
 
         <div class="form__items contact">
-          <div class="contact__item">
-            <label class="contact__label-1" for="label-tel-1">НОМЕР ТЕЛЕФОНА</label>
-            <input class="number-tel" id="label-tel-1" type="tel" placeholder="Номер, пожалуйста" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+          <div class="contact__items">
+            <label class="contact__label" for="contact-number">НОМЕР ТЕЛЕФОНА</label>
+            <input class="contact__input" id="contact-number" type="tel" placeholder="Номер, пожалуйста" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}">
           </div>
 
           <div class="contact__item">
-            <label class="contact__label-2" for="email-1">АДРЕС ПОЧТЫ</label>
-            <input class="email-1" id="email-1" type="email" required placeholder="Введите почту *" pattern=" /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
-          </div>
-
-          <!--POPUP DONE-->
-
-          <div class="form__done popup-done">
-            <span class="popup-done__heading">Ваша заявка отправлена</span>
-            <span class="popup-done__text">
-              Спасибо за ваше участие, ваша заявка уже поступила к нам.
-              В ближайшее время мы рассмотрим ее и
-              оповестим вас.
-            </span>
-            <button class="popup-done__button" type="button">закрыть окно</button>
+            <label class="contact__label" for="contact-email">АДРЕС ПОЧТЫ</label>
+            <input class="contact__input" id="contact-email" type="email" required placeholder="Введите почту *" pattern=" /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
           </div>
         </div>
 
-        <div class="form__items radio">
-          <div class="radio__item">
-            <input class="form__choice-1" id="form__choice-1" type="radio" name="form__choice">
-            <label class="radio__label-1" for="form__choice-1">Pink для IOS</label>
+        <div class="form__items os-select">
+          <h2 class="os-select">С каким приложением путешествовали?</h2>
+          <div class="os-select__items">
+            <input class="os-select__choice" id="choice-ios" type="radio" name="form__choice">
+            <label class="os-select__label" for="choice-ios">Pink для IOS</label>
           </div>
 
-          <div class="radio__item">
-            <input class="form__choice-2" id="form__choice-2" type="radio" name="form__choice">
-            <label class="radio__label-2" for="form__choice-2">Pink на Android</label>
+          <div class="os-select__item">
+            <input class="os-select__choice" id="choice-android" type="radio" name="form__choice">
+            <label class="os-select__label" for="choice-android">Pink на Android</label>
           </div>
 
-          <div class="radio__item">
-            <input class="form__choice-3" id="form__choice-3" type="radio" name="form__choice">
-            <label class="radio__label-3" for="form__choice-3">Windows Phone</label>
+          <div class="os-select__item">
+            <input class="os-select__choice" id="choice-window" type="radio" name="form__choice">
+            <label class="os-select__label" for="choice-window">Windows Phone</label>
           </div>
         </div>
 
         <div class="form__items textarea">
-          <span class="textarea__heading">Опишите свои эмоции</span>
+          <p class="textarea__heading">Опишите свои эмоции</p>
           <textarea class="textarea__description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
@@ -152,17 +126,33 @@
       </form>
     </main>
 
-    <footer class="footer-form footer">
-      <div class="footer-form__logo">
+    <footer class="footer-main">
+      <div class="footer-main__logo">
         <img class="logo" src="http://placehold.it/150x100" alt="logo">
       </div>
 
-      <ul class="footer__link link-social">
-        <li class="link-social__item"><a href="#" class="link-social__twitter"></a></li>
-        <li class="link-social__item" ><a href="#" class="link-social__facebook"></a></li>
-        <li class="link-social__item"><a href="#" class="link-social__play"></a></li>
+      <ul class="footer-main__link link-social">
+        <li class="link-social__item"><a href="#" id="link-social link-social__twitter"></a></li>
+        <li class="link-social__item" ><a href="#" id="link-social__facebook"></a></li>
+        <li class="link-social__item"><a href="#" id="link-social__play"></a></li>
       </ul>
-      <span class="footer__address">Разработано</span>
+      <a class="footer-main__address" href="#"><img src="#" alt="logo-html">Разработано</a>
     </footer>
+
+    <!--POPUP ERROR-->
+
+    <div class="popup-error">
+      <p class="popup-error__heading">Что-то пошло не так!</p>
+      <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup-error__button" type="button">ок</button>
+    </div>
+
+    <!--POPUP DONE-->
+
+    <div class="popup-done">
+      <p class="popup-done__heading">Ваша заявка отправлена</p>
+      <p class="popup-done__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="popup-done__button" type="button">закрыть окно</button>
+    </div>
   </body>
 </html>
