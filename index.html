@@ -13,7 +13,7 @@
 
       <!--NAV-POPUP-->
 
-      <nav class="button-popup">
+      <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
@@ -91,18 +91,18 @@
           <blockquote class="slider-reviews"></blockquote>
           <blockquote class="slider-reviews"></blockquote>
 
-          <ul class="slider__controls">
-            <li class="slider__button">
-              <input class="slider__btn slider__btn--active" id="review-slide-1" name="slider__btn-reviews" type="radio">
-              <label for="review-slide-1">Слайд отзыва-1</label>
+          <ul class="slider-controls">
+            <li class="slider-controls__button">
+              <input class="slider-controls__input slider-controls__input--active" id="review-slide-1" name="slider__btn-reviews" type="radio">
+              <label class="slider-controls__label" for="review-slide-1">Слайд отзыва-1</label>
             </li>
-            <li class="slider__button">
-              <input class="slider__btn" id="review-slide-2" name="slider__btn-reviews" type="radio">
-              <label for="review-slide-2">Слайд отзыва-2</label>
+            <li class="slider-controls__button">
+              <input class="slider-controls__input" id="review-slide-2" name="slider__btn-reviews" type="radio">
+              <label class="slider-controls__label" for="review-slide-2">Слайд отзыва-2</label>
             </li>
-            <li class="slider__button">
-              <input class="slider__btn" id="review-slide-3" name="slider__btn-reviews" type="radio">
-              <label for="review-slide-3">Слайд отзыва-3</label>
+            <li class="slider-controls__button">
+              <input class="slider-controls__input" id="review-slide-3" name="slider__btn-reviews" type="radio">
+              <label class="slider-controls__label" for="review-slide-3">Слайд отзыва-3</label>
             </li>
           </ul>
         </div>
@@ -110,12 +110,12 @@
 
       <section class="price">
         <h2 class="hidden-title">Цена</h2>
-        <div class="price__slider slider-price">
+        <div class="price__slider slider-price slider">
             <table class="slider-price__table">
               <tr class="slider-price__row">
                 <th class="slider-price__heading">
                   <span class="slider-price__title">стандарт</span>
-                  <span class="slider-price__price">3,99 USD</span>
+                  <span class="slider-price__cost">3,99 USD</span>
                   <p class="slider-price__feature feature">хит</p>
                 </th>
               </tr>
@@ -130,18 +130,18 @@
               </tr>
             </table>
 
-          <ul class="slider__buttons">
-            <li class="slider__button">
-              <input class="slider__btn" id="price-slide-1" name="slider__btn-price" type="radio">
-              <label for="price-slide-1">Слайд цены-1</label>
+          <ul class="slider-controls">
+            <li class="slider-controls__button">
+              <input class="slider-controls__input" id="price-slide-1" name="slider__btn-price" type="radio">
+              <label class="slider-controls__label" for="price-slide-1">Слайд цены-1</label>
             </li>
-            <li class="slider__button">
-              <input class="slider__btn slider__btn--active" id="price-slide-2" name="slider__btn-price" type="radio">
-              <label for="price-slide-2">Слайд цены-2</label>
+            <li class="slider-controls__button">
+              <input class="slider-controls__input slider-controls__input--active" id="price-slide-2" name="slider__btn-price" type="radio">
+              <label class="slider-controls__label" for="price-slide-2">Слайд цены-2</label>
             </li>
-            <li class="slider__button">
-              <input class="slider__btn" id="price-slide-3" name="slider__btn-price" type="radio">
-              <label for="price-slide-3">Слайд цены-3</label>
+            <li class="slider-controls__button">
+              <input class="slider-controls__input" id="price-slide-3" name="slider__btn-price" type="radio">
+              <label class="slider-controls__label" for="price-slide-3">Слайд цены-3</label>
             </li>
           </ul>
         </div>
@@ -152,18 +152,18 @@
       <h2 class="hidden-title">Контакты</h2>
       <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
       <div class="contacts__tel contacts-info">
-        <p class="contacts-info__tel-title">Звоните:</p>
-        <p class="contacts-info__tel-text">+7 (812) 555-66-66</p>
+        <p class="contacts-info__title">Звоните:</p>
+        <p class="contacts-info__description">+7 (812) 555-66-66</p>
       </div>
 
       <div class="contacts__email contacts-info">
-        <p class="contacts-info__email-title">Пишите:</p>
-        <p class="contacts-info__email-text">mail@htmlacademy.ru</p>
+        <p class="contacts-info__title">Пишите:</p>
+        <p class="contacts-info__description">mail@htmlacademy.ru</p>
       </div>
 
       <div class="contacts__address contacts-info">
-        <p class="contacts-info__address-title">Приезжайте в гости:</p>
-        <p class="contacts-info__address-text">ул. Большая Конюшенная, 19/8</p>
+        <p class="contacts-info__title">Приезжайте в гости:</p>
+        <p class="contacts-info__description">ул. Большая Конюшенная, 19/8</p>
       </div>
 
       <div class="contacts__map">
