@@ -3,31 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-main">
       <div class="header-main__logo">
-        <img class="logo" src="http://placehold.it/150x100" alt="logo">
+        <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
         <div class="header-main__popup-button"></div>
       </div>
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
-        </ul>
-      </nav>
+      <!--<nav class="main-nav">-->
+        <!--<ul class="main-nav__items">-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
+          <!--<li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>-->
+          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>-->
+          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>-->
+        <!--</ul>-->
+      <!--</nav>-->
 
       <div class="header-main__intro">
-        <img class="header-main__img" src="http://placehold.it/150x100" alt="arm">
+        <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="arm">
       </div>
     </header>
 
-    <main class="main">
+    <main class="main wrapper">
       <section class="download">
         <h2 class="hidden-title">Скачать приложение</h2>
         <a href="https://www.apple.com/ru/itunes/download" class="download__button" target="_blank">Скачать приложение</a>
@@ -35,17 +36,17 @@
         <ul class="download__items">
           <li class="download__platform">
             <a href="https://www.apple.com/ru/itunes/download" target="_blank" class="download__lnk">
-            <img class="download__img download__img--apple" alt="apple" src="#"></a>
+            <img class="download__img download__img--apple" alt="apple" src="img/logo-apple.svg"></a>
           </li>
 
           <li class="download__platform">
             <a href="https://play.google.com/store" target="_blank" class="download__lnk">
-            <img class="download__img download__img--android" alt="android" src="#"></a>
+            <img class="download__img download__img--android" alt="android" src="img/logo-android.svg"></a>
           </li>
 
           <li class="download__platform">
             <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="download__lnk" target="_blank">
-            <img class="download__img download__img--window" alt="window" src="#"></a>
+            <img class="download__img download__img--window" alt="window" src="img/logo-microsoft.svg"></a>
           </li>
         </ul>
 
@@ -53,9 +54,11 @@
       </section>
 
       <section class="information">
-        <h2 class="hidden-title">Приемущества</h2>
-        <p class="information__item">Устали от серости мегаполиса?</p>
-        <p class="information__item">Нам есть, что вам предложить!</p>
+          <h2 class="hidden-title">Приемущества</h2>
+          <div class="decoration">
+            <p class="information__item">Устали от серости мегаполиса?</p>
+            <p class="information__item">Нам есть, что вам предложить!</p>
+          </div>
 
         <ul class="information__advantages advantages">
           <li class="advantages__item">
@@ -78,33 +81,38 @@
       </section>
 
       <section class="reviews">
-        <h2 class="hidden-title">Отзывы</h2>
-        <div class="reviews__slider slider-reviews">
-          <blockquote class="slider-reviews__item">
-            <span class="slider-reviews__title">Николай Петров</span>
-            <p class="slider-reviews__description">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть
-              на привычные серые вещи! А еще я познакомился со своей будущей женой
-              в комментариях к выложенной фотографии!»
-            </p>
-          </blockquote>
-          <blockquote class="slider-reviews"></blockquote>
-          <blockquote class="slider-reviews"></blockquote>
+        <div class="decoration">
+          <h2 class="hidden-title">Отзывы</h2>
+          <div class="reviews__slider slider-reviews">
+            <blockquote class="slider-reviews__item">
+              <span class="slider-reviews__title">Николай Петров</span>
+              <p class="slider-reviews__description">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                на привычные серые вещи! А еще я познакомился со своей будущей женой
+                в комментариях к выложенной фотографии!»
+              </p>
+            </blockquote>
 
-          <ul class="slider-controls">
-            <li class="slider-controls__button">
-              <input class="slider-controls__input" id="review-slide-1" name="slider__btn-reviews" type="radio">
-              <label class="slider-controls__label" for="review-slide-1">Слайд отзыва-1</label>
-            </li>
-            <li class="slider-controls__button">
-              <input class="slider-controls__input" id="review-slide-2" name="slider__btn-reviews" type="radio">
-              <label class="slider-controls__label" for="review-slide-2">Слайд отзыва-2</label>
-            </li>
-            <li class="slider-controls__button">
-              <input class="slider-controls__input" id="review-slide-3" name="slider__btn-reviews" type="radio">
-              <label class="slider-controls__label" for="review-slide-3">Слайд отзыва-3</label>
-            </li>
-          </ul>
+            <!--SLIDES-->
+
+            <!--<blockquote class="slider-reviews"></blockquote>-->
+            <!--<blockquote class="slider-reviews"></blockquote>-->
+
+            <ul class="slider-controls">
+              <li class="slider-controls__button">
+                <input class="slider-controls__input" id="review-slide-1" title="slider__btn" name="slider__btn-reviews" type="radio">
+                <label class="slider-controls__label" for="review-slide-1">Слайд отзыва-1</label>
+              </li>
+              <li class="slider-controls__button">
+                <input class="slider-controls__input" id="review-slide-2" title="slider__btn" name="slider__btn-reviews" type="radio">
+                <label class="slider-controls__label" for="review-slide-2">Слайд отзыва-2</label>
+              </li>
+              <li class="slider-controls__button">
+                <input class="slider-controls__input" id="review-slide-3" title="slider__btn" name="slider__btn-reviews" type="radio">
+                <label class="slider-controls__label" for="review-slide-3">Слайд отзыва-3</label>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -149,26 +157,28 @@
     </main>
 
     <section class="contacts">
-      <h2 class="hidden-title">Контакты</h2>
-      <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contacts__tel contacts-info">
-        <p class="contacts-info__title">Звоните:</p>
-        <p class="contacts-info__description">+7 (812) 555-66-66</p>
-      </div>
+      <div class="contacts__decoration">
+        <h2 class="hidden-title">Контакты</h2>
+        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contact-wrapper">
+          <div class="contacts__tel contacts-info">
+          <p class="contacts-info__title">Звоните:</p>
+          <p class="contacts-info__description">+7 (812) 555-66-66</p>
+        </div>
 
-      <div class="contacts__email contacts-info">
-        <p class="contacts-info__title">Пишите:</p>
-        <p class="contacts-info__description">mail@htmlacademy.ru</p>
-      </div>
+          <div class="contacts__email contacts-info">
+            <p class="contacts-info__title">Пишите:</p>
+            <p class="contacts-info__description">mail@htmlacademy.ru</p>
+          </div>
 
-      <div class="contacts__address contacts-info">
-        <p class="contacts-info__title">Приезжайте в гости:</p>
-        <p class="contacts-info__description">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts__address contacts-info">
+            <p class="contacts-info__title">Приезжайте в гости:</p>
+            <p class="contacts-info__description">ул. Большая Конюшенная, 19/8</p>
+          </div>
+        </div>
       </div>
-
       <div class="contacts__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2240.886957428933!2d37.632889803017385!3d55.82992136559617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506155557154" width="600" height="450" style="border:0" allowfullscreen></iframe>
-
+        <img class="contacts__map-item" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="map">
         <div class="marker"></div>
       </div>
     </section>

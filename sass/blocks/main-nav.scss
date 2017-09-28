@@ -1,0 +1,30 @@
+.main-nav {
+  width: $widthMobileBody;
+  outline: 1px solid red;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: $colorPage2;
+}
+
+.main-nav__item {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 6px;
+  box-shadow: 0 1px 0 0 #000000;
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 14px;
+  color: $colorFont;
+  font-weight: 700;
+  text-align: center;
+}

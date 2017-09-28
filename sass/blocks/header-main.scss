@@ -1,0 +1,45 @@
+.header-main {
+  outline: 1px solid red;
+  background-color: #2a3a4a;
+}
+
+.header-main__img {
+  margin-bottom: -5px;
+}
+
+.header-main__logo {
+  background-color: rgba(29, 38, 49, 0.3);
+  z-index: 1;
+  position: relative;
+}
+
+.header-main__logo .logo {
+  padding: 20px;
+}
+
+.header-main__intro {
+  width: 100%;
+  padding-top: 160px;
+  margin-top: -67px;
+  background-color: $colorPage;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.header-main__title {
+  color: $colorFont;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: -60px;
+  padding-bottom: 50px;
+}
+
+.main-nav {
+  position: relative;
+  z-index: 1;
+}
+

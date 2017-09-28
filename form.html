@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Форма</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header class="header-main">
       <div class="header-main__logo">
-        <img class="logo" src="http://placehold.it/150x100" alt="logo">
+        <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
         <div class="header-main__popup-button"></div>
       </div>
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">html academy</a></li>
-        </ul>
-      </nav>
+      <!--<nav class="main-nav">-->
+        <!--<ul class="main-nav__items">-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">фотографии</a></li>-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">конкурс</a></li>-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">html academy</a></li>-->
+        <!--</ul>-->
+      <!--</nav>-->
 
       <div class="header-main__intro">
         <h1 class="header-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -30,7 +31,7 @@
     <main class="main">
       <section class="presentation">
         <h2 class="hidden-title">Презентация</h2>
-        <p class="presentation__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="presentation__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -122,7 +123,7 @@
 
           <button class="form__submit" type="submit">отправить форму</button>
 
-        <span class="form__require"><span>*</span>-обязательные поля</span>
+        <span class="form__require"><span class="star">*</span>-обязательные поля</span>
       </form>
     </main>
 
