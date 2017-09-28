@@ -10,7 +10,7 @@
 .contacts__decoration {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: 130%;

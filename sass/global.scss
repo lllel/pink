@@ -23,7 +23,7 @@ body {
 .decoration {
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     width: 300%;
