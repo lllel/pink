@@ -6,9 +6,11 @@
 
 .slider-price__table {
   background-color: #ffffff;
-  width: 276px;
+  width: 828px;
   margin: 0 auto;
-  margin-top: 55px;
+  margin-top: 25px;
+  border-collapse: collapse;
+  transform: translate(-30.5%);
 }
 
 .slider-price__row {
@@ -21,6 +23,11 @@
   width: 276px;
   overflow: hidden;
   padding: 20px 0 20px 0;
+  border: 2px solid #e5e5e5;
+}
+
+.slider-price__column {
+  border: 2px solid #e5e5e5;
 }
 
 .feature {

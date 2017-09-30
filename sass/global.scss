@@ -4,39 +4,47 @@ html {
 
 body {
   box-sizing: inherit;
-  max-width: $widthMobileBody;
-  width: 100%;
+  min-width: $widthMobileBody;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 }
 
 .hidden-title {
-  visibility: hidden;
-  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
-  width: 87.5%;
-  margin: 0 auto;
   padding: 0;
 }
 
 .decoration {
   position: relative;
+  padding-bottom: 30px;
 
   &::after {
     content: "";
     display: block;
-    width: 300%;
+    width: 100%;
     height: 52px;
     background-image: url("../img/bg-triangle-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     bottom: -51px;
+    left: 50%;
+    transform: translate(-50%)
   }
 }
 
-//.main {
-//  overflow: hidden;
-//}
+.star {
+  color: #d22856;
+}

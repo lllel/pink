@@ -1,10 +1,12 @@
 .achievements {
   outline: 1px solid red;
+  background-color: #f2f2f2;
 }
 
 .achievements__item {
-  margin: 0;
-  padding: 0;
+  padding: 0 10px;
+  margin-left: 90px;
+  margin-top: 55px;
 }
 
 .achievements__title {
@@ -15,4 +17,31 @@
   text-align: center;
   margin: 0;
   text-transform: uppercase;
+  padding: 0 35px;
+}
+
+.achievements__input {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.achievements__label {
+  position: relative;
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 3px solid #e5e5e5;
+    position: absolute;
+    top: 0;
+    left: -80px;
+    transform: translate(0, -20%);
+  }
 }

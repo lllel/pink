@@ -2,14 +2,26 @@
   outline: 1px solid red;
 }
 
+.form__items {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
 .form__require {
+  display: block;
+  margin-top: 40px;
   color: $colorPage2;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.star {
-  color: #d22856;
+.form__submit {
+  margin: 10px auto 0;
 }

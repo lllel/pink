@@ -6,21 +6,13 @@
   padding: 0;
 }
 
-.reviews .slider-controls {
-  padding-bottom: 8px;
-}
-
-.price .slider-controls {
-  padding-top: 22px;
-}
-
 .slider-controls__button {
   list-style-type: none;
+  margin-right: 20px;
 }
 
 .slider-controls__input {
   visibility: hidden;
-  margin-right: 20px;
 }
 
 .slider-controls__label {

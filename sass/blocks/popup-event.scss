@@ -1,0 +1,36 @@
+.popup-event {
+  outline: 1px solid red;
+  margin: 0 auto;
+  min-width: 320px;
+  width: 320px;
+}
+
+.popup-event__heading {
+  padding: 45px 0 20px;
+  margin: 0;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popup-event__text {
+  padding: 0 25px 30px;
+  margin: 0;
+  color: $colorPage2;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popup-event__button-decoration {
+  background-color: #f2f2f2;
+  box-shadow: 0 6px 10px -2px #dfdfdf;
+  padding: 50px 20px;
+}
+
+.popup-event__button {
+  margin: 0 auto;
+  padding: 50px;
+}

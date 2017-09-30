@@ -7,23 +7,23 @@
   </head>
   <body>
     <header class="header-main">
-      <div class="header-main__logo">
+      <div class="header-main__logo header-main__logo--position">
         <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
         <div class="header-main__popup-button"></div>
       </div>
 
       <!--NAV-POPUP-->
 
-      <!--<nav class="main-nav">-->
-        <!--<ul class="main-nav__items">-->
-          <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
-          <!--<li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>-->
-          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>-->
-          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>-->
-        <!--</ul>-->
-      <!--</nav>-->
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
+        </ul>
+      </nav>
 
-      <div class="header-main__intro">
+      <div class="header-main__intro header-main__intro--padding">
         <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="arm">
       </div>
     </header>
@@ -32,7 +32,7 @@
       <section class="download">
         <div class="wrapper">
         <h2 class="hidden-title">Скачать приложение</h2>
-        <a href="https://www.apple.com/ru/itunes/download" class="download__button" target="_blank">Скачать приложение</a>
+        <a href="https://www.apple.com/ru/itunes/download" class="download__button button-transparent" target="_blank">Скачать приложение</a>
 
         <ul class="download__items">
           <li class="download__platform">
@@ -127,7 +127,7 @@
       <section class="price">
         <h2 class="hidden-title">Цена</h2>
         <div class="price__slider slider-price">
-          <div class="wrapper">
+          <!--<div class="wrapper">-->
             <table class="slider-price__table">
               <tr class="slider-price__row">
                 <th class="slider-price__heading">
@@ -135,16 +135,35 @@
                   <span class="slider-price__cost">3,99 USD</span>
                   <p class="slider-price__feature feature">хит</p>
                 </th>
+                <th class="slider-price__heading">
+                  <span class="slider-price__title">стандарт</span>
+                  <span class="slider-price__cost">3,99 USD</span>
+                  <p class="slider-price__feature feature">хит</p>
+                </th>
+                <th class="slider-price__heading">
+                  <span class="slider-price__title">стандарт</span>
+                  <span class="slider-price__cost">3,99 USD</span>
+                  <p class="slider-price__feature feature">хит</p>
+                </th>
+
+
               </tr>
               <tr class="slider-price__row">
+                <td class="slider-price__column">розовый фильтр</td>
+                <td class="slider-price__column">розовый фильтр</td>
                 <td class="slider-price__column">розовый фильтр</td>
               </tr>
               <tr class="slider-price__row">
                 <td class="slider-price__column">смайлики</td>
+                <td class="slider-price__column">смайлики</td>
+                <td class="slider-price__column">смайлики</td>
               </tr>
               <tr class="slider-price__row">
                 <td class="slider-price__column">комментарии</td>
+                <td class="slider-price__column">комментарии</td>
+                <td class="slider-price__column">комментарии</td>
               </tr>
+
             </table>
 
           <ul class="slider-controls">
@@ -162,37 +181,37 @@
             </li>
           </ul>
           </div>
+        <!--</div>-->
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__decoration">
+          <div class="wrapper">
+          <h2 class="hidden-title">Контакты</h2>
+          <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contact-wrapper">
+            <div class="contacts__tel contacts-info">
+            <p class="contacts-info__title">Звоните:</p>
+            <p class="contacts-info__description">+7 (812) 555-66-66</p>
+          </div>
+
+            <div class="contacts__email contacts-info">
+              <p class="contacts-info__title">Пишите:</p>
+              <p class="contacts-info__description">mail@htmlacademy.ru</p>
+            </div>
+
+            <div class="contacts__address contacts-info">
+              <p class="contacts-info__title">Приезжайте в гости:</p>
+              <p class="contacts-info__description">ул. Большая Конюшенная, 19/8</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map-item" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="map">
+          <div class="marker"></div>
         </div>
       </section>
     </main>
-
-    <section class="contacts">
-      <div class="contacts__decoration">
-        <div class="wrapper">
-        <h2 class="hidden-title">Контакты</h2>
-        <p class="contacts__heading">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contact-wrapper">
-          <div class="contacts__tel contacts-info">
-          <p class="contacts-info__title">Звоните:</p>
-          <p class="contacts-info__description">+7 (812) 555-66-66</p>
-        </div>
-
-          <div class="contacts__email contacts-info">
-            <p class="contacts-info__title">Пишите:</p>
-            <p class="contacts-info__description">mail@htmlacademy.ru</p>
-          </div>
-
-          <div class="contacts__address contacts-info">
-            <p class="contacts-info__title">Приезжайте в гости:</p>
-            <p class="contacts-info__description">ул. Большая Конюшенная, 19/8</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="contacts__map">
-        <img class="contacts__map-item" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="map">
-        <div class="marker"></div>
-      </div>
-    </section>
   </body>
 </html>

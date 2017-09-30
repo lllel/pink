@@ -7,23 +7,23 @@
 </head>
   <body>
     <header class="header-main">
-      <div class="header-main__logo">
+      <div class="header-main__logo header-main__logo--position">
         <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
         <div class="header-main__popup-button"></div>
       </div>
 
       <!--NAV-POPUP-->
 
-      <!--<nav class="main-nav">-->
-        <!--<ul class="main-nav__items">-->
-          <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
-          <!--<li class="main-nav__item"><a class="main-nav__link">фотографии</a></li>-->
-          <!--<li class="main-nav__item"><a class="main-nav__link">конкурс</a></li>-->
-          <!--<li class="main-nav__item"><a class="main-nav__link">html academy</a></li>-->
-        <!--</ul>-->
-      <!--</nav>-->
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">html academy</a></li>
+        </ul>
+      </nav>
 
-      <div class="header-main__intro">
+      <div class="header-main__intro header-main__intro--padding">
         <h1 class="header-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
@@ -121,39 +121,43 @@
           <textarea class="textarea__description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
 
-          <button class="form__submit" type="submit">отправить форму</button>
+          <button class="form__submit button" type="submit">отправить форму</button>
 
-        <span class="form__require"><span class="star">*</span>-обязательные поля</span>
+        <span class="form__require"><span class="star">*</span> - обязательные поля</span>
       </form>
     </main>
 
     <footer class="footer-main">
       <div class="footer-main__logo">
-        <img class="logo" src="http://placehold.it/150x100" alt="logo">
+        <img class="logo" src="img/logo-pink-blue-mobile.svg" alt="logo">
       </div>
 
       <ul class="footer-main__links links-social">
-        <li class="links-social__item"><a href="#" id="link-social link-social--twitter">twitter</a></li>
-        <li class="links-social__item"><a href="#" id="link-social link-social--facebook">facebook</a></li>
-        <li class="links-social__item"><a href="#" id="link-social link-social--play">play</a></li>
+        <li class="links-social__item"><a href="#" class="link-social link-social--twitter">twitter</a></li>
+        <li class="links-social__item"><a href="#" class="link-social link-social--facebook">facebook</a></li>
+        <li class="links-social__item"><a href="#" class="link-social link-social--play">play</a></li>
       </ul>
-      <a class="footer-main__address" href="#"><img class="footer-main__logo-html" src="#" alt="logo-html">Разработано</a>
+      <a class="footer-main__address" href="#">Разработано<img class="footer-main__logo-html" src="#" alt="logo-html"></a>
     </footer>
 
     <!--POPUP ERROR-->
 
-    <div class="popup-error">
-      <p class="popup-error__heading">Что-то пошло не так!</p>
-      <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup-error__button" type="button">ок</button>
+    <div class="popup-error popup-event">
+      <p class="popup-event__heading">Что-то пошло не так!</p>
+      <p class="popup-event__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="popup-event__button-decoration">
+        <button class="popup-event__button button" type="button">ок</button>
+      </div>
     </div>
 
     <!--POPUP DONE-->
 
-    <div class="popup-done">
-      <p class="popup-done__heading">Ваша заявка отправлена</p>
-      <p class="popup-done__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="popup-done__button" type="button">закрыть окно</button>
+    <div class="popup-done popup-event">
+      <p class="popup-event__heading">Ваша заявка отправлена</p>
+      <p class="popup-event__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="popup-event__button-decoration">
+        <button class="popup-event__button button" type="button">закрыть окно</button>
+      </div>
     </div>
   </body>
 </html>

@@ -3,6 +3,24 @@
   overflow: hidden;
 }
 
+.contacts__decoration {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 130%;
+    height: 52px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translate(-50%)
+  }
+}
+
 .contacts__heading {
   color: #283645;
   font-size: 24px;
@@ -14,4 +32,8 @@
   height: 200px;
   overflow: hidden;
   background-image: url("../img/bg-map-mobile@1x.png");
+}
+
+.contact-wrapper {
+  padding: 0 25px;
 }

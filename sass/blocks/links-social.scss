@@ -1,4 +1,14 @@
 .links-social {
   display: flex;
   justify-content: center;
+  padding: 20px 0 0;
+}
+
+.links-social__item {
+  list-style-type: none;
+  padding-right: 20px;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }

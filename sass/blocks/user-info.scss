@@ -2,9 +2,29 @@
   outline: 1px solid red;
 }
 
+.user-info__input {
+  display: block;
+  height: 60px;
+  width: 280px;
+  border: 3px solid #e5e5e5;
+  margin: 0 auto;
+}
+
+.user-info__input::placeholder {
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
 .user-info__item {
-  margin: 0;
+  margin: 20px 0 0;
   padding: 0;
+}
+
+.user-info__item:first-child {
+  margin-top: 0;
 }
 
 .user-info__label {
@@ -14,4 +34,5 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  margin-left: 40px;
 }
