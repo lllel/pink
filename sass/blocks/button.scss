@@ -1,0 +1,61 @@
+.button {
+  display: block;
+  color: $colorFont;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-transparent {
+  display: block;
+  text-align: center;
+  width: 271px;
+  margin: 28px auto 0;
+  padding: 20px 0;
+  color: $colorFont;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+
+  &-red {
+    display: block;
+    text-align: center;
+    width: 271px;
+    padding: 15px 0;
+    color: #d22856;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    border: 4px solid #d22856;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &--disable {
+      display: block;
+      text-align: center;
+      width: 271px;
+      padding: 15px 0;
+      color: #b5b9be;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+      text-decoration: none;
+      border: 4px solid #b5b9be;
+      border-radius: 30px;
+      background-color: transparent;
+      opacity: 0.3;
+    }
+  }
+}

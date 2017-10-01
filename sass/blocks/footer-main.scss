@@ -1,0 +1,22 @@
+.footer-main {
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.footer-main__logo {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.footer-main__address {
+  display: block;
+  padding-top: 50px;
+  color: $colorPage2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 5px;
+  text-align: center;
+  text-decoration: none;
+}

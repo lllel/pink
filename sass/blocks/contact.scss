@@ -1,0 +1,38 @@
+.contact {
+  outline: 1px solid red;
+}
+
+.contact__item {
+  padding: 0;
+  margin: 20px 0 0;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.contact__label {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.contact__input {
+  display: block;
+  height: 60px;
+  width: 280px;
+  border: 3px solid #e5e5e5;
+  margin: 0 auto;
+}
+
+.contact__input::placeholder {
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 20px;
+}

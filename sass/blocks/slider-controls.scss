@@ -1,0 +1,38 @@
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-controls__button {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.slider-controls__input {
+  visibility: hidden;
+}
+
+.slider-controls__label {
+  font-size: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  width: 6px;
+  height: 6px;
+  display: block;
+}
+
+.slider-controls__label:last-child {
+  margin-right: 0;
+}
+
+.slider-controls__input:checked + .slider-controls__label {
+  border-radius: 50%;
+  border: 3px solid #283645;
+  background-color: #ffffff;
+  width: 6px;
+  height: 6px;
+}
