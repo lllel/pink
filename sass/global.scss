@@ -42,9 +42,22 @@ body {
     bottom: -51px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 1;
   }
 }
 
 .star {
   color: #d22856;
 }
+
+@media (min-width: 660px) {
+  body {
+    min-width: 660px;
+  }
+
+  .wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+

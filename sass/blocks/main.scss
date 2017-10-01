@@ -2,3 +2,11 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: 660px) {
+  .main {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+  }
+}

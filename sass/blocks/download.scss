@@ -40,3 +40,31 @@
   line-height: 24px;
   text-align: center;
 }
+
+.download__text {
+  display: none;
+  color: $colorFont;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .download {
+    max-width: 300px;
+    margin-top: -504px;
+    margin-left: 20px;
+    z-index: 1;
+    background-color: transparent;
+    //position: absolute;
+    //top: 50%;
+    //transform: translate(0, -250px);
+  }
+
+  .download__text {
+    display: block;
+    line-height: 40px;
+  }
+}

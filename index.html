@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,24 +15,26 @@
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>
-        </ul>
-      </nav>
+      <!--<nav class="main-nav">-->
+        <!--<ul class="main-nav__items">-->
+          <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
+          <!--<li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>-->
+          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">конкурс</a></li>-->
+          <!--<li class="main-nav__item"><a href="#" class="main-nav__link">html academy</a></li>-->
+        <!--</ul>-->
+      <!--</nav>-->
 
       <div class="header-main__intro header-main__intro--padding">
-        <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="arm">
-      </div>
+        <!--<div class="wrapper">-->
+          <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="arm">
+        </div>
+      <!--</div>-->
     </header>
 
     <main class="main">
       <section class="download">
-        <div class="wrapper">
         <h2 class="hidden-title">Скачать приложение</h2>
+        <p class="download__text">Взгляните на жизнь иначе!</p>
         <a href="https://www.apple.com/ru/itunes/download" class="download__button button-transparent" target="_blank">Скачать приложение</a>
 
         <ul class="download__items">
@@ -52,7 +55,6 @@
         </ul>
 
         <p class="download__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
       </section>
 
       <section class="information">
@@ -63,8 +65,8 @@
             <p class="information__item">Нам есть, что вам предложить!</p>
           </div>
 
+      <div class="advantages-container">
         <ul class="information__advantages advantages">
-          <ul class="wrapper">
             <li class="advantages__item">
               <h2 class="advantages__title">Поднимает настроение</h2>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
@@ -79,11 +81,10 @@
               <h2 class="advantages__title">Заводит новых друзей</h2>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
-          </ul>
         </ul>
 
         <div class="information__img"></div>
-
+      </div>
       </section>
 
       <section class="reviews">

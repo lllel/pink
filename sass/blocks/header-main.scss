@@ -49,3 +49,23 @@
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: 660px) {
+  .header-main {
+    width: 660px;
+  }
+
+  .header-main__intro {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    background-size: 680px 770px;
+    position: relative;
+  }
+
+  .header-main__img {
+    margin-right: 20px;
+    width: auto;
+    height: 550px;
+  }
+}
