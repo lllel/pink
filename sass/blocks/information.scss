@@ -13,14 +13,13 @@
 }
 
 .information__img {
-  width: 80px;
+  //width: 80px;
   height: 280px;
   text-align: center;
   background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: top, center;
   background-repeat: no-repeat;
-  flex-shrink: 0;
   z-index: 2;
 }
 
@@ -29,12 +28,31 @@
     margin-top: 214px;
   }
 
+  .information .wrapper {
+    border-color: #f2f2f2;
+  }
+
   .information__img {
     width: 270px;
     height: 480px;
+    flex-shrink: 0;
     background-size: cover;
-    //position: absolute;
     background-color: transparent;
     margin-left: 20px;
+  }
+
+  .information .decoration {
+    margin-bottom: -35px;
+
+    &::after {
+      content: "";
+      border-bottom-color: #f2f2f2;
+    }
+  }
+
+  .information__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
   }
 }

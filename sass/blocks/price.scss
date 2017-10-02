@@ -6,3 +6,12 @@
   width: 320px;
   overflow-x: hidden;
 }
+
+@media (min-width: 660px) {
+  .price {
+    width: 680px;
+    overflow-x: visible;
+    display: flex;
+    margin: auto;
+  }
+}

@@ -36,3 +36,11 @@
   width: 6px;
   height: 6px;
 }
+
+@media (min-width: 660px) {
+  .slider-price .slider-controls {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 95px;
+  }
+}

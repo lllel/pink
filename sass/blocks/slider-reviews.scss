@@ -9,7 +9,6 @@
 }
 
 .slider-reviews__item {
-  width: 280px;
   margin: 0;
   padding: 0;
 }
@@ -26,4 +25,24 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.slider-reviews__age {
+  display: none;
+  color: #283645;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .slider-reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slider-reviews__age {
+    display: block;
+    order: -1;
+  }
 }

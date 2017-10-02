@@ -52,19 +52,28 @@
 
 @media (min-width: 660px) {
   .header-main {
-    width: 660px;
+    width: 100%;
   }
 
   .header-main__intro {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 15px;
-    background-size: 680px 770px;
-    position: relative;
+    //background-size: 680px 770px;
+    background-size: cover;
+  }
+
+  .header-main__intro .wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header-main__intro--padding {
+    padding-bottom: 0;
+    margin: 0;
   }
 
   .header-main__img {
-    margin-right: 20px;
     width: auto;
     height: 550px;
   }

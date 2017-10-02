@@ -5,3 +5,9 @@
 .reviews .slider-controls {
   padding-bottom: 8px;
 }
+
+@media (min-width: 660px) {
+  .reviews {
+    width: 100%;
+  }
+}

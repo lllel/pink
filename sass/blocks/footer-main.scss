@@ -1,22 +1,35 @@
 .footer-main {
+  display: none;
   outline: 1px solid red;
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding: 50px 0 60px;
 }
 
 .footer-main__logo {
-  padding-top: 60px;
   text-align: center;
 }
 
 .footer-main__address {
   display: block;
-  padding-top: 50px;
   color: $colorPage2;
   font-size: 14px;
   font-weight: 400;
   line-height: 5px;
   text-align: center;
   text-decoration: none;
+}
+
+@media (min-width: 660px) {
+  .footer-main {
+    display: block;
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .footer-main .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -31,12 +31,3 @@
   line-height: 24px;
   text-align: center;
 }
-
-@media (min-width: 660px) {
-  .advantages-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    position: relative;
-  }
-}
