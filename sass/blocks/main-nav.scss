@@ -1,6 +1,8 @@
 .main-nav {
   width: $widthMobileBody;
   outline: 1px solid red;
+  position: relative;
+  z-index: 1;
 }
 
 .main-nav__items {
@@ -29,8 +31,14 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .main-nav {
     width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .main-nav {
+    display: none;
   }
 }

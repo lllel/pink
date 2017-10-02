@@ -6,8 +6,33 @@
   padding-bottom: 8px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .reviews {
     width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .reviews__decoration {
+    &::before {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 65px;
+      background-image: url("../img/quotes.png");
+      background-repeat: no-repeat;
+      margin: 0 auto;
+    }
+
+    .reviews__decoration {
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: 50px solid red;
+        border-left: 100vw solid transparent;
+        width: 0;
+        height: 0;
+      }
+    }
   }
 }

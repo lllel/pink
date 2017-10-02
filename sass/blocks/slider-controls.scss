@@ -37,10 +37,20 @@
   height: 6px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .slider-price .slider-controls {
     display: flex;
     justify-content: flex-start;
     margin-left: 95px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .slider-reviews .slider-controls {
+    display: none;
+  }
+
+  .slider-price .slider-controls {
+    display: none;
   }
 }

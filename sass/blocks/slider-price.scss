@@ -76,7 +76,7 @@
   border: 2px solid #e5e5e5;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .price {
     width: 660px;
     display: flex;

@@ -11,6 +11,7 @@
 .slider-reviews__item {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .slider-reviews__title {
@@ -35,7 +36,15 @@
   line-height: 30px;
 }
 
-@media (min-width: 660px) {
+.slider-reviews__btn-right {
+  display: none;
+}
+
+.slider-reviews__btn-left {
+  display: none;
+}
+
+@media (min-width: $widthTabletBody) {
   .slider-reviews__item {
     display: flex;
     flex-direction: column-reverse;
@@ -44,5 +53,45 @@
   .slider-reviews__age {
     display: block;
     order: -1;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .slider-reviews__item {
+    margin: 0 auto;
+  }
+
+  .slider-reviews__description {
+    padding: 0 185px;
+  }
+
+  .slider-reviews__btn-right {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-right: 2px solid #c2c6ca;
+    border-top: 2px solid #c2c6ca;
+    transform: rotate(45deg) translate(0, -50%);
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  .slider-reviews__btn-left {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-left: 2px solid #c2c6ca;
+    border-bottom: 2px solid #c2c6ca;
+    transform: rotate(45deg) translate(0, -50%);
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
   }
 }

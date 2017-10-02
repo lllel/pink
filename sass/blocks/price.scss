@@ -7,7 +7,7 @@
   overflow-x: hidden;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .price {
     width: 680px;
     overflow-x: visible;

@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .main {
     width: 100%;
     display: flex;

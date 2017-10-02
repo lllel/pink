@@ -20,7 +20,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $widthTabletBody) {
   .footer-main {
     display: block;
     width: 100%;

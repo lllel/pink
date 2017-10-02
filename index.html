@@ -11,6 +11,14 @@
       <div class="header-main__logo header-main__logo--position">
         <div class="wrapper">
           <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
+          <nav class="header-main__nav">
+            <ul class="header-main__items">
+              <li class="header-main__item"><a class="header-main__link">главная</a></li>
+              <li class="header-main__item"><a class="header-main__link" href="photo.html">фотографии</a></li>
+              <li class="header-main__item"><a href="#" class="header-main__link">конкурс</a></li>
+              <li class="header-main__item"><a href="#" class="header-main__link">html academy</a></li>
+            </ul>
+          </nav>
           <div class="header-main__popup-button"></div>
         </div>
       </div>
@@ -62,25 +70,29 @@
       <section class="information">
 
         <h2 class="hidden-title">Приемущества</h2>
-        <div class="decoration">
+        <div class="information__decoration">
           <p class="information__item">Устали от серости мегаполиса?</p>
           <p class="information__item">Нам есть, что вам предложить!</p>
         </div>
 
-        <div class="wrapper">
+
           <div class="information__container">
+            <div class="wrapper">
             <ul class="information__advantages advantages">
                 <li class="advantages__item">
+                  <div class="advantages__img-black-white"></div>
                   <h2 class="advantages__title">Поднимает настроение</h2>
                   <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
                 </li>
 
                 <li class="advantages__item">
+                  <div class="advantages__img-pink"></div>
                   <h2 class="advantages__title">Меняет мир вокруг</h2>
                   <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </li>
 
                 <li class="advantages__item">
+                  <div class="advantages__img-pink-smile"></div>
                   <h2 class="advantages__title">Заводит новых друзей</h2>
                   <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
@@ -108,7 +120,7 @@
       </section>
 
       <section class="reviews">
-        <div class="decoration">
+        <div class="reviews__decoration">
           <h2 class="hidden-title">Отзывы</h2>
           <div class="reviews__slider slider-reviews">
             <div class="wrapper">
@@ -119,6 +131,8 @@
                 на привычные серые вещи! А еще я познакомился со своей будущей женой
                 в комментариях к выложенной фотографии!»
               </p>
+              <button class="slider-reviews__btn-left" type="button"></button>
+              <button class="slider-reviews__btn-right" type="button"></button>
               <p class="slider-reviews__age">25 лет, водитель трамвая</p>
             </blockquote>
 
