@@ -1,10 +1,12 @@
 .achievements {
-  outline: 1px solid red;
   background-color: #f2f2f2;
 }
 
+.achievements .wrapper {
+  outline: 1px solid red;
+}
+
 .achievements__item {
-  padding: 0 10px;
   margin-left: 90px;
   margin-top: 55px;
 }
@@ -43,5 +45,19 @@
     top: 0;
     left: -80px;
     transform: translate(0, -20%);
+  }
+}
+
+@media (min-width: $widthTabletBody) {
+  .achievements {
+    background-color: #ffffff;
+    order: 4;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .achievements__container {
+    display: flex;
+    justify-content: space-around;
   }
 }

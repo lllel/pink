@@ -27,10 +27,21 @@
 .popup-event__button-decoration {
   background-color: #f2f2f2;
   box-shadow: 0 6px 10px -2px #dfdfdf;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
 
 .popup-event__button {
   margin: 0 auto;
   padding: 50px;
+  min-width: 300px;
+}
+
+@media (min-width: $widthTabletBody) {
+  .popup-event {
+    width: 460px;
+  }
+
+  .popup-event__text {
+    padding: 0 110px 30px;
+  }
 }

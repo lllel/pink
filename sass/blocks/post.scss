@@ -3,13 +3,23 @@
 }
 
 .post-bg {
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
   padding-bottom: 25px;
   margin: 0 20px;
 }
 
 .post__card {
-  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 135px;
+}
+
+.post__card .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .post__user-text {
@@ -18,7 +28,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 15px 0;
 }
 
 .post__user-name {
@@ -26,6 +36,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
 
 .post__time {
@@ -43,5 +54,78 @@
   line-height: 24px;
   text-align: left;
   text-transform: uppercase;
-  margin: 0 0 0 50px;
+  margin: auto 0 0 30px;
+  order: 1;
+}
+
+@media (min-width: $widthTabletBody) {
+  .posts__item {
+    width: 49%;
+  }
+
+  .post-bg {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+  }
+
+  .post__img--panorama {
+    width: 100%;
+    height: 505px;
+  }
+
+  .post__picture--panorama {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+  }
+
+  .post__card--panorama .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post__like--panorama {
+    order: 0;
+    margin-right: 50px;
+  }
+
+  .post__user-text {
+    width: 200px;
+  }
+
+  .post__user-text--panorama {
+    width: 100%;
+  }
+
+  .posts__item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post__picture {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .posts__item {
+    width: 32%;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+  }
+
+  .post__img--panorama {
+    width: 100%;
+    height: 505px;
+  }
 }

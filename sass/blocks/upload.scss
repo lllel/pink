@@ -53,10 +53,87 @@
   cursor: pointer;
 }
 
+.upload__tool-line--hidden {
+  display: none;
+}
+
 .upload__send {
   margin: 28px auto 0;
 }
 
 .upload__annulment {
   margin: 12px auto 0;
+}
+
+@media (min-width: $widthTabletBody) {
+  .upload {
+    padding-top: 40px;
+  }
+
+  .upload-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  .upload .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .upload__img {
+    margin-bottom: 0;
+  }
+
+  .upload__tool-line--hidden {
+    display: block;
+  }
+
+  .upload__instruments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__line-container {
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+  }
+
+  .upload__tool-line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2px;
+  }
+
+  .upload__buttons-container {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .upload .wrapper {
+    justify-content: space-around;
+  }
+
+  .upload__buttons-container {
+    display: flex;
+    align-items: stretch;
+    min-height: 65px;
+  }
+
+  .upload__line-container {
+    justify-content: space-around;
+  }
+
+  .upload__send {
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  .upload__annulment {
+    margin-top: 0;
+  }
 }

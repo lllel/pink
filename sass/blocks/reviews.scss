@@ -10,9 +10,37 @@
   .reviews {
     width: 100%;
   }
+
+  .reviews__slider {
+    padding-bottom: 50px;
+  }
+
+  .reviews__decoration {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 50px solid #f2f2f2;
+      border-left: 100vw solid transparent;
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 
 @media (min-width: $widthDesktopBody) {
+  .reviews {
+    padding-top: 80px;
+  }
+
+  .reviews__slider {
+    padding: 0 0 115px;
+  }
+
   .reviews__decoration {
     &::before {
       content: "";
@@ -22,17 +50,6 @@
       background-image: url("../img/quotes.png");
       background-repeat: no-repeat;
       margin: 0 auto;
-    }
-
-    .reviews__decoration {
-      &::after {
-        content: "";
-        display: block;
-        border-bottom: 50px solid red;
-        border-left: 100vw solid transparent;
-        width: 0;
-        height: 0;
-      }
     }
   }
 }

@@ -1,9 +1,9 @@
 .download {
-  height: 271px;
   background-color: $colorPage;
   padding-bottom: 20px;
   outline: 1px solid red;
   border-top: 1px solid transparent;
+  position: absolute;
 }
 
 .download__button {
@@ -53,15 +53,16 @@
 
 @media (min-width: $widthTabletBody) {
   .download {
+    top: 0;
+    left: 0;
     max-width: 300px;
-    margin-top: -504px;
-    margin-left: 20px;
     z-index: 1;
     background-color: transparent;
   }
 
   .download__text {
     display: block;
+    margin-top: 10px;
     line-height: 40px;
   }
 }

@@ -23,6 +23,7 @@
   width: 6px;
   height: 6px;
   display: block;
+  cursor: pointer;
 }
 
 .slider-controls__label:last-child {
@@ -35,14 +36,6 @@
   background-color: #ffffff;
   width: 6px;
   height: 6px;
-}
-
-@media (min-width: $widthTabletBody) {
-  .slider-price .slider-controls {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 95px;
-  }
 }
 
 @media (min-width: $widthDesktopBody) {

@@ -9,9 +9,13 @@
 
 @media (min-width: $widthTabletBody) {
   .price {
-    width: 680px;
+    width: 100%;
     overflow-x: visible;
     display: flex;
-    margin: auto;
+    background-color: #f2f2f2;
+  }
+
+  .price .slider-controls {
+    display: none;
   }
 }

@@ -1,9 +1,12 @@
 .footer-main {
   display: none;
-  outline: 1px solid red;
   width: 320px;
   margin: 0 auto;
   padding: 50px 0 60px;
+}
+
+.footer-main .wrapper {
+  outline: 1px solid red;
 }
 
 .footer-main__logo {

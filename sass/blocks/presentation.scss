@@ -8,3 +8,29 @@
   margin: 0;
   outline: 1px solid red;
 }
+
+.presentation__description-desktop {
+  display: none;
+}
+
+@media (min-width: $widthTabletBody) {
+  .presentation__description {
+    padding: 30px 110px;
+  }
+
+  .presentation__description-desktop {
+    display: inline;
+    font: inherit;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .presentation__description {
+    padding: 30px 260px;
+  }
+
+  .presentation__description-desktop {
+    display: inline;
+    font: inherit;
+  }
+}

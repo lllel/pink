@@ -30,6 +30,11 @@ body {
   color: #d22856;
 }
 
+.logo {
+  width: 75px;
+  height: 23px;
+}
+
 @media (min-width: $widthTabletBody) {
   body {
     min-width: 100%;
@@ -43,7 +48,7 @@ body {
 
 @media (min-width: $widthDesktopBody) {
   .wrapper {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
   }
 }

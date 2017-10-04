@@ -1,8 +1,12 @@
-.contact {
+.contact .wrapper {
   outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__item {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 20px 0 0;
 
@@ -35,4 +39,52 @@
   font-weight: 400;
   line-height: 30px;
   padding-left: 20px;
+}
+
+@media (min-width: $widthTabletBody) {
+  .contact {
+    order: 3;
+  }
+
+  .contact__item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .contact__input {
+    width: 500px;
+  }
+
+  .contact__label {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .contact .form__fieldset {
+    display: flex;
+    order: 3;
+    flex-direction: row;
+  }
+
+  .contact__item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 375px;
+    margin: 0;
+  }
+
+  .contact__container {
+    display: flex;
+    //width: auto;
+    justify-content: space-around;
+  }
+
+  .contact__input {
+    width: 375px;
+  }
+
+  .contact__label {
+    margin-left: 20px;
+  }
 }

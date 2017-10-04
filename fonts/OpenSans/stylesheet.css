@@ -12,7 +12,7 @@
 	font-family: 'Open Sans';
 	src: url('OpenSans-Bold.woff2') format('woff2'),
 		url('OpenSans-Bold.woff') format('woff');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -20,7 +20,7 @@
 	font-family: 'Open Sans';
 	src: url('OpenSans.woff2') format('woff2'),
 		url('OpenSans.woff') format('woff');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -36,7 +36,7 @@
 	font-family: 'Open Sans';
 	src: url('OpenSans-Bold_1.woff2') format('woff2'),
 		url('OpenSans-Bold_1.woff') format('woff');
-	font-weight: bold;
+	font-weight: 700;
 	font-style: normal;
 }
 
@@ -44,6 +44,6 @@
 	font-family: 'Open Sans';
 	src: url('OpenSans_1.woff2') format('woff2'),
 		url('OpenSans_1.woff') format('woff');
-	font-weight: normal;
+	font-weight: 400;
 	font-style: normal;
 }
