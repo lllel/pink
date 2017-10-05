@@ -56,10 +56,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
   }
 
   .user-info__label {
     margin-right: 20px;
+  }
+
+  .user-info__input {
+    flex-grow: 1;
+    width: initial;
   }
 }
 

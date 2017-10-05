@@ -1,4 +1,4 @@
-.form {
+.form .wrapper {
   outline: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -64,18 +64,6 @@
     padding: 0 40px;
   }
 
-  .achievements__title {
-    display: none;
-  }
-
-  .os-select__title {
-    display: none;
-  }
-
-  .textarea__heading {
-    display: none;
-  }
-
   .form__fieldset--os-select {
     padding-bottom: 50px;
   }
@@ -94,7 +82,7 @@
 }
 
 @media (min-width: $widthDesktopBody) {
-  .form {
+  .form .wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

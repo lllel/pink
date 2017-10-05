@@ -29,6 +29,19 @@
   text-align: center;
 }
 
+@media (min-width: $widthTabletBody) {
+  .achievements__title {
+    display: none;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .textarea__description {
+    width: 820px;
+    height: 130px;
+  }
+}
+
 @media (min-width: $widthDesktopBody) {
   .advantages {
     display: flex;

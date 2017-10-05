@@ -35,6 +35,18 @@ body {
   height: 23px;
 }
 
+.feature {
+  display: block;
+  height: 27px;
+  width: 100%;
+  color: $colorFont;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 27px;
+  background-color: #d22856;
+  margin: 0;
+}
+
 @media (min-width: $widthTabletBody) {
   body {
     min-width: 100%;

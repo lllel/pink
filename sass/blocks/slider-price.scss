@@ -5,7 +5,6 @@
 }
 
 .slider-price__table {
-  background-color: #ffffff;
   width: 1000px;
   margin: 25px auto 0;
   border-collapse: collapse;
@@ -23,22 +22,6 @@
   overflow: hidden;
   padding: 20px 0 20px 0;
   border: 2px solid #e5e5e5;
-}
-
-.slider-price__feature {
-  display: block;
-  height: 27px;
-  width: 100%;
-  color: $colorFont;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 27px;
-  background-color: #d22856;
-  margin: 0;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: 17px;
-  left: -107px;
 }
 
 .slider-price__title {
@@ -62,6 +45,7 @@
 }
 
 .slider-price__column {
+  background-color: #ffffff;
   color: #283645;
   font-size: 14px;
   font-weight: 400;
@@ -72,8 +56,11 @@
   border: 2px solid #e5e5e5;
 }
 
-.slider-price__column-desktop {
-  display: none;
+.slider-price__feature {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 15px;
+  left: -109px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -88,7 +75,6 @@
 
   .slider-price__text-hidden {
     font-size: 0;
-    background-color: #f2f2f2;
     border: 0;
   }
 
@@ -104,6 +90,7 @@
   }
 
   .slider-price__feature {
+    transform: rotate(-45deg);
     position: absolute;
     top: 8px;
     left: -61px;
@@ -114,6 +101,11 @@
     width: 200px;
     padding: 15px;
     vertical-align: middle;
+    background-color: #ffffff;
+  }
+
+  .slider-price__row--border {
+    border: none;
   }
 }
 

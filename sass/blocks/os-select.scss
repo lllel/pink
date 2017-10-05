@@ -56,6 +56,10 @@
     background-color: #ffffff;
     order: 2;
   }
+
+  .os-select__title {
+    display: none;
+  }
 }
 
 @media (min-width: $widthDesktopBody) {
