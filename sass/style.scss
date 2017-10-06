@@ -2,6 +2,7 @@
 @import "fonts";
 @import "variables";
 @import "global";
+@import "../sass/blocks/wrapper";
 @import "../sass/blocks/header-main";
 @import "../sass/blocks/main-nav";
 @import "../sass/blocks/main";
@@ -32,3 +33,4 @@
 @import "../sass/blocks/upload";
 @import "../sass/blocks/button";
 @import "../sass/blocks/news";
+@import "../sass/blocks/feature";

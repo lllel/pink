@@ -2,6 +2,10 @@
   outline: 1px solid red;
 }
 
+.reviews__slider {
+  padding-bottom: 15px;
+}
+
 .reviews .slider-controls {
   padding-bottom: 8px;
 }
@@ -17,18 +21,6 @@
 
   .reviews__decoration {
     position: relative;
-    overflow: hidden;
-
-    &::after {
-      content: "";
-      display: block;
-      border-bottom: 50px solid #f2f2f2;
-      border-left: 100vw solid transparent;
-      width: 0;
-      height: 0;
-      position: absolute;
-      bottom: 0;
-    }
   }
 }
 

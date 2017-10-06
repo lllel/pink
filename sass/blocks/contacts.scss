@@ -15,7 +15,7 @@
     border-right: 100vw solid transparent;
     border-top: 100px solid #ffffff;
     position: absolute;
-    transform: translate(-37%, 0);
+    transform: translateX(-37%);
   }
 }
 
@@ -45,6 +45,7 @@
 @media (min-width: $widthTabletBody) {
   .contacts__wrapper {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -58,7 +59,7 @@
 
     &::after {
       content: "";
-      transform: translate(-38%, 0);
+      transform: translateX(-38%);
     }
   }
 

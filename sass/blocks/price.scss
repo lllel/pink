@@ -4,7 +4,21 @@
 
 .price {
   width: 320px;
-  overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 50px solid #ffffff;
+    border-left: 100vw solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+  }
 }
 
 @media (min-width: $widthTabletBody) {
@@ -12,6 +26,7 @@
     width: 100%;
     overflow-x: visible;
     display: flex;
+    flex-direction: row;
     background-color: #f2f2f2;
   }
 

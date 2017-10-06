@@ -15,6 +15,7 @@
 
 .header-main__items {
   display: flex;
+  flex-direction: row;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -94,6 +95,7 @@
 
   .header-main__download-container {
     display: flex;
+    flex-direction: row;
     position: relative;
     width: 100%;
   }
@@ -130,6 +132,7 @@
 
   .header-main__logo .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -148,6 +151,7 @@
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 400;
+    line-height: 22px;
     padding: 0 30px;
   }
 

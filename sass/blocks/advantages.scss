@@ -33,24 +33,19 @@
   .achievements__title {
     display: none;
   }
-}
 
-@media (min-width: $widthDesktopBody) {
-  .textarea__description {
-    width: 820px;
-    height: 130px;
+  .advantages__item:first-child {
+    padding-top: 0;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .advantages {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     margin-top: -70px;
-  }
-
-  .advantages__item:first-child {
-    padding-top: 0;
+    padding: 0;
   }
 
   .advantages__item {

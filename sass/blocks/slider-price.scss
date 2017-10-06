@@ -8,7 +8,7 @@
   width: 1000px;
   margin: 25px auto 0;
   border-collapse: collapse;
-  transform: translate(-42.4%);
+  transform: translateX(-42.4%);
 }
 
 .slider-price__row {
@@ -59,8 +59,8 @@
 .slider-price__feature {
   transform: rotate(-45deg);
   position: absolute;
-  top: 15px;
-  left: -109px;
+  top: 16px;
+  right: 186px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -71,6 +71,7 @@
 
   .slider-price .slider-controls {
     display: flex;
+    flex-direction: row;
   }
 
   .slider-price__text-hidden {
@@ -93,7 +94,7 @@
     transform: rotate(-45deg);
     position: absolute;
     top: 8px;
-    left: -61px;
+    right: 79px;
   }
 
   .slider-price__column-hidden {
@@ -112,7 +113,7 @@
 @media (min-width: $widthDesktopBody) {
   .slider-price__feature {
     position: absolute;
-    top: 8px;
-    left: -100px;
+    top: 13px;
+    right: 158px;
   }
 }

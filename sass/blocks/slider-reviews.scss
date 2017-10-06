@@ -72,7 +72,7 @@
     border: none;
     border-right: 2px solid #c2c6ca;
     border-top: 2px solid #c2c6ca;
-    transform: rotate(45deg) translate(0, -50%);
+    transform: rotate(45deg) translateY(-50%);
     background-color: transparent;
     position: absolute;
     right: 0;
@@ -87,7 +87,7 @@
     border: none;
     border-left: 2px solid #c2c6ca;
     border-bottom: 2px solid #c2c6ca;
-    transform: rotate(45deg) translate(0, -50%);
+    transform: rotate(45deg) translateY(-50%);
     background-color: transparent;
     position: absolute;
     top: 50%;
