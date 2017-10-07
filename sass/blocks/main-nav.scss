@@ -1,8 +1,21 @@
 .main-nav {
+  display: none;
   width: $widthMobileBody;
   outline: 1px solid red;
   position: relative;
   z-index: 1;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .main-nav__items {

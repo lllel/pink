@@ -1,8 +1,11 @@
 .footer-main {
-  display: none;
   width: 320px;
   margin: 0 auto;
-  padding: 50px 0 60px;
+  padding: 30px 0 60px;
+}
+
+.footer-main__links {
+  padding-bottom: 25px;
 }
 
 .footer-main .wrapper {
@@ -28,6 +31,11 @@
     display: block;
     width: 100%;
     padding-top: 60px;
+  }
+
+  .footer-main__links {
+    margin: 0;
+    padding: 0;
   }
 
   .footer-main .wrapper {

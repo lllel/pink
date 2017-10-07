@@ -46,6 +46,13 @@
   top: 0;
 }
 
+.header-main__logo .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-main__logo--position {
   position: relative;
 }
@@ -65,7 +72,7 @@
 }
 
 .header-main__intro--padding {
-  padding-top: 92px;
+  padding-top: 50px;
 }
 
 .header-main__title {
@@ -77,9 +84,105 @@
   padding: 0 25px 50px;
 }
 
+.header-main__popup-button {
+  display: block;
+  margin-right: 20px;
+  width: 50px;
+  height: 24px;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff;
+  }
+}
+
+.header-main__popup-button--closed {
+  display: block;
+  width: 50px;
+  height: 24px;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: none;
+  }
+}
+
+.header-main__popup-button--opened {
+  border: 0;
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+.header-main__popup-button--nojs {
+  display: none;
+}
+
 @media (min-width: $widthTabletBody) {
   .header-main {
     width: 100%;
+  }
+
+  .header-main__logo .logo {
+    padding-left: 0;
   }
 
   .header-main__title {
@@ -105,6 +208,10 @@
     height: 550px;
     margin-left: auto;
   }
+
+  .header-main__popup-button {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: $widthDesktopBody) {
@@ -128,6 +235,7 @@
 
   .header-main__logo .logo {
     padding: 40px;
+    padding-left: 0;
   }
 
   .header-main__logo .wrapper {
