@@ -1,3 +1,31 @@
 .popup-error {
+  //display: none;
   padding-bottom: 15px;
+  position: absolute;
+  left: 50%;
+  bottom: 1195px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+@media (min-width: $widthTabletBody) {
+  .popup-error {
+    position: absolute;
+    bottom: 1775px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .popup-error {
+    position: absolute;
+    bottom: 1065px;
+  }
 }

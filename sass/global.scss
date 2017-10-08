@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: inherit;
   min-width: $widthMobileBody;
   margin: 0 auto;

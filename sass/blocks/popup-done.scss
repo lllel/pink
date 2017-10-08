@@ -1,3 +1,35 @@
 .popup-done {
-  padding-bottom: 15px;
+  //display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 628px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+@media (min-width: $widthTabletBody) {
+  .popup-done {
+    position: absolute;
+    bottom: 1178px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .popup-done {
+    width: 780px;
+    position: absolute;
+    bottom: 520px;
+  }
+
+  .popup-done__text {
+    padding: 0 217px 30px;
+  }
 }
