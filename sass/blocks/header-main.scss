@@ -6,12 +6,51 @@
   margin: 0 auto;
 }
 
+.header-main__nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header-main__items {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header-main__item {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 6px;
+}
+
+.header-main__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 14px;
+  color: $colorFont;
+  font-weight: 700;
+  text-align: center;
+}
+
 .header-main__logo {
   background-color: rgba(29, 38, 49, 0.3);
   width: 100%;
   z-index: 2;
   position: absolute;
   top: 0;
+}
+
+.header-main__logo .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-main__logo--position {
@@ -29,11 +68,11 @@
   background-color: $colorPage;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50%, 0;
+  background-position: top;
 }
 
 .header-main__intro--padding {
-  padding-top: 92px;
+  padding-top: 50px;
 }
 
 .header-main__title {
@@ -45,7 +84,193 @@
   padding: 0 25px 50px;
 }
 
-.main-nav {
+.header-main__popup-button {
+  display: block;
+  margin-right: 20px;
+  width: 50px;
+  height: 24px;
+  border: 0;
   position: relative;
-  z-index: 1;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff;
+  }
+}
+
+.header-main__popup-button--closed {
+  display: block;
+  width: 50px;
+  height: 24px;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: 0 10px 0 0 #ffffff, 0 -10px 0 0 #ffffff;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    box-shadow: none;
+  }
+}
+
+.header-main__popup-button--opened {
+  display: block;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+.header-main__popup-button--none {
+  display: none;
+}
+
+@media (min-width: $widthTabletBody) {
+  .header-main {
+    width: 100%;
+  }
+
+  .header-main__logo .logo {
+    padding-left: 0;
+  }
+
+  .header-main__title {
+    font-size: 50px;
+    font-weight: 300;
+    width: 500px;
+    margin: auto;
+  }
+
+  .header-main__intro {
+    background-size: cover;
+  }
+
+  .header-main__download-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+  }
+
+  .header-main__img {
+    width: auto;
+    height: 550px;
+    margin-left: auto;
+  }
+
+  .header-main__popup-button {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .header-main {
+    width: 100%;
+  }
+
+  .header-main__title {
+    font-size: 50px;
+    font-weight: 300;
+    width: 760px;
+  }
+
+  .header-main__nav {
+    display: block;
+  }
+
+  .header-main__intro {
+    min-height: 300px;
+  }
+
+  .header-main__logo .logo {
+    padding: 40px;
+    padding-left: 0;
+  }
+
+  .header-main__logo .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-main__items {
+    padding: 10px 0;
+  }
+
+  .header-main__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-main__link {
+    display: block;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 0 30px;
+  }
+
+  .header-main__popup-button {
+    display: none;
+  }
+
+  .header-main__img {
+    width: auto;
+    height: 550px;
+    margin-left: auto;
+  }
 }

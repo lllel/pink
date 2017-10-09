@@ -1,0 +1,77 @@
+.news {
+  outline: 1px solid red;
+  border-top: 1px solid transparent;
+  display: none;
+}
+
+.news__container {
+  width: 310px;
+}
+
+.news__description {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.news__title {
+  margin: 0;
+}
+
+.news__text {
+  color: $base-font-color-content;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.news__link {
+  color: $base-font-color-title;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 10px;
+}
+
+.news__img {
+  width: 258px;
+  height: 254px;
+  background-image: url("../img/icon-editor-diagram-fill.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 660px) {
+  .news {
+    display: block;
+  }
+
+  .news .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  .news__img {
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .news {
+    background-color: #f2f2f2;
+  }
+
+  .news__container {
+    width: auto;
+  }
+
+  .news__img {
+    margin-right: 70px;
+  }
+
+  .news .wrapper {
+    justify-content: flex-end;
+  }
+}

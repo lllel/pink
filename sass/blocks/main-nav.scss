@@ -1,6 +1,13 @@
 .main-nav {
+  display: none;
   width: $widthMobileBody;
   outline: 1px solid red;
+  position: relative;
+  z-index: 1;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .main-nav__items {
@@ -27,4 +34,16 @@
   color: $colorFont;
   font-weight: 700;
   text-align: center;
+}
+
+@media (min-width: $widthTabletBody) {
+  .main-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .main-nav {
+    display: none;
+  }
 }

@@ -7,6 +7,7 @@
 
 .upload__img {
   margin-bottom: 25px;
+  font-size: 0;
 }
 
 .upload-tools {
@@ -29,6 +30,18 @@
   position: relative;
   width: 240px;
   margin: 0 auto 25px;
+  padding-bottom: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #dddfe0;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+  }
 }
 
 .upload__line {
@@ -41,16 +54,18 @@
   position: absolute;
   top: 0;
   right: 30px;
-  transform: translate(0, -50%);
+  transform: translateY(-50%);
   border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #d22856;
+  border: 2px solid #d22856;
   box-sizing: border-box;
   background-color: #f2f2f2;
   width: 14px;
   height: 14px;
   cursor: pointer;
+}
+
+.upload__tool-line--hidden {
+  display: none;
 }
 
 .upload__send {
@@ -59,4 +74,115 @@
 
 .upload__annulment {
   margin: 12px auto 0;
+}
+
+@media (min-width: $widthTabletBody) {
+  .upload {
+    padding-top: 40px;
+  }
+
+  .upload-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  .upload .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .upload__tool-line {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 312px;
+      height: 1px;
+      background-color: #dddfe0;
+      position: absolute;
+      bottom: 0;
+      left: -45px;
+    }
+  }
+
+  .upload__img {
+    margin-bottom: 0;
+  }
+
+  .upload__tool-line--hidden {
+    display: block;
+  }
+
+  .upload__instruments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upload__line-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+  }
+
+  .upload__tool-line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+
+  .upload__buttons-container {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .upload {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .upload .wrapper {
+    justify-content: space-around;
+  }
+
+  .upload__tool-line {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 470px;
+      height: 1px;
+      background-color: #dddfe0;
+      position: absolute;
+      bottom: 0;
+      left: -200px;
+    }
+  }
+
+  .upload__buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 65px;
+  }
+
+  .upload__line-container {
+    justify-content: space-around;
+  }
+
+  .upload__send {
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  .upload__annulment {
+    margin-top: 0;
+  }
 }

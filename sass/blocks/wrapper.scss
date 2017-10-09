@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 0;
+}
+
+@media (min-width: $widthTabletBody) {
+  .wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+}

@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: inherit;
   min-width: $widthMobileBody;
   margin: 0 auto;
@@ -22,29 +23,17 @@ body {
   overflow: hidden;
 }
 
-.wrapper {
-  padding: 0;
-}
-
-.decoration {
-  position: relative;
-  padding-bottom: 30px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 52px;
-    background-image: url("../img/bg-triangle-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -51px;
-    left: 50%;
-    transform: translate(-50%);
-  }
-}
-
 .star {
   color: #d22856;
+}
+
+.logo {
+  width: 75px;
+  height: 23px;
+}
+
+@media (min-width: $widthTabletBody) {
+  body {
+    min-width: 100%;
+  }
 }

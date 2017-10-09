@@ -1,10 +1,15 @@
-.contact {
+.contact .wrapper {
   outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__item {
+  display: flex;
+  flex-direction: column;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 0;
+  margin-top: 20px;
 
   &:first-child {
     margin: 0;
@@ -12,7 +17,7 @@
 }
 
 .contact__label {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -24,9 +29,11 @@
 .contact__input {
   display: block;
   height: 60px;
-  width: 280px;
+  width: 260px;
   border: 3px solid #e5e5e5;
   margin: 0 auto;
+  padding: 0 10px;
+  font-size: 18px;
 }
 
 .contact__input::placeholder {
@@ -35,4 +42,63 @@
   font-weight: 400;
   line-height: 30px;
   padding-left: 20px;
+}
+
+@media (min-width: $widthTabletBody) {
+  .contact {
+    order: 3;
+  }
+
+  .contact__item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .contact__input {
+    width: 500px;
+  }
+
+  .contact__label {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .contact .form__fieldset {
+    display: flex;
+    order: 3;
+    flex-direction: row;
+  }
+
+  .contact__item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .contact__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact__input {
+    width: 375px;
+  }
+
+  .contact__label {
+    margin-left: 20px;
+  }
+
+  .contacts__tel {
+    order: 1;
+  }
+
+  .contacts__address {
+    order: 2;
+  }
+
+  .contacts__email {
+    order: 3;
+  }
 }

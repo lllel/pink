@@ -1,5 +1,6 @@
 .slider-controls {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -23,6 +24,7 @@
   width: 6px;
   height: 6px;
   display: block;
+  cursor: pointer;
 }
 
 .slider-controls__label:last-child {
@@ -35,4 +37,14 @@
   background-color: #ffffff;
   width: 6px;
   height: 6px;
+}
+
+@media (min-width: $widthDesktopBody) {
+  .slider-reviews .slider-controls {
+    display: none;
+  }
+
+  .slider-price .slider-controls {
+    display: none;
+  }
 }

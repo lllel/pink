@@ -2,14 +2,48 @@
   outline: 1px solid red;
 }
 
-.post-bg {
-  background-color: #f2f2f2;
-  padding-bottom: 25px;
-  margin: 0 20px;
+.posts__item-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.post__img-container--panorama {
+  position: relative;
+}
+
+.post__feature--panorama {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  text-align: center;
+  width: 130px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .post__card {
-  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-top: -4px;
+  padding: 25px 0 25px 30px;
+  min-height: 121px;
+}
+
+.post__card--panorama {
+  margin: 0 20px;
+}
+
+.post__card .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.post__img {
+  width: 100%;
+  height: auto;
 }
 
 .post__user-text {
@@ -18,7 +52,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  padding: 20px 0 20px 0;
+  padding: 10px 0 15px;
 }
 
 .post__user-name {
@@ -26,6 +60,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
+  margin: 0;
 }
 
 .post__time {
@@ -37,11 +72,90 @@
 }
 
 .post__like {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
   text-transform: uppercase;
-  margin: 0 0 0 50px;
+  margin: auto 0 0 30px;
+  order: 1;
+}
+
+@media (min-width: $widthTabletBody) {
+  .posts__item {
+    width: 49%;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+  }
+
+  .post__img-container--panorama {
+    width: 100%;
+  }
+
+  .post__user-text--panorama {
+    padding: 10px 33px;
+  }
+
+  .post__card--panorama {
+    width: 590px;
+    margin: -4px auto 0;
+  }
+
+  .post__img--panorama {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+  }
+
+  .post__card--panorama .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post__like--panorama {
+    order: 0;
+    margin-right: 50px;
+  }
+
+  .posts__item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .post__feature--panorama {
+    top: 25px;
+    right: 25px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .posts__item {
+    width: 32%;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+  }
+
+  .post__feature--panorama {
+    top: 45px;
+    right: 50px;
+  }
+
+  .post__user-text--panorama {
+    padding: 10px 33px;
+  }
+
+  .post__card--panorama {
+    width: 910px;
+    margin: -4px auto 0;
+  }
 }
