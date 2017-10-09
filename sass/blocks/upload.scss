@@ -7,6 +7,7 @@
 
 .upload__img {
   margin-bottom: 25px;
+  font-size: 0;
 }
 
 .upload-tools {
@@ -55,9 +56,7 @@
   right: 30px;
   transform: translateY(-50%);
   border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #d22856;
+  border: 2px solid #d22856;
   box-sizing: border-box;
   background-color: #f2f2f2;
   width: 14px;

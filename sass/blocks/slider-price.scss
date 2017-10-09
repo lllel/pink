@@ -46,7 +46,7 @@
 
 .slider-price__column {
   background-color: #ffffff;
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -57,6 +57,9 @@
 }
 
 .slider-price__feature {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
   transform: rotate(-45deg);
   position: absolute;
   top: 16px;
@@ -67,6 +70,14 @@
   .slider-price {
     display: flex;
     flex-direction: column;
+  }
+
+  .slider-price__title {
+    font-size: 16px;
+  }
+
+  .slider-price__cost {
+    font-size: 18px;
   }
 
   .slider-price .slider-controls {
@@ -100,9 +111,14 @@
   .slider-price__column-hidden {
     display: table-cell;
     width: 200px;
-    padding: 15px;
+    padding: 12px;
     vertical-align: middle;
     background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $base-font-color-content;
+    text-transform: capitalize;
   }
 
   .slider-price__row--border {
@@ -111,6 +127,16 @@
 }
 
 @media (min-width: $widthDesktopBody) {
+  .slider-price__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .slider-price__cost {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .slider-price__feature {
     position: absolute;
     top: 13px;

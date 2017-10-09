@@ -12,7 +12,7 @@
 }
 
 .achievements__title {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -30,9 +30,10 @@
 
 .achievements__label {
   position: relative;
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 18px;
   font-weight: 400;
+  line-height: 30px;
 
   &::before {
     content: "";
@@ -56,9 +57,38 @@
 }
 
 @media (min-width: $widthDesktopBody) {
+  .achievements__item {
+    width: 22%;
+    margin-left: 103px;
+  }
+
   .achievements__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .achievements__item-selfie {
+    order: 1;
+  }
+
+  .achievements__item-chuck {
+    order: 2;
+  }
+
+  .achievements__item-tower {
+    order: 3;
+  }
+
+  .achievements__item-scorched {
+    order: 4;
+  }
+
+  .achievements__item-souvenirs {
+    order: 5;
+  }
+
+  .achievements__item-hotel {
+    order: 6;
   }
 }

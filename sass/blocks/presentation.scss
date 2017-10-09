@@ -1,12 +1,15 @@
+.presentation {
+  outline: 1px solid red;
+}
+
 .presentation__description {
   padding: 30px 20px;
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   margin: 0;
-  outline: 1px solid red;
 }
 
 .presentation__description-desktop {
@@ -15,7 +18,10 @@
 
 @media (min-width: $widthTabletBody) {
   .presentation__description {
-    padding: 30px 110px;
+    padding: 65px 0;
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
   }
 
   .presentation__description-desktop {
@@ -26,7 +32,7 @@
 
 @media (min-width: $widthDesktopBody) {
   .presentation__description {
-    padding: 30px 260px;
+    width: 615px;
   }
 
   .presentation__description-desktop {

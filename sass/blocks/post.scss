@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.post__img--panorama {
+.post__img-container--panorama {
   position: relative;
 }
 
@@ -17,6 +17,7 @@
   right: 30px;
   text-align: center;
   width: 130px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -40,7 +41,7 @@
   margin: 0 auto;
 }
 
-.post__picture {
+.post__img {
   width: 100%;
   height: auto;
 }
@@ -71,7 +72,7 @@
 }
 
 .post__like {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -90,7 +91,7 @@
     width: 100%;
   }
 
-  .post__img--panorama {
+  .post__img-container--panorama {
     width: 100%;
   }
 
@@ -103,7 +104,7 @@
     margin: -4px auto 0;
   }
 
-  .post__picture--panorama {
+  .post__img--panorama {
     width: 100%;
     height: auto;
     min-height: 50px;

@@ -32,7 +32,7 @@
     text-align: center;
     width: 271px;
     padding: 15px 0;
-    color: #d22856;
+    color: $base-font-color-title;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -57,5 +57,11 @@
       background-color: transparent;
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .button-transparent {
+    font-size: 21px;
   }
 }

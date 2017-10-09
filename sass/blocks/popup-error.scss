@@ -1,6 +1,5 @@
 .popup-error {
-  //display: none;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   position: absolute;
   left: 50%;
   bottom: 1195px;
@@ -19,7 +18,7 @@
 @media (min-width: $widthTabletBody) {
   .popup-error {
     position: absolute;
-    bottom: 1775px;
+    bottom: 1737px;
   }
 }
 

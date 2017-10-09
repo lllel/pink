@@ -17,7 +17,7 @@
 }
 
 .contact__label {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -33,6 +33,7 @@
   border: 3px solid #e5e5e5;
   margin: 0 auto;
   padding: 0 10px;
+  font-size: 18px;
 }
 
 .contact__input::placeholder {
@@ -72,7 +73,6 @@
   .contact__item {
     flex-direction: column-reverse;
     align-items: flex-start;
-    width: 375px;
     margin: 0;
   }
 
@@ -88,5 +88,17 @@
 
   .contact__label {
     margin-left: 20px;
+  }
+
+  .contacts__tel {
+    order: 1;
+  }
+
+  .contacts__address {
+    order: 2;
+  }
+
+  .contacts__email {
+    order: 3;
   }
 }

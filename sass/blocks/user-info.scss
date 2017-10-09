@@ -8,10 +8,12 @@
 
 .user-info__input {
   display: block;
+  margin: 0 auto;
   height: 60px;
   width: 280px;
   border: 3px solid #e5e5e5;
   padding: 0 10px;
+  font-size: 18px;
 }
 
 .user-info__input::placeholder {
@@ -34,7 +36,7 @@
 }
 
 .user-info__label {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -46,6 +48,7 @@
 @media (min-width: $widthTabletBody) {
   .user-info {
     order: 1;
+    margin-right: 20px;
   }
 
   .user-info .wrapper {
@@ -71,7 +74,7 @@
 
 @media (min-width: $widthDesktopBody) {
   .user-info {
-    width: 435px;
+    width: 450px;
   }
 
   .user-info .wrapper {
@@ -81,5 +84,9 @@
 
   .user-info__item:first-child {
     margin-top: 50px;
+  }
+
+  .user-info__item {
+    width: 435px;
   }
 }

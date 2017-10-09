@@ -68,7 +68,7 @@
   background-color: $colorPage;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50%, 0;
+  background-position: top;
 }
 
 .header-main__intro--padding {
@@ -148,6 +148,7 @@
 }
 
 .header-main__popup-button--opened {
+  display: block;
   border: 0;
   position: relative;
   background-color: transparent;
@@ -172,7 +173,7 @@
   }
 }
 
-.header-main__popup-button--nojs {
+.header-main__popup-button--none {
   display: none;
 }
 
@@ -222,7 +223,7 @@
   .header-main__title {
     font-size: 50px;
     font-weight: 300;
-    width: 650px;
+    width: 760px;
   }
 
   .header-main__nav {

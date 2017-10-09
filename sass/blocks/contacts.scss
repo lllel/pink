@@ -4,9 +4,10 @@
 }
 
 .contacts__heading {
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 24px;
   font-weight: 300;
+  line-height: 34px;
   text-align: center;
 }
 
@@ -66,5 +67,19 @@
 
   .contacts__map {
     height: 380px;
+  }
+
+  .contacts__heading {
+    font-size: 40px;
+    line-height: 56px;
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .contacts__heading {
+    font-size: 50px;
+    line-height: 64px;
+    padding: 0 220px;
   }
 }

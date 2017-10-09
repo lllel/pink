@@ -5,15 +5,7 @@
   position: relative;
   z-index: 1;
 
-  &--closed {
-    display: none;
-  }
-
   &--opened {
-    display: block;
-  }
-
-  &--nojs {
     display: block;
   }
 }

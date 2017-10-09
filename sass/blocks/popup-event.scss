@@ -41,7 +41,15 @@
     width: 460px;
   }
 
+  .popup-event__heading {
+    padding: 45px 125px 20px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
   .popup-event__text {
-    padding: 0 110px 30px;
+    padding: 0 70px 30px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }

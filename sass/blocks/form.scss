@@ -34,8 +34,14 @@
 }
 
 @media (min-width: $widthTabletBody) {
+  .form .wrapper {
+    width: 100%;
+  }
+
   .form__container-submit {
     order: 6;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__container-submit .wrapper {
@@ -65,19 +71,29 @@
   }
 
   .form__fieldset--os-select {
+    padding: 0;
     padding-bottom: 50px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__fieldset--contact {
-    padding: 30px;
+    padding: 0;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__fieldset--achievements {
+    padding: 0;
     padding-bottom: 50px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .form__fieldset--textarea {
-    padding: 30px 0 50px;
+    padding: 0;
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
@@ -86,6 +102,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form__container-submit {
+    margin: 0;
   }
 
   .form__container-submit .wrapper {
@@ -97,7 +119,7 @@
   }
 
   .form__fieldset--os-select {
-    width: 435px;
+    width: 450px;
     padding-bottom: 50px;
   }
 

@@ -7,7 +7,7 @@
 }
 
 .os-select__title {
-  color: #d22856;
+  color: $base-font-color-title;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -29,7 +29,7 @@
 }
 
 .os-select__label {
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -57,6 +57,10 @@
     order: 2;
   }
 
+  .os-select .wrapper {
+    width: auto;
+  }
+
   .os-select__title {
     display: none;
   }
@@ -64,7 +68,7 @@
 
 @media (min-width: $widthDesktopBody) {
   .os-select {
-    width: 470px;
+    width: 455px;
   }
 
   .os-select .wrapper {

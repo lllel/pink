@@ -3,7 +3,6 @@
   padding-bottom: 20px;
   outline: 1px solid red;
   border-top: 1px solid transparent;
-  position: absolute;
 }
 
 .download__button {
@@ -34,7 +33,7 @@
 }
 
 .download__availability {
-  color: $colorFont;
+  color: #d2d3d4;
   margin: 25px auto 0;
   font-size: 14px;
   font-weight: 300;
@@ -54,6 +53,7 @@
 
 @media (min-width: $widthTabletBody) {
   .download {
+    position: absolute;
     top: 0;
     left: 0;
     max-width: 300px;
@@ -65,5 +65,18 @@
     display: block;
     margin-top: 10px;
     line-height: 40px;
+  }
+
+  .download__availability {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $widthTabletBody) {
+  .download__text {
+    display: block;
+    margin-top: 10px;
+    font-size: 50px;
+    line-height: 62px;
   }
 }

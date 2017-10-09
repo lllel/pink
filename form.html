@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,13 +19,13 @@
               <li class="header-main__item"><a class="header-main__link">html academy</a></li>
             </ul>
           </nav>
-          <div class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--nojs"></div>
+          <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
         </div>
       </div>
 
       <!--NAV-POPUP-->
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
@@ -49,20 +50,18 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="wrapper">
           <div class="form__items user-info">
-            <div class="wrapper">
-              <p class="user-info__item">
-                <label class="user-info__label" for="user-lastname">фамилия:</label>
-                <input class="user-info__input" id="user-lastname" type="text" required placeholder="Укажите фамилию *">
-              </p>
-              <p class="user-info__item">
-                <label class="user-info__label" for="user-firstname">имя:</label>
-                <input class="user-info__input" id="user-firstname" type="text" required placeholder="Введите ваше имя *">
-              </p>
-              <p class="user-info__item">
-                <label class="user-info__label" for="user-middlename">отчество:</label>
-                <input class="user-info__input" id="user-middlename" type="text" placeholder="Ну и отчество тоже">
-              </p>
-            </div>
+            <p class="user-info__item">
+              <label class="user-info__label" for="user-lastname">фамилия:</label>
+              <input class="user-info__input" id="user-lastname" type="text" required placeholder="Укажите фамилию *">
+            </p>
+            <p class="user-info__item">
+              <label class="user-info__label" for="user-firstname">имя:</label>
+              <input class="user-info__input" id="user-firstname" type="text" required placeholder="Введите ваше имя *">
+            </p>
+            <p class="user-info__item">
+              <label class="user-info__label" for="user-middlename">отчество:</label>
+              <input class="user-info__input" id="user-middlename" type="text" placeholder="Ну и отчество тоже">
+            </p>
           </div>
 
           <div class="form__items achievements">
@@ -71,42 +70,29 @@
                 <legend class="form__fieldset-legend">ваши безбашенные достижения в путешествии</legend>
                 <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
                 <div class="achievements__container">
-                  <div class="achievements__item-container">
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-selfie" type="checkbox">
-                      <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
-                    </p>
-
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-scorched" type="checkbox">
-                      <label class="achievements__label" for="achievements-scorched">Обгорел на пляже</label>
-                    </p>
-                  </div>
-
-                  <div class="achievements__item-container">
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-chuck" type="checkbox">
-                      <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
-                    </p>
-
-
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-souvenirs" type="checkbox">
-                      <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
-                    </p>
-                  </div>
-
-                  <div class="achievements__item-container">
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-tower" type="checkbox">
-                      <label class="achievements__label" for="achievements-tower">Удержал башню</label>
-                    </p>
-
-                    <p class="achievements__item">
-                      <input class="achievements__input" id="achievements-hotel" type="checkbox">
-                      <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
-                    </p>
-                  </div>
+                  <p class="achievements__item achievements__item-selfie">
+                    <input class="achievements__input" id="achievements-selfie" type="checkbox">
+                    <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
+                  </p>
+                  <p class="achievements__item achievements__item-scorched">
+                    <input class="achievements__input" id="achievements-scorched" type="checkbox"><label class="achievements__label" for="achievements-scorched">Обгорел на пляже</label>
+                  </p>
+                  <p class="achievements__item achievements__item-chuck">
+                    <input class="achievements__input" id="achievements-chuck" type="checkbox">
+                    <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
+                  </p>
+                  <p class="achievements__item achievements__item-souvenirs">
+                    <input class="achievements__input" id="achievements-souvenirs" type="checkbox">
+                    <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
+                  </p>
+                  <p class="achievements__item achievements__item-tower">
+                    <input class="achievements__input" id="achievements-tower" type="checkbox">
+                    <label class="achievements__label" for="achievements-tower">Удержал башню</label>
+                  </p>
+                  <p class="achievements__item achievements__item-hotel">
+                    <input class="achievements__input" id="achievements-hotel" type="checkbox">
+                    <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
+                  </p>
                 </div>
               </fieldset>
             </div>
@@ -131,27 +117,26 @@
             </div>
           </div>
 
+
+
+
           <div class="form__items os-select">
-            <div class="wrapper">
-              <fieldset class="form__fieldset form__fieldset--os-select">
-                <legend class="form__fieldset-legend">ваши безбашенные достижения в путешествии</legend>
-                <h2 class="os-select__title">С каким приложением путешествовали?</h2>
-                <p class="os-select__item">
-                  <input class="os-select__input" id="choice-ios" type="radio" name="form__choice">
-                  <label class="os-select__label" for="choice-ios">Pink для IOS</label>
-                </p>
-
-                <p class="os-select__item">
-                  <input class="os-select__input" id="choice-android" type="radio" name="form__choice">
-                  <label class="os-select__label" for="choice-android">Pink на Android</label>
-                </p>
-
-                <p class="os-select__item">
-                  <input class="os-select__input" id="choice-window" type="radio" name="form__choice">
-                  <label class="os-select__label" for="choice-window">Pink на Windows Phone</label>
-                </p>
-              </fieldset>
-            </div>
+            <fieldset class="form__fieldset form__fieldset--os-select">
+              <legend class="form__fieldset-legend">С каким приложением путешествовали</legend>
+              <h2 class="os-select__title">С каким приложением путешествовали?</h2>
+              <p class="os-select__item">
+                <input class="os-select__input" id="choice-ios" type="radio" name="form__choice">
+                <label class="os-select__label" for="choice-ios">Pink для IOS</label>
+              </p>
+              <p class="os-select__item">
+                <input class="os-select__input" id="choice-android" type="radio" name="form__choice">
+                <label class="os-select__label" for="choice-android">Pink на Android</label>
+              </p>
+              <p class="os-select__item">
+                <input class="os-select__input" id="choice-window" type="radio" name="form__choice">
+                <label class="os-select__label" for="choice-window">Pink на Windows Phone</label>
+              </p>
+            </fieldset>
           </div>
 
           <div class="form__items textarea">
@@ -206,7 +191,6 @@
       </div>
     </div>
 
-    <script src="js/main-nav.js"></script>
-    <script src="js/popup-event.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 .information {
   outline: 1px solid red;
-  margin-top: 275px;
   border-top: 1px solid transparent;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .information__item {
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -42,7 +41,6 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: top, center;
   background-repeat: no-repeat;
-  z-index: 2;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -52,6 +50,17 @@
 
   .information .wrapper {
     border-color: #f2f2f2;
+  }
+
+  .information__item {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .information__item--padding {
+    padding: 0 55px;
+    width: 425px;
+    margin: 0 auto;
   }
 
   .information__img {
@@ -87,13 +96,14 @@
   }
 
   .information__item {
+    font-size: 50px;
     margin-top: 40px;
+  }
 
-    &:last-child {
-      display: block;
-      width: 300px;
-      margin: 0 auto;
-    }
+  .information__item--padding {
+    display: block;
+    width: 640px;
+    margin: 0 auto;
   }
 
   .information__intro {
