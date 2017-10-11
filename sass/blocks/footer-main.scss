@@ -4,6 +4,10 @@
   padding: 30px 0 60px;
 }
 
+.footer-main--index-mobile {
+  display: none;
+}
+
 .footer-main__links {
   padding-bottom: 25px;
 }
@@ -27,6 +31,10 @@
 }
 
 @media (min-width: $widthTabletBody) {
+  .footer-main--index-mobile {
+    display: block;
+  }
+
   .footer-main {
     display: block;
     width: 100%;
