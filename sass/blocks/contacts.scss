@@ -1,14 +1,37 @@
 .contacts {
-  outline: 1px solid red;
   overflow: hidden;
+}
+
+.contacts__decoration {
+  padding: 17px 0 38px;
 }
 
 .contacts__heading {
   color: $base-font-color-content;
   font-size: 24px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 30px;
   text-align: center;
+}
+
+.contacts-info__title {
+  margin: 0;
+}
+
+.contacts-info__description {
+  margin: 0;
+}
+
+.contacts__tel {
+  padding-top: 10px;
+}
+
+.contacts__email {
+  padding-top: 21px;
+}
+
+.contacts__address {
+  padding-top: 26px;
 }
 
 .contacts__map {
@@ -34,7 +57,7 @@
     height: 0;
     border-left: 320px solid transparent;
     border-right: 320px solid transparent;
-    border-top: 80px solid #ffffff;
+    border-top: 70px solid #ffffff;
     position: absolute;
     transform: translateX(-30%);
   }

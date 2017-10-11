@@ -1,7 +1,6 @@
 .slider-price {
   background-color: #f2f2f2;
-  outline: 1px solid red;
-  padding: 50px 0;
+  padding: 71px 0 46px;
 }
 
 .slider-price__table {
@@ -29,7 +28,7 @@
   color: $colorFont;
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 27px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -52,7 +51,7 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  padding: 20px 0 20px 20px;
+  padding: 14px 0 15px 22px;
   border: 2px solid #e5e5e5;
 }
 
@@ -62,8 +61,8 @@
   line-height: 30px;
   transform: rotate(-45deg);
   position: absolute;
-  top: 16px;
-  right: 186px;
+  top: 12px;
+  right: 187px;
 }
 
 @media (min-width: $widthTabletBody) {

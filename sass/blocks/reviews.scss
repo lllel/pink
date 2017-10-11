@@ -1,13 +1,10 @@
-.reviews {
-  outline: 1px solid red;
-}
-
 .reviews__slider {
-  padding-bottom: 15px;
+  padding-bottom: 28px;
 }
 
 .reviews .slider-controls {
   padding-bottom: 8px;
+  margin-top: -4px;
 }
 
 @media (min-width: $widthTabletBody) {

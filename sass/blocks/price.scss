@@ -1,17 +1,16 @@
 .price .slider-controls {
-  padding-top: 22px;
+  padding-top: 18px;
 }
 
 .price {
   width: 320px;
   overflow: hidden;
   position: relative;
-  padding-top: 20px;
 
   &::after {
     content: "";
     display: block;
-    border-bottom: 50px solid #ffffff;
+    border-bottom: 35px solid #ffffff;
     border-left: 100vw solid transparent;
     width: 0;
     height: 0;

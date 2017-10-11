@@ -1,7 +1,6 @@
 .download {
   background-color: $colorPage;
-  padding-bottom: 20px;
-  outline: 1px solid red;
+  padding-bottom: 29px;
   border-top: 1px solid transparent;
 }
 
@@ -10,7 +9,7 @@
 }
 
 .download__items {
-  margin: 30px 0 0 0;
+  margin: 33px 0 0 0;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -34,11 +33,12 @@
 
 .download__availability {
   color: #d2d3d4;
-  margin: 25px auto 0;
+  margin: 21px auto 0;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+  padding: 0 25px;
 }
 
 .download__text {
