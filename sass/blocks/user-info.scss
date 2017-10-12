@@ -9,7 +9,7 @@
   display: block;
   margin: 0 auto;
   height: 60px;
-  width: 280px;
+  width: 255px;
   border: 3px solid #e5e5e5;
   padding: 0 10px;
   font-size: 18px;
@@ -26,7 +26,7 @@
 .user-info__item {
   display: flex;
   flex-direction: column;
-  margin: 30px 0 0;
+  margin: 20px 0 0;
   padding: 0;
 }
 
@@ -59,14 +59,18 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    margin-top: 48px;
+    margin-left: 20px;
   }
 
   .user-info__label {
-    margin-right: 20px;
+    margin: 0;
+    margin-right: 15px;
   }
 
   .user-info__input {
     flex-grow: 1;
+    margin-right: 24px;
     width: initial;
   }
 }
@@ -82,10 +86,15 @@
   }
 
   .user-info__item:first-child {
-    margin-top: 50px;
+    margin-top: 37px;
   }
 
   .user-info__item {
     width: 435px;
+    margin-left: 0;
+  }
+
+  .user-info__input {
+    margin-right: 0;
   }
 }

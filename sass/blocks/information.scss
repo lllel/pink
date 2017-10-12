@@ -58,7 +58,12 @@
 
   .information__item {
     font-size: 40px;
-    line-height: 56px;
+    line-height: 50px;
+    margin: 0;
+
+    &:last-child {
+      margin-top: 0;
+    }
   }
 
   .information__item--padding {
@@ -73,8 +78,7 @@
     flex-shrink: 0;
     background-size: cover;
     background-color: transparent;
-    margin-left: 20px;
-    margin-top: -50px;
+    margin-top: -53px;
   }
 
   .information__container {
@@ -85,12 +89,22 @@
   .information__container .wrapper {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: flex-start;
     background-color: #f2f2f2;
   }
 
   .information__intro {
     padding-bottom: 100px;
+    margin-top: 46px;
+
+    &::after {
+      border-bottom: 50px solid #f2f2f2;
+      border-left: 100vw solid transparent;
+    }
+  }
+
+  .information__advantages {
+    padding: 0 25px;
   }
 }
 
@@ -102,6 +116,10 @@
   .information__item {
     font-size: 50px;
     margin-top: 40px;
+
+    &:last-child {
+      margin-top: 15px;
+    }
   }
 
   .information__item--padding {
@@ -111,6 +129,7 @@
   }
 
   .information__intro {
-    padding-bottom: 120px;
+    margin-top: 31px;
+    padding-bottom: 155px;
   }
 }

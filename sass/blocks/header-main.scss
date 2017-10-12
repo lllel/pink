@@ -64,7 +64,7 @@
 
 .header-main__intro {
   width: 100%;
-  padding-top: 160px;
+  min-height: 170px;
   font-size: 0;
   background-color: $colorPage;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -72,24 +72,36 @@
   background-position: top;
 }
 
-.header-main__intro--padding {
-  padding-top: 110px;
-  background-position: center -71px;
+.header-main__intro--form {
+  padding-top: 0;
+}
+
+.header-main__intro--index {
+  padding-top: 0;
+}
+
+.header-main__img {
+  padding-top: 107px;
 }
 
 .header-main__title {
   color: $colorFont;
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 0 25px 50px;
+  padding: 95px 25px 50px;
+}
+
+.header-main__title--padding {
+  padding: 28px 25px 50px;
 }
 
 .header-main__popup-button {
   display: block;
   margin-right: 20px;
-  width: 50px;
+  width: 46px;
   height: 24px;
   border: 0;
   position: relative;
@@ -152,9 +164,10 @@
 .header-main__popup-button--opened {
   display: block;
   border: 0;
+  margin: 0;
+  padding: 0;
   position: relative;
   background-color: transparent;
-  margin-right: -3px;
 
   &::after {
     content: "";
@@ -186,19 +199,38 @@
     width: 100%;
   }
 
+  .header-main__popup-button--opened {
+    width: 26px;
+  }
+
   .header-main__logo .logo {
-    padding-left: 0;
+    padding: 42px 0 44px;
   }
 
   .header-main__title {
     font-size: 50px;
     font-weight: 300;
     width: 500px;
+    padding: 67px 0 75px;
+    line-height: 62px;
     margin: auto;
   }
 
   .header-main__intro {
     background-size: cover;
+    min-height: 330px;
+  }
+
+  .header-main__intro--index {
+    padding-top: 106px;
+  }
+
+  .header-main__intro--photo {
+    padding-top: 103px;
+  }
+
+  .header-main__intro--form {
+    padding-top: 63px;
   }
 
   .header-main__download-container {
@@ -208,10 +240,15 @@
     width: 100%;
   }
 
-  .header-main__img {
-    width: auto;
-    height: 550px;
+  .header-main__img-container {
     margin-left: auto;
+    width: 492px;
+  }
+
+  .header-main__img {
+    padding-top: 73px;
+    width: 100%;
+    height: auto;
   }
 
   .header-main__popup-button {
@@ -224,10 +261,16 @@
     width: 100%;
   }
 
+  .header-main__img-container {
+    width: 585px;
+  }
+
   .header-main__title {
     font-size: 50px;
     font-weight: 300;
     width: 760px;
+    padding: 0;
+    margin-top: -31px;
   }
 
   .header-main__nav {
@@ -235,12 +278,16 @@
   }
 
   .header-main__intro {
-    min-height: 300px;
+    min-height: 190px;
+    padding-top: 205px;
   }
 
-  .header-main__logo .logo {
-    padding: 40px;
-    padding-left: 0;
+  .header-main__intro--index {
+    padding-top: 206px;
+  }
+
+  .header-main__intro--photo {
+    padding-top: 203px;
   }
 
   .header-main__logo .wrapper {
@@ -257,6 +304,11 @@
   .header-main__item {
     margin: 0;
     padding: 0;
+    margin-left: 80px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 
   .header-main__link {
@@ -265,7 +317,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    padding: 0 30px;
+    padding: 0;
   }
 
   .header-main__popup-button {
@@ -274,7 +326,8 @@
 
   .header-main__img {
     width: auto;
-    height: 550px;
+    height: 647px;
     margin-left: auto;
+    padding-top: 0;
   }
 }

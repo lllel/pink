@@ -10,12 +10,12 @@
   text-align: center;
   margin: 0;
   text-transform: uppercase;
-  padding: 0 25px;
+  padding: 33px 25px 0;
 }
 
 .os-select__item {
-  margin-left: 90px;
-  margin-top: 55px;
+  margin-left: 75px;
+  margin-top: 43px;
 }
 
 .os-select__input {
@@ -42,7 +42,7 @@
     border: 3px solid #e5e5e5;
     position: absolute;
     top: 0;
-    left: -80px;
+    left: -70px;
     transform: translateY(-20%);
   }
 }
@@ -53,6 +53,10 @@
     order: 2;
   }
 
+  .os-select__item {
+    margin-left: 112px;
+  }
+
   .os-select .wrapper {
     width: auto;
   }
@@ -60,11 +64,26 @@
   .os-select__title {
     display: none;
   }
+
+  .os-select__label {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -60px;
+    }
+  }
 }
 
 @media (min-width: $widthDesktopBody) {
   .os-select {
     width: 455px;
+  }
+
+  .os-select__item {
+    margin-left: 131px;
   }
 
   .os-select .wrapper {

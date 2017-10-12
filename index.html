@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
   <body>
     <header class="header-main">
       <div class="header-main__logo header-main__logo--position">
         <div class="wrapper">
-          <img class="logo" src="img/logo-pink-white-mobile.svg" width="154" height="103" alt="logo">
+          <img class="logo" src="img/logo-pink-white-mobile.svg" alt="logo">
           <nav class="header-main__nav">
             <ul class="header-main__items">
               <li class="header-main__item"><a class="header-main__link">главная</a></li>
               <li class="header-main__item"><a class="header-main__link" href="photo.html">фотографии</a></li>
               <li class="header-main__item"><a href="form.html" class="header-main__link">конкурс</a></li>
-              <li class="header-main__item"><a class="header-main__link">html academy</a></li>
+              <li class="header-main__item"><a class="header-main__link">HTML academy</a></li>
             </ul>
           </nav>
           <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
@@ -34,11 +34,13 @@
         </ul>
       </nav>
 
-      <div class="header-main__intro header-main__intro--padding">
+      <div class="header-main__intro--form header-main__intro--photo header-main__intro header-main__intro--index">
         <div class="wrapper">
           <div class="header-main__download-container">
-          <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="arm">
-
+            <div class="header-main__img-container">
+              <h1 class="header-main__title--padding hidden-title"></h1>
+              <img class="header-main__img" src="img/iphone-hand-mobile@1x.png" alt="arm">
+            </div>
           <section class="download">
             <h2 class="hidden-title">Скачать приложение</h2>
             <p class="download__text">Взгляните на жизнь иначе!</p>
@@ -108,7 +110,7 @@
           <div class="news__container">
             <h2 class="hidden-title">Новости</h2>
             <div class="news__description">
-              <p class="news__title">Эффект на 24 часа!</p>
+              <p class="news__title">Эффект<br class="br-hidden"> на 24 часа!</p>
               <p class="news__text">
                 Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
               </p>
@@ -130,9 +132,9 @@
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть
                 на привычные серые вещи! А еще я познакомился со своей будущей женой
                 в комментариях к выложенной фотографии!»
+                <button class="slider-reviews__btn-left" type="button"></button>
+                <button class="slider-reviews__btn-right" type="button"></button>
               </p>
-              <button class="slider-reviews__btn-left" type="button"></button>
-              <button class="slider-reviews__btn-right" type="button"></button>
               <p class="slider-reviews__age">25 лет, водитель трамвая</p>
             </blockquote>
 
@@ -253,7 +255,7 @@
       </section>
     </main>
 
-    <footer class="footer-main footer-main--index-mobile">
+    <footer class="footer-main footer-main--index-mobile footer-main--no-padding">
       <div class="wrapper">
         <div class="footer-main__logo">
           <img class="logo-spectacles" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="logo">

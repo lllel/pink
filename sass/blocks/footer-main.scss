@@ -1,7 +1,7 @@
 .footer-main {
   width: 320px;
   margin: 0 auto;
-  padding: 30px 0 60px;
+  padding: 42px 0 30px;
 }
 
 .footer-main--index-mobile {
@@ -9,7 +9,9 @@
 }
 
 .footer-main__links {
-  padding-bottom: 25px;
+  padding: 0;
+  padding-bottom: 42px;
+  padding-top: 36px;
 }
 
 .footer-main__logo {
@@ -27,14 +29,23 @@
 }
 
 @media (min-width: $widthTabletBody) {
-  .footer-main--index-mobile {
-    display: block;
-  }
-
   .footer-main {
     display: block;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 21px;
+    margin-top: 68px;
+  }
+
+  .footer-main--no-padding {
+    margin-top: 0;
+  }
+
+  .footer-main--form {
+    padding-top: 90px;
+  }
+
+  .footer-main--photo {
+    margin-top: 15px;
   }
 
   .footer-main__links {
@@ -59,5 +70,17 @@
   .footer-main__address {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .footer-main {
+    padding-top: 74px;
+  }
+
+  .footer-main--no-padding {
+    margin-top: 0;
+  }
+
+  .footer-main--photo {
+    padding-top: 108px;
   }
 }

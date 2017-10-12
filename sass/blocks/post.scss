@@ -3,17 +3,21 @@
   margin: 0 auto;
 }
 
+.post__img-container {
+  margin-top: 12px;
+}
+
 .post__img-container--panorama {
   position: relative;
 }
 
 .post__feature--panorama {
   position: absolute;
-  top: 0;
-  right: 30px;
+  top: 5px;
+  right: 21px;
   text-align: center;
   width: 130px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -23,12 +27,14 @@
   background-color: #f2f2f2;
   margin: 0;
   margin-top: -4px;
-  padding: 25px 0 25px 30px;
-  min-height: 121px;
+  padding: 5px 0 16px 20px;
 }
 
 .post__card--panorama {
   margin: 0 20px;
+  padding: 0;
+  padding-left: 12px;
+  padding-bottom: 15px;
 }
 
 .post__card .wrapper {
@@ -48,7 +54,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  padding: 10px 0 15px;
+  padding-bottom: 15px;
 }
 
 .post__user-name {
@@ -57,6 +63,7 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
+  padding-top: 12px;
 }
 
 .post__time {
@@ -79,25 +86,30 @@
 }
 
 @media (min-width: $widthTabletBody) {
-  .posts__item {
-    width: 49%;
-  }
-
-  .posts__item--panorama {
-    width: 100%;
+  .post__img-container {
+    height: 306px;
+    margin-top: 0;
   }
 
   .post__img-container--panorama {
     width: 100%;
+    height: 528px;
+    margin-top: 13px;
   }
 
-  .post__user-text--panorama {
-    padding: 10px 33px;
+  .posts__item-container {
+    margin-top: 35px;
+  }
+
+  .post__card {
+    margin-top: -6px;
+    min-height: 129px;
   }
 
   .post__card--panorama {
     width: 590px;
-    margin: -4px auto 0;
+    margin: -19px auto 0;
+    min-height: 120px;
   }
 
   .post__img--panorama {
@@ -111,6 +123,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 7px;
+    padding-top: 8px;
+    width: 584px;
+  }
+
+  .post__like {
+    margin: auto 0 0 11px;
+    font-size: 11px;
   }
 
   .post__like--panorama {
@@ -118,40 +138,56 @@
     margin-right: 50px;
   }
 
-  .posts__item-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
+  .post__user-name {
+    padding-top: 18px;
+  }
+
+  .post__user-text {
+    width: 265px;
+  }
+
+  .post__user-text--panorama {
+    padding: 0;
+    width: 535px;
   }
 
   .post__feature--panorama {
-    top: 25px;
-    right: 25px;
+    top: 59px;
+    right: 19px;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
-  .posts__item {
-    width: 32%;
-  }
-
-  .posts__item--panorama {
-    width: 100%;
-  }
-
   .post__feature--panorama {
     top: 45px;
     right: 50px;
   }
 
   .post__user-text--panorama {
-    padding: 10px 33px;
+    width: 880px;
+  }
+
+  .post__card {
+    margin-top: 0;
   }
 
   .post__card--panorama {
-    width: 910px;
+    width: 940px;
     margin: -4px auto 0;
+  }
+
+  .post__card--panorama .wrapper {
+    width: 890px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .post__img-container {
+    height: 400px;
+  }
+
+  .post__img-container--panorama {
+    margin-top: 43px;
+    height: 509px;
   }
 }

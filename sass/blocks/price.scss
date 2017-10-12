@@ -26,6 +26,11 @@
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
+
+    &::after {
+      border-bottom: 50px solid #ffffff;
+      border-left: 100vw solid transparent;
+    }
   }
 
   .price .slider-controls {

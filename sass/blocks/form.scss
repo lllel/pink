@@ -18,6 +18,18 @@
   text-transform: uppercase;
 }
 
+.form__container-submit {
+  padding: 0 18px;
+}
+
+.form__submit {
+  margin-top: 8px;
+}
+
+.form__require-hidden {
+  display: none;
+}
+
 .form__container-submit .wrapper {
   display: flex;
   flex-direction: column;
@@ -34,12 +46,18 @@
 @media (min-width: $widthTabletBody) {
   .form .wrapper {
     width: 100%;
+    padding: 0;
   }
 
   .form__container-submit {
     order: 6;
     width: 620px;
-    margin: 0 auto;
+    margin: 37px auto 0;
+  }
+
+  .form__submit.button {
+    padding: 15px 58px;
+    margin: 0;
   }
 
   .form__container-submit .wrapper {
@@ -54,6 +72,7 @@
 
   .form__fieldset {
     border: 3px solid #e5e5e5;
+    margin: 0;
   }
 
   .form__fieldset-legend {
@@ -71,27 +90,29 @@
   .form__fieldset--os-select {
     padding: 0;
     padding-bottom: 50px;
-    width: 620px;
+    width: 613px;
     margin: 0 auto;
+    margin-top: 20px;
   }
 
   .form__fieldset--contact {
     padding: 0;
-    width: 620px;
+    width: 613px;
     margin: 0 auto;
+    margin-top: 16px;
   }
 
   .form__fieldset--achievements {
     padding: 0;
-    padding-bottom: 50px;
-    width: 620px;
-    margin: 0 auto;
+    padding-bottom: 34px;
+    width: 619px;
+    margin: 22px auto 0;
   }
 
   .form__fieldset--textarea {
     padding: 0;
-    width: 620px;
-    margin: 0 auto;
+    width: 619px;
+    margin: 21px auto 0;
   }
 }
 
@@ -104,20 +125,22 @@
     margin: 0 auto;
   }
 
+  .form__items {
+    padding-bottom: 0;
+  }
+
   .form__container-submit {
     margin: 0;
+    padding: 0;
   }
 
   .form__container-submit .wrapper {
     justify-content: space-between;
   }
 
-  .form__items {
-    padding-bottom: 50px;
-  }
-
   .form__fieldset--os-select {
-    width: 450px;
+    width: 430px;
+    margin-left: 20px;
     padding-bottom: 50px;
   }
 
@@ -127,9 +150,19 @@
 
   .form__fieldset--achievements {
     width: 940px;
+    margin: 20px auto 0;
   }
 
   .form__fieldset--textarea {
     width: 940px;
+    margin: 21px auto 37px;
+  }
+
+  .form__fieldset-legend {
+    padding: 0 20px;
+  }
+
+  .form__require-hidden {
+    display: inline;
   }
 }

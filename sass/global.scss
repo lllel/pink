@@ -37,3 +37,9 @@ body {
     min-width: 100%;
   }
 }
+
+@media (min-width: $widthDesktopBody) {
+  .br-hidden {
+    display: none;
+  }
+}

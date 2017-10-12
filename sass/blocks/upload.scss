@@ -2,11 +2,19 @@
   background-color: #f2f2f2;
   text-align: center;
   padding-bottom: 40px;
+  padding-top: 24px;
 }
 
 .upload__img {
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   font-size: 0;
+  width: 280px;
+  height: 375px;
+}
+
+.upload__picture {
+  width: 100%;
+  height: auto;
 }
 
 .upload-tools {
@@ -43,6 +51,14 @@
   }
 }
 
+.upload__line-container {
+  margin-top: 56px;
+}
+
+.upload__tool-line-container {
+  margin-top: 47px;
+}
+
 .upload__line {
   height: 2px;
   background-color: $colorPage2;
@@ -68,7 +84,7 @@
 }
 
 .upload__send {
-  margin: 28px auto 0;
+  margin: 42px auto 0;
 }
 
 .upload__annulment {
@@ -83,7 +99,7 @@
   .upload-tools {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 0;
   }
 
@@ -93,23 +109,31 @@
     justify-content: space-between;
   }
 
+  .upload__line {
+    width: 200px;
+  }
+
   .upload__tool-line {
     position: relative;
+    padding-bottom: 45px;
 
     &::after {
       content: "";
       display: block;
-      width: 312px;
+      width: 280px;
       height: 1px;
       background-color: #dddfe0;
       position: absolute;
-      bottom: 0;
-      left: -45px;
+      bottom: 7px;
+      left: -41px;
     }
   }
 
   .upload__img {
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 15px;
+    width: 300px;
+    height: 419px;
   }
 
   .upload__tool-line--hidden {
@@ -126,6 +150,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 180px;
+    margin-top: 41px;
   }
 
   .upload__tool-line-container {
@@ -136,7 +161,8 @@
   }
 
   .upload__buttons-container {
-    margin-top: auto;
+    margin-top: 23px;
+    margin-right: 13px;
   }
 }
 
@@ -144,6 +170,7 @@
   .upload {
     width: 940px;
     margin: 0 auto;
+    padding-top: 56px;
   }
 
   .upload .wrapper {
@@ -152,17 +179,22 @@
 
   .upload__tool-line {
     position: relative;
+    width: 278px;
 
     &::after {
       content: "";
       display: block;
-      width: 470px;
+      width: 420px;
       height: 1px;
       background-color: #dddfe0;
       position: absolute;
-      bottom: 0;
-      left: -200px;
+      bottom: 9px;
+      left: -114px;
     }
+  }
+
+  .upload__line {
+    width: 278px;
   }
 
   .upload__buttons-container {
@@ -170,10 +202,24 @@
     flex-direction: row;
     align-items: stretch;
     min-height: 65px;
+    margin-top: 144px;
+    margin-right: 35px;
+  }
+
+  .upload__tool-line-container {
+    margin-right: 78px;
   }
 
   .upload__line-container {
     justify-content: space-around;
+    margin-top: 21px;
+  }
+
+  .upload__img {
+    width: 300px;
+    height: 401px;
+    margin-left: 25px;
+    margin-top: 0;
   }
 
   .upload__send {
