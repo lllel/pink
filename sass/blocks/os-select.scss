@@ -22,6 +22,16 @@
   visibility: hidden;
   position: absolute;
   opacity: 0;
+
+  &:checked + .os-select__label::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-map-marker-form.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .os-select__label {
@@ -31,6 +41,7 @@
   line-height: 30px;
   text-align: left;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: "";

@@ -83,6 +83,20 @@
   text-transform: uppercase;
   margin: auto 0 0 30px;
   order: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    right: 247px;
+  }
 }
 
 @media (min-width: $widthTabletBody) {
@@ -131,11 +145,31 @@
   .post__like {
     margin: auto 0 0 11px;
     font-size: 11px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 35px;
+    }
   }
 
   .post__like--panorama {
     order: 0;
     margin-right: 50px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 12px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 5px;
+      right: -25px;
+    }
   }
 
   .post__user-name {
@@ -165,6 +199,15 @@
 
   .post__user-text--panorama {
     width: 880px;
+  }
+
+  .post__like--panorama {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: -47px;
+    }
   }
 
   .post__card {
