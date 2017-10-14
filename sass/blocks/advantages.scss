@@ -6,11 +6,7 @@
 
 .advantages__item {
   list-style-type: none;
-  margin: 0;
-
-  &:first-child {
-    padding-top: 40px;
-  }
+  margin-top: 37px;
 }
 
 .advantages__title {
@@ -22,20 +18,39 @@
 }
 
 .advantages__description {
-  color: #283645;
+  color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
   text-align: center;
 }
 
 @media (min-width: $widthTabletBody) {
-  .achievements__title {
-    display: none;
+  .advantages {
+    margin-left: 38px;
+    padding: 0;
   }
 
   .advantages__item:first-child {
     padding-top: 0;
+  }
+
+  .advantages__item {
+    margin: 0;
+    padding-top: 21px;
+  }
+
+  .advantages__title {
+    text-align: left;
+    margin: 0;
+    padding-top: 10px;
+    line-height: 30px;
+  }
+
+  .advantages__description {
+    text-align: left;
+    margin: 0;
+    padding-top: 17px;
   }
 }
 
@@ -50,15 +65,23 @@
 
   .advantages__item {
     position: relative;
-    width: 300px;
+    width: 317px;
+    padding-top: 0;
   }
 
   .advantages__title {
-    padding: 0 80px;
+    margin-top: 64px;
+    padding: 0 42px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .advantages__description {
-    padding: 0 45px;
+    margin-top: 22px;
+    padding: 0 37px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .advantages__img {
@@ -75,8 +98,8 @@
       height: 17px;
       background-image: url("../img/shadow-decoration.png");
       position: absolute;
-      bottom: 180px;
-      left: 0;
+      bottom: 263px;
+      left: 7px;
       opacity: 0.3;
     }
   }

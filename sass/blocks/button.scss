@@ -18,7 +18,7 @@
   text-align: center;
   width: 271px;
   margin: 28px auto 0;
-  padding: 20px 0;
+  padding: 13px 0;
   color: $colorFont;
   font-size: 18px;
   font-weight: 700;
@@ -60,8 +60,36 @@
   }
 }
 
+@media (min-width: $widthTabletBody) {
+  .button-transparent {
+    padding: 15px 10px;
+  }
+
+  .button-transparent-red {
+    width: 259px;
+    margin-left: 0;
+  }
+
+  .button-transparent-red--disable {
+    width: 259px;
+    margin-left: 0;
+  }
+}
+
 @media (min-width: $widthDesktopBody) {
   .button-transparent {
     font-size: 21px;
+  }
+
+  .button-transparent-red {
+    width: 180px;
+    height: 54px;
+    margin-left: 0;
+  }
+
+  .button-transparent-red--disable {
+    width: 180px;
+    height: 54px;
+    margin-left: 0;
   }
 }

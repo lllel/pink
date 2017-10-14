@@ -1,14 +1,37 @@
 .contacts {
-  outline: 1px solid red;
   overflow: hidden;
+}
+
+.contacts__decoration {
+  padding: 17px 0 38px;
 }
 
 .contacts__heading {
   color: $base-font-color-content;
   font-size: 24px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 30px;
   text-align: center;
+}
+
+.contacts-info__title {
+  margin: 0;
+}
+
+.contacts-info__description {
+  margin: 0;
+}
+
+.contacts__tel {
+  padding-top: 10px;
+}
+
+.contacts__email {
+  padding-top: 21px;
+}
+
+.contacts__address {
+  padding-top: 26px;
 }
 
 .contacts__map {
@@ -34,7 +57,7 @@
     height: 0;
     border-left: 320px solid transparent;
     border-right: 320px solid transparent;
-    border-top: 80px solid #ffffff;
+    border-top: 70px solid #ffffff;
     position: absolute;
     transform: translateX(-30%);
   }
@@ -54,15 +77,17 @@
       height: 0;
       border-left: 100vw solid transparent;
       border-right: 100vw solid transparent;
-      border-top: 100px solid #ffffff;
+      border-top: 135px solid #ffffff;
       position: absolute;
-      bottom: -100px;
+      bottom: -103px;
       transform: translateX(0);
     }
   }
 
   .contacts-info {
     width: 280px;
+    margin-top: 41px;
+    z-index: 2;
   }
 
   .contacts__map {
@@ -71,8 +96,30 @@
 
   .contacts__heading {
     font-size: 40px;
-    line-height: 56px;
+    line-height: 51px;
     padding: 0 35px;
+    margin: 0;
+    margin-top: 48px;
+  }
+
+  .contacts__tel {
+    padding: 0;
+  }
+
+  .contacts__email {
+    padding: 0;
+  }
+
+  .contacts__address {
+    padding: 0;
+  }
+
+  .contacts-info__description {
+    margin-top: 6px;
+  }
+
+  .contacts-info__title {
+    line-height: 26px;
   }
 }
 
@@ -81,5 +128,41 @@
     font-size: 50px;
     line-height: 64px;
     padding: 0 220px;
+    margin-top: 43px;
+  }
+
+  .contacts__tel {
+    order: 1;
+  }
+
+  .contacts__address {
+    order: 2;
+  }
+
+  .contacts__email {
+    order: 3;
+  }
+
+  .contacts-info {
+    margin-top: 53px;
+  }
+
+  .contacts-info__description {
+    margin-top: 22px;
+  }
+
+  .contacts__wrapper {
+    justify-content: space-around;
+
+    &::after {
+      content: "";
+      border-top: 150px solid #ffffff;
+      position: absolute;
+      bottom: -115px;
+    }
+  }
+
+  .contacts__map {
+    height: 483px;
   }
 }

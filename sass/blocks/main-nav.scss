@@ -1,7 +1,6 @@
 .main-nav {
   display: none;
   width: $widthMobileBody;
-  outline: 1px solid red;
   position: relative;
   z-index: 1;
 
@@ -20,8 +19,9 @@
 .main-nav__item {
   list-style-type: none;
   margin: 0 auto;
-  padding: 6px;
-  box-shadow: 0 1px 0 0 #000000;
+  padding-top: 2px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
 }
 
 .main-nav__link {

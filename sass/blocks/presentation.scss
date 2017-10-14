@@ -1,9 +1,5 @@
-.presentation {
-  outline: 1px solid red;
-}
-
 .presentation__description {
-  padding: 30px 20px;
+  padding: 42px 20px 35px;
   color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
@@ -12,16 +8,24 @@
   margin: 0;
 }
 
+.presentation__description--photo {
+  padding: 42px 35px 35px;
+}
+
 .presentation__description-desktop {
   display: none;
 }
 
 @media (min-width: $widthTabletBody) {
   .presentation__description {
-    padding: 65px 0;
+    padding: 87px 0 67px;
     font-size: 18px;
     width: 500px;
     margin: 0 auto;
+  }
+
+  .presentation__description--padding {
+    padding-top: 47px;
   }
 
   .presentation__description-desktop {
@@ -32,11 +36,20 @@
 
 @media (min-width: $widthDesktopBody) {
   .presentation__description {
-    width: 615px;
+    width: 770px;
+    padding: 94px 0 43px;
+  }
+
+  .presentation__description--padding {
+    padding: 5px 0 67px;
   }
 
   .presentation__description-desktop {
     display: inline;
     font: inherit;
+  }
+
+  .presentation__description--photo {
+    width: 630px;
   }
 }

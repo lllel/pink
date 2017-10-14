@@ -1,3 +1,42 @@
 .posts__item {
   margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $widthTabletBody) {
+  .posts__item {
+    width: 49%;
+    margin-bottom: 25px;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+  }
+
+  .posts__item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .posts__item {
+    width: 32%;
+    margin-bottom: 59px;
+  }
+
+  .posts__item--panorama {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+
+  .posts__item-container {
+    margin-top: 0;
+  }
 }

@@ -32,8 +32,23 @@ body {
   height: 23px;
 }
 
+.logo-tablet {
+  display: none;
+}
+
 @media (min-width: $widthTabletBody) {
   body {
     min-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-tablet {
+    display: block;
+    width: 148px;
+    height: 42px;
+    padding: 33px 0;
   }
 }

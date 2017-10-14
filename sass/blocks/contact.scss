@@ -1,7 +1,10 @@
 .contact .wrapper {
-  outline: 1px solid red;
   display: flex;
   flex-direction: column;
+}
+
+.contact__container {
+  margin-top: 21px;
 }
 
 .contact__item {
@@ -29,7 +32,7 @@
 .contact__input {
   display: block;
   height: 60px;
-  width: 260px;
+  width: 250px;
   border: 3px solid #e5e5e5;
   margin: 0 auto;
   padding: 0 10px;
@@ -49,17 +52,59 @@
     order: 3;
   }
 
+  .contact__container {
+    padding: 8px 0 25px;
+  }
+
   .contact__item {
     flex-direction: column-reverse;
     align-items: flex-start;
+    margin-top: 35px;
   }
 
   .contact__input {
-    width: 500px;
+    width: 480px;
   }
 
   .contact__label {
-    margin-left: 90px;
+    margin-left: 75px;
+    margin-top: 5px;
+  }
+
+  .contact__label--tel {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/phone.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #e5e5e5;
+      position: absolute;
+      top: -68px;
+      right: -354px;
+    }
+  }
+
+  .contact__label--mail {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/mail.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #e5e5e5;
+      position: absolute;
+      top: -68px;
+      right: -385px;
+    }
   }
 }
 
@@ -79,26 +124,37 @@
   .contact__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 8px 0 15px;
   }
 
   .contact__input {
-    width: 375px;
+    width: 350px;
   }
 
   .contact__label {
     margin-left: 20px;
   }
 
-  .contacts__tel {
-    order: 1;
+  .contact__label--tel {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -68px;
+      right: -226px;
+    }
   }
 
-  .contacts__address {
-    order: 2;
-  }
+  .contact__label--mail {
+    position: relative;
 
-  .contacts__email {
-    order: 3;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -68px;
+      right: -258px;
+    }
   }
 }

@@ -1,15 +1,30 @@
 .footer-main {
   width: 320px;
   margin: 0 auto;
-  padding: 30px 0 60px;
+
+  &--photo {
+    padding: 40px 0 30px;
+  }
+
+  &--form {
+    padding: 54px 0 30px;
+  }
+}
+
+.footer-main__logo-academy {
+  display: inline;
+  width: 27px;
+  height: 36px;
+}
+
+.footer-main--index-mobile {
+  display: none;
 }
 
 .footer-main__links {
-  padding-bottom: 25px;
-}
-
-.footer-main .wrapper {
-  outline: 1px solid red;
+  padding: 0;
+  padding-bottom: 13px;
+  padding-top: 18px;
 }
 
 .footer-main__logo {
@@ -30,7 +45,22 @@
   .footer-main {
     display: block;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 21px;
+    margin-top: 68px;
+  }
+
+  .footer-main--form {
+    padding-top: 15px;
+  }
+
+  .footer-main--photo {
+    margin-top: 8px;
+  }
+
+  .footer-main--index-mobile {
+    margin-top: 16px;
+    padding-top: 0;
+    padding-bottom: 30px;
   }
 
   .footer-main__links {
@@ -48,6 +78,13 @@
   .footer-main__address {
     font-size: 14px;
     line-height: 18px;
+    position: relative;
+  }
+
+  .footer-main__logo-academy {
+    position: absolute;
+    top: -9px;
+    left: 92px;
   }
 }
 
@@ -55,5 +92,29 @@
   .footer-main__address {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .footer-main__logo-academy {
+    position: absolute;
+    top: -6px;
+    left: 118px;
+  }
+
+  .footer-main {
+    padding-top: 74px;
+  }
+
+  .footer-main--photo {
+    padding-top: 92px;
+    margin-top: 0;
+  }
+
+  .footer-main--form {
+    padding-top: 0;
+  }
+
+  .footer-main--index-mobile {
+    margin-top: 0;
+    padding-top: 67px;
   }
 }
