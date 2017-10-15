@@ -1,7 +1,3 @@
-.form {
-  margin-top: 9px;
-}
-
 .form .wrapper {
   display: flex;
   flex-direction: column;
@@ -48,15 +44,15 @@
 }
 
 @media (min-width: $widthTabletBody) {
-  .form .wrapper {
-    width: 100%;
-    padding: 0;
+  .form {
+    padding-top: 9px;
   }
 
   .form__container-submit {
     order: 6;
     width: 620px;
-    margin: 37px auto 0;
+    margin-top: 37px;
+    padding: 0;
   }
 
   .form__submit.button {
@@ -68,6 +64,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
 
   .form__require {
@@ -95,14 +92,12 @@
     padding: 0;
     padding-bottom: 50px;
     width: 613px;
-    margin: 0 auto;
     margin-top: 20px;
   }
 
   .form__fieldset--contact {
     padding: 0;
     width: 613px;
-    margin: 0 auto;
     margin-top: 16px;
   }
 
@@ -110,7 +105,7 @@
     padding: 0;
     padding-bottom: 34px;
     width: 619px;
-    margin: 22px auto 0;
+    margin-top: 22px;
   }
 
   .form__fieldset--textarea {
@@ -123,6 +118,7 @@
 @media (min-width: $widthDesktopBody) {
   .form {
     margin-top: 0;
+    padding-top: 0;
   }
 
   .form .wrapper {

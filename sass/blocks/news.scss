@@ -33,15 +33,6 @@
   line-height: 30px;
 }
 
-.news__img {
-  width: 240px;
-  height: 278px;
-  background-image: url("../img/timer.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 @media (min-width: $widthTabletBody) {
   .news {
     display: block;
@@ -56,7 +47,7 @@
   }
 
   .news__container {
-    margin-top: 24px;
+    margin-top: 12px;
   }
 
   .news__title {
@@ -64,10 +55,36 @@
   }
 
   .news__img {
+    width: 240px;
+    height: 278px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-    flex-shrink: 0;
-    width: 235px;
-    height: 270px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 170px;
+      border: 14px solid #d22856;
+      border-radius: 50%;
+      position: absolute;
+      top: 59px;
+      right: 21px;
+    }
+
+    &::before {
+      content: "24";
+      display: block;
+      font-size: 90px;
+      font-weight: 700;
+      color: #d22856;
+      position: absolute;
+      top: 87px;
+      left: 68px;
+    }
   }
 
   .news__text {
@@ -96,6 +113,23 @@
     height: 350px;
     margin-right: 70px;
     margin-left: 0;
+
+    &::after {
+      content: "";
+      width: 215px;
+      height: 215px;
+      position: absolute;
+      top: 76px;
+      right: 24px;
+    }
+
+    &::before {
+      content: "24";
+      font-size: 120px;
+      position: absolute;
+      top: 110px;
+      left: 79px;
+    }
   }
 
   .news__title br {

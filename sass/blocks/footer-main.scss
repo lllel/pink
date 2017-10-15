@@ -15,6 +15,9 @@
   display: inline;
   width: 27px;
   height: 36px;
+  position: absolute;
+  top: -9px;
+  left: 197px;
 }
 
 .footer-main--index-mobile {
@@ -22,9 +25,7 @@
 }
 
 .footer-main__links {
-  padding: 0;
-  padding-bottom: 13px;
-  padding-top: 18px;
+  padding: 18px 0 13px;
 }
 
 .footer-main__logo {
@@ -39,6 +40,9 @@
   line-height: 18px;
   text-align: center;
   text-decoration: none;
+  position: relative;
+  margin-top: 40px;
+  margin-right: 40px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -54,7 +58,7 @@
   }
 
   .footer-main--photo {
-    margin-top: 8px;
+    margin-top: 29px;
   }
 
   .footer-main--index-mobile {
@@ -78,7 +82,8 @@
   .footer-main__address {
     font-size: 14px;
     line-height: 18px;
-    position: relative;
+    margin-right: 37px;
+    margin-top: 0;
   }
 
   .footer-main__logo-academy {

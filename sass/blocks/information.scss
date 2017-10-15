@@ -47,6 +47,12 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header-main__intro {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
+}
+
 @media (min-width: $widthTabletBody) {
   .information {
     margin-top: 0;
@@ -79,6 +85,7 @@
     background-size: cover;
     background-color: transparent;
     margin-top: -53px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
   }
 
   .information__container {
@@ -105,6 +112,12 @@
 
   .information__advantages {
     padding: 0 25px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .information__img {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
   }
 }
 

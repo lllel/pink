@@ -1,3 +1,8 @@
+.posts__item-container {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .posts__item {
   margin-bottom: 20px;
 
@@ -9,7 +14,7 @@
 @media (min-width: $widthTabletBody) {
   .posts__item {
     width: 49%;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 
   .posts__item--panorama {
