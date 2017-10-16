@@ -12,6 +12,7 @@
 
 .slider-price__row {
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .slider-price__heading {
@@ -28,7 +29,7 @@
   color: $colorFont;
   font-size: 18px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -44,7 +45,6 @@
 }
 
 .slider-price__column {
-  background-color: #ffffff;
   color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
@@ -56,13 +56,19 @@
 }
 
 .slider-price__feature {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 24px;
+  width: 150px;
   transform: rotate(-45deg);
   position: absolute;
-  top: 12px;
-  right: 187px;
+  top: 9px;
+  right: 175px;
+  display: block;
+  padding: 3px;
+  color: $colorFont;
+  font-weight: 400;
+  background-color: $base-font-color-title;
+  margin: 0;
 }
 
 .slider-price__row:nth-child(2) {
@@ -245,6 +251,7 @@
   .slider-price__text-hidden {
     font-size: 0;
     border: 0;
+    background-color: #f2f2f2;
   }
 
   .slider-price__table {
@@ -386,8 +393,8 @@
   .slider-price__feature {
     transform: rotate(-45deg);
     position: absolute;
-    top: 0;
-    right: 68px;
+    top: 1px;
+    right: 59px;
   }
 
   .slider-price__column-hidden {
@@ -425,8 +432,8 @@
 
   .slider-price__feature {
     position: absolute;
-    top: 11px;
-    right: 139px;
+    top: 9px;
+    right: 131px;
   }
 
   .slider-price__table {

@@ -32,8 +32,9 @@ body {
   height: 23px;
 }
 
-.logo-tablet {
-  display: none;
+.footer-logo {
+  width: 148px;
+  height: 40px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -42,13 +43,8 @@ body {
   }
 
   .logo {
-    display: none;
-  }
-
-  .logo-tablet {
     display: block;
     width: 148px;
-    height: 42px;
-    padding: 33px 0;
+    height: 40px;
   }
 }

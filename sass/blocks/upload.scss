@@ -196,7 +196,7 @@
     margin: 0;
     margin-top: 15px;
     width: 300px;
-    height: 419px;
+    height: 401px;
   }
 
   .upload__tool-line--hidden {
@@ -206,6 +206,7 @@
   .upload__instruments {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .upload__line-container {
@@ -224,7 +225,6 @@
   }
 
   .upload__buttons-container {
-    margin-top: 45px;
     margin-right: 0;
     margin-left: 11px;
   }
@@ -248,6 +248,8 @@
   .upload__tool-line {
     position: relative;
     width: 278px;
+    height: 23px;
+    padding-bottom: 27px;
 
     &::after {
       content: "";
@@ -306,13 +308,13 @@
     flex-direction: row;
     align-items: stretch;
     min-height: 65px;
-    margin-top: 163px;
     margin-right: 35px;
   }
 
   .upload__tool-line-container {
     margin-right: 60px;
-    margin-top: 70px;
+    margin-top: auto;
+    padding-top: 16px;
   }
 
   .upload__line-container {

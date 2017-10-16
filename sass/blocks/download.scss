@@ -54,9 +54,9 @@
 @media (min-width: $widthTabletBody) {
   .download {
     position: absolute;
-    top: 0;
+    bottom: 84px;
     left: 0;
-    margin-top: 85px;
+    margin-left: 20px;
     max-width: 300px;
     z-index: 1;
     background-color: transparent;
@@ -84,6 +84,10 @@
 @media (min-width: $widthDesktopBody) {
   .download {
     margin-top: 0;
+    margin-left: 0;
+    position: absolute;
+    bottom: 92px;
+    left: 9px;
   }
 
   .download__text {

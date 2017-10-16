@@ -1,8 +1,3 @@
-.posts__item-container {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .post__img-container {
   margin-top: 12px;
 }
@@ -17,8 +12,15 @@
   right: 21px;
   text-align: center;
   width: 130px;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: block;
+  padding: 3px;
+  color: $colorFont;
+  background-color: $base-font-color-title;
+  margin: 0;
 }
 
 .post__card {
@@ -54,7 +56,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .post__user-name {
@@ -68,7 +70,7 @@
 
 .post__time {
   color: $colorPage2;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 24px;
   text-align: left;
@@ -116,7 +118,8 @@
   }
 
   .post__card {
-    margin-top: -6px;
+    margin-top: 0;
+    padding-top: 0;
     min-height: 129px;
   }
 
@@ -128,7 +131,7 @@
 
   .post__img--panorama {
     width: 100%;
-    height: auto;
+    height: 508px;
     min-height: 50px;
   }
 
@@ -144,7 +147,6 @@
 
   .post__like {
     margin: auto 0 0 11px;
-    font-size: 11px;
 
     &::after {
       content: "";
@@ -193,8 +195,8 @@
 
 @media (min-width: $widthDesktopBody) {
   .post__feature--panorama {
-    top: 45px;
-    right: 50px;
+    top: 56px;
+    right: 9px;
   }
 
   .post__user-text--panorama {
@@ -225,12 +227,17 @@
     padding-left: 0;
   }
 
+  .post__user-name {
+    padding-top: 21px;
+  }
+
   .post__img-container {
     height: 400px;
   }
 
   .post__img-container--panorama {
-    margin-top: 43px;
+    margin: 43px auto 0;
     height: 509px;
+    max-width: 1200px;
   }
 }
