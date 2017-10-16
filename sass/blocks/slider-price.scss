@@ -12,6 +12,7 @@
 
 .slider-price__row {
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .slider-price__heading {
@@ -44,7 +45,6 @@
 }
 
 .slider-price__column {
-  background-color: #ffffff;
   color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
@@ -251,6 +251,7 @@
   .slider-price__text-hidden {
     font-size: 0;
     border: 0;
+    background-color: #f2f2f2;
   }
 
   .slider-price__table {

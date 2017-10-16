@@ -19,7 +19,7 @@
 }
 
 .form__container-submit {
-  padding: 0 18px;
+  padding: 0 15px;
 }
 
 .form__submit {
@@ -150,6 +150,7 @@
 
   .form__fieldset--contact {
     width: 940px;
+    justify-content: space-around;
   }
 
   .form__fieldset--achievements {
