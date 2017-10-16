@@ -248,6 +248,8 @@
   .upload__tool-line {
     position: relative;
     width: 278px;
+    height: 23px;
+    padding-bottom: 27px;
 
     &::after {
       content: "";
@@ -312,6 +314,7 @@
   .upload__tool-line-container {
     margin-right: 60px;
     margin-top: auto;
+    padding-top: 16px;
   }
 
   .upload__line-container {

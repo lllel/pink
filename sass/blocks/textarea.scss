@@ -40,7 +40,6 @@
 
     &::placeholder {
       font-size: 19px;
-      word-spacing: -6px;
       padding-top: 1px;
     }
   }
@@ -55,9 +54,5 @@
     width: 800px;
     height: 103px;
     margin: 30px auto 43px;
-
-    &::placeholder {
-      word-spacing: -5px;
-    }
   }
 }
