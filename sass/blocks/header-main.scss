@@ -274,7 +274,7 @@
     transition: 0.3s;
   }
 
-  &:active:before {
+  &:active::before {
     opacity: 0.3;
   }
 }
