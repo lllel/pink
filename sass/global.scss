@@ -27,24 +27,8 @@ body {
   color: #d22856;
 }
 
-.logo {
-  width: 75px;
-  height: 23px;
-}
-
-.footer-logo {
-  width: 148px;
-  height: 40px;
-}
-
 @media (min-width: $widthTabletBody) {
   body {
     min-width: 100%;
-  }
-
-  .logo {
-    display: block;
-    width: 148px;
-    height: 40px;
   }
 }

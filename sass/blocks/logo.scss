@@ -1,0 +1,53 @@
+.logo--mobile {
+  width: 75px;
+  height: 23px;
+}
+
+.logo--tablet {
+  display: none;
+  width: 148px;
+  height: 40px;
+}
+//
+//#icon-htmlacademy:hover {
+//  fill: green;
+//}
+
+.logo--desktop {
+  display: none;
+  width: 148px;
+  height: 40px;
+}
+
+.footer-logo {
+  width: 148px;
+  height: 40px;
+}
+
+@media (min-width: $widthTabletBody) {
+  .logo--mobile {
+    display: none;
+  }
+
+  .logo--tablet {
+    display: block;
+  }
+
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .logo--mobile {
+    display: none;
+  }
+
+  .logo--tablet {
+    display: none;
+  }
+
+  .logo--desktop {
+    display: block;
+  }
+}

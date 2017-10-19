@@ -37,7 +37,24 @@
   }
 }
 
-.information__img {
+.webp .information__img {
+  height: 280px;
+  margin-top: 19px;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-image: url("../img/iphone-screen-mobile@1x.webp");
+  background-position: top, center;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .webp .information__img {
+    background-image: url("../img/iphone-screen-mobile@2x.webp");
+    background-size: 157px, 278px;
+  }
+}
+
+.no-webp.information__img {
   height: 280px;
   margin-top: 19px;
   text-align: center;
@@ -48,7 +65,7 @@
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .information__img {
+  .no-webp .information__img {
     background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px, 278px;
   }
@@ -79,7 +96,23 @@
     margin: 0 auto;
   }
 
-  .information__img {
+  .webp .information__img {
+    width: 270px;
+    height: 480px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-color: transparent;
+    margin-top: -53px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.webp");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .webp .information__img {
+        background-image: url("../img/iphone-screen-3-tablet@2x.webp");
+      }
+    }
+  }
+
+  .no-webp .information__img {
     width: 270px;
     height: 480px;
     flex-shrink: 0;
@@ -87,6 +120,12 @@
     background-color: transparent;
     margin-top: -53px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .no-webp .information__img {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      }
+    }
   }
 
   .information__container {
@@ -113,12 +152,6 @@
 
   .information__advantages {
     padding: 0 25px;
-  }
-
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .information__img {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
-    }
   }
 }
 

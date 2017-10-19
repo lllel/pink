@@ -33,6 +33,7 @@
     background-image: url("../img/icon-yes-form.svg");
     background-position: center;
     background-repeat: no-repeat;
+    border-color: #d22856;
   }
 }
 
@@ -54,6 +55,10 @@
     position: absolute;
     bottom: -8px;
     left: -70px;
+  }
+
+  &:hover::before {
+    border-color: #283645;
   }
 }
 

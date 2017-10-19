@@ -13,11 +13,12 @@
 
 .footer-main__logo-academy {
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   position: absolute;
-  top: -13px;
-  left: 190px;
+  top: -11px;
+  left: 195px;
+  fill: #d22856;
 }
 
 .footer-main--index-mobile {
@@ -58,7 +59,7 @@
   }
 
   .footer-main--photo {
-    margin-top: 29px;
+    margin-top: 10px;
   }
 
   .footer-main--index-mobile {
@@ -87,6 +88,8 @@
   }
 
   .footer-main__logo-academy {
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: -9px;
     left: 92px;
@@ -110,7 +113,7 @@
   }
 
   .footer-main--photo {
-    padding-top: 92px;
+    padding-top: 84px;
     margin-top: 0;
   }
 

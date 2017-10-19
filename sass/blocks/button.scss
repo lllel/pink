@@ -14,6 +14,23 @@
   white-space: nowrap;
 }
 
+.button.form__submit {
+  margin-top: 8px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #7abc98;
+  }
+}
+
+.button.form__submit--disabled {
+  background-color: #e5e5e5;
+}
+
+
 .button-transparent {
   display: block;
   text-align: center;
@@ -28,36 +45,69 @@
   border: 4px solid #ffffff;
   border-radius: 30px;
 
-  &-red {
-    display: block;
-    text-align: center;
-    width: 271px;
-    padding: 15px 0;
-    color: $base-font-color-title;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
-    text-decoration: none;
-    border: 4px solid #d22856;
-    border-radius: 30px;
-    background-color: transparent;
-    cursor: pointer;
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+    transition: 0.3s;
+  }
 
-    &--disable {
-      display: block;
-      text-align: center;
-      width: 271px;
-      padding: 15px 0;
-      color: #b5b9be;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 18px;
-      text-decoration: none;
-      border: 4px solid #b5b9be;
-      border-radius: 30px;
-      background-color: transparent;
-      opacity: 0.3;
-    }
+  &:active {
+    color: #f2cdd4;
+  }
+}
+
+.button-transparent--red {
+  display: block;
+  text-align: center;
+  width: 271px;
+  padding: 15px 0;
+  color: $base-font-color-title;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 4px solid #d22856;
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #e07e94;
+  }
+}
+
+.button-transparent--cancel {
+  display: block;
+  text-align: center;
+  width: 271px;
+  padding: 15px 0;
+  color: #dddfe0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 4px solid #dddfe0;
+  border-radius: 30px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #b5b9be;
+    background-color: transparent;
+    color: #d0d1d3;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    border-color: #b5b9be;
+    color: #cdcfd3;
   }
 }
 
@@ -66,12 +116,13 @@
     padding: 15px 10px;
   }
 
-  .button-transparent-red {
+  .button-transparent--red {
     width: 259px;
     margin-left: 0;
+    margin-top: 83px;
   }
 
-  .button-transparent-red--disable {
+  .button-transparent--cancel {
     width: 259px;
     margin-left: 0;
   }
@@ -82,15 +133,17 @@
     font-size: 21px;
   }
 
-  .button-transparent-red {
+  .button-transparent--red {
     width: 180px;
     height: 54px;
     margin-left: 0;
+    margin-top: 0;
   }
 
-  .button-transparent-red--disable {
+  .button-transparent--cancel {
     width: 180px;
     height: 54px;
     margin-left: 0;
+    margin-top: 0;
   }
 }

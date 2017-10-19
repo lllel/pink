@@ -104,33 +104,65 @@
     }
   }
 
-  .advantages__img-black-white {
+  .webp .advantages__img-black-white {
+    background-image: url("../img/iphone-screen-1-desktop@1x.webp");
+    background-position: center;
+  }
+
+  .webp .advantages__img-pink {
+    background-image: url("../img/iphone-screen-2-desktop@1x.webp");
+    background-position: center;
+  }
+
+  .webp .advantages__img-pink-smile {
+    background-image: url("../img/iphone-screen-3-desktop@1x.webp");
+    background-position: center;
+  }
+
+  .no-webp.advantages__img-black-white {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-position: center;
   }
 
-  .advantages__img-pink {
+  .no-webp .advantages__img-pink {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-position: center;
   }
 
-  .advantages__img-pink-smile {
+  .no-webp .advantages__img-pink-smile {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-position: center;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .advantages__img-black-white {
+    .webp .advantages__img-black-white {
+      background-image: url("../img/iphone-screen-1-desktop@2x.webp");
+      background-position: center;
+    }
+
+    .webp .advantages__img-pink {
+      background-image: url("../img/iphone-screen-2-desktop@2x.webp");
+      background-position: center;
+    }
+
+    .webp .advantages__img-pink-smile {
+      background-image: url("../img/iphone-screen-3-desktop@2x.webp");
+      background-position: center;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .no-webp .advantages__img-black-white {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
       background-position: center;
     }
 
-    .advantages__img-pink {
+    .no-webp .advantages__img-pink {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
       background-position: center;
     }
 
-    .advantages__img-pink-smile {
+    .no-webp .advantages__img-pink-smile {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
       background-position: center;
     }

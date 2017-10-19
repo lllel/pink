@@ -27,6 +27,14 @@
   height: 6px;
   display: block;
   cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
 .slider-controls__label:last-child {

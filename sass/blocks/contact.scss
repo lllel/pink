@@ -37,6 +37,17 @@
   margin: 0 auto;
   padding: 0 10px;
   font-size: 18px;
+
+  &:hover {
+    border-color: #283645;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+    transition: 0.3s;
+  }
 }
 
 .contact__input::placeholder {
@@ -110,7 +121,6 @@
 
 @media (min-width: $widthDesktopBody) {
   .contact .form__fieldset {
-    //display: flex;
     order: 3;
     flex-direction: row;
   }

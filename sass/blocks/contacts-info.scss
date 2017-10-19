@@ -13,4 +13,17 @@
   line-height: 30px;
   text-align: center;
   text-decoration: none;
+
+  &--mail {
+    &:hover {
+      color: #283645;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    &:active {
+      color: #e9ebec;
+    }
+  }
 }

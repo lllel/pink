@@ -31,6 +31,17 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #e9ebec;
+  }
 }
 
 @media (min-width: $widthTabletBody) {

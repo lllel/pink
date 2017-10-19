@@ -34,6 +34,15 @@
   color: $colorFont;
   font-weight: 700;
   text-align: center;
+
+  &:hover[href] {
+    color: #d22856;
+    transition: color 0.3s;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $widthTabletBody) {

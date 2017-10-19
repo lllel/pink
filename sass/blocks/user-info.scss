@@ -13,6 +13,17 @@
   border: 2px solid #e5e5e5;
   padding: 0 10px;
   font-size: 18px;
+
+  &:hover {
+    border-color: #283645;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+    transition: 0.3s;
+  }
 }
 
 .user-info__input::placeholder {

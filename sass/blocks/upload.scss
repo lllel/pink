@@ -103,6 +103,10 @@
   width: 14px;
   height: 14px;
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .upload__tool-line--hidden {
@@ -120,6 +124,7 @@
 @media (min-width: $widthTabletBody) {
   .upload {
     padding-top: 40px;
+    padding-bottom: 50px;
   }
 
   .upload-tools__label-crop {
@@ -243,6 +248,7 @@
 
   .upload .wrapper {
     justify-content: space-around;
+    width: 930px;
   }
 
   .upload__tool-line {
@@ -304,11 +310,12 @@
   }
 
   .upload__buttons-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    min-height: 65px;
-    margin-right: 35px;
+    min-height: 70px;
+    margin-right: 70px;
   }
 
   .upload__tool-line-container {
@@ -325,7 +332,7 @@
   .upload__img {
     width: 300px;
     height: 419px;
-    margin-left: 25px;
+    margin-left: 27px;
     margin-top: 0;
   }
 

@@ -31,6 +31,7 @@
     background-image: url("../img/icon-map-marker-form.svg");
     background-repeat: no-repeat;
     background-position: center;
+    border-color: #d22856;
   }
 }
 
@@ -55,6 +56,10 @@
     top: 0;
     left: -70px;
     transform: translateY(-20%);
+  }
+
+  &:hover::before {
+    border-color: #283645;
   }
 }
 
