@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header-main">
       <div class="header-main__logo header-main__logo--position">
         <div class="wrapper">
@@ -266,13 +269,25 @@
             <div class="upload__line-container">
               <div class="upload-tools">
                 <input class="upload-tools__input" id="upload-tools-crop" type="checkbox">
-                <label class="upload-tools__label-crop" for="upload-tools-crop"></label>
+                <label class="upload-tools__label-crop" for="upload-tools-crop">
+                  <svg class="upload-tools__label-img">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </label>
 
                 <input class="upload-tools__input" id="upload-tools-fill" type="checkbox">
-                <label class="upload-tools__label-fill" for="upload-tools-fill"></label>
+                <label class="upload-tools__label-fill" for="upload-tools-fill">
+                  <svg class="upload-tools__label-img">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </label>
 
                 <input class="upload-tools__input" id="upload-tools-grayscale" type="checkbox">
-                <label class="upload-tools__label-grayscale" for="upload-tools-grayscale"></label>
+                <label class="upload-tools__label-grayscale" for="upload-tools-grayscale">
+                  <svg class="upload-tools__label-img">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </label>
               </div>
 
               <div class="upload__tool-line-container">
@@ -341,9 +356,6 @@
           </svg></a>
       </div>
     </footer>
-    <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
 
     <script src="js/modal.js"></script>
     <script src="js/picturefill.js"></script>

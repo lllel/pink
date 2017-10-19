@@ -19,6 +19,15 @@
   top: -11px;
   left: 195px;
   fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 .footer-main--index-mobile {
@@ -31,6 +40,26 @@
 
 .footer-main__logo {
   text-align: center;
+}
+
+.footer-logo {
+  .footer-logo__part1 {
+    fill: #d22856;
+  }
+
+  .footer-logo__part2 {
+    fill: #d22856;
+  }
+}
+
+.logo-link:hover {
+  .footer-logo__part1 {
+    fill: #d22856;
+  }
+
+  .footer-logo__part2 {
+    fill: #d22856;
+  }
 }
 
 .footer-main__address {
