@@ -16,6 +16,19 @@ headerMainBtn.classList.remove('header-main__popup-button--none');
 bgHeadPadding.classList.remove('header-main__bg-hand--padding');
 introBgPosition.classList.remove('header-main__intro--bg-position');
 
+// if (bgHeadPadding && introBgPosition) {
+//   bgHeadPadding.classList.remove('header-main__bg-hand--padding');
+//   introBgPosition.classList.remove('header-main__intro--bg-position');
+// }
+
+// if (titlePadding) {
+//   titlePadding.classList.remove('header-main__title--padding');
+// }
+
+// if (headerMainBtn) {
+//   headerMainBtn.addEventListener('click', modalMenu);
+// }
+
 // MODAL MENU
 function modalMenu() {
   headerMainBtn.addEventListener('click', function () {

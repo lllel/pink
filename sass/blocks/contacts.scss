@@ -2,6 +2,10 @@
   overflow: hidden;
 }
 
+.contacts-info {
+  z-index: 5;
+}
+
 .contacts__decoration {
   padding: 17px 0 38px;
 }
@@ -74,14 +78,14 @@
       border-top: 135px solid #ffffff;
       position: absolute;
       bottom: -103px;
-      transform: translateX(0);
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   .contacts-info {
     width: 280px;
     margin-top: 41px;
-    z-index: 2;
   }
 
   .contacts__map {
