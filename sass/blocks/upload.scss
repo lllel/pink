@@ -44,6 +44,11 @@
   }
 }
 
+.upload-tools__label-img--grayscale {
+  width: 40px;
+  height: 40px;
+}
+
 .upload-tools__input:checked + .upload-tools__label-img {
   fill: #d22856;
 }

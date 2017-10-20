@@ -34,13 +34,6 @@
   padding-top: 26px;
 }
 
-.contacts__map {
-  height: 200px;
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-}
-
 .contacts__map-item {
   width: 100%;
   height: auto;
@@ -60,6 +53,7 @@
     border-top: 70px solid #ffffff;
     position: absolute;
     transform: translateX(-30%);
+    z-index: 2;
   }
 }
 

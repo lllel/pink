@@ -13,12 +13,13 @@
     <header class="header-main">
       <div class="header-main__logo header-main__logo--position">
         <div class="wrapper">
-          <a class="logo-link" href="index.html">
+          <a class="logo-link logo-link__header" href="index.html">
             <svg class="logo logo--mobile" width="75" height="23">
               <use xlink:href="#icon-pink-white-mobile"></use>
             </svg>
-            <svg class="logo logo--tablet" width="148" height="40">
-              <use xlink:href="#icon-pink-white-tablet"></use>
+            <svg class="logo logo--tablet footer-logo" width="148" height="40">
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
             <svg class="logo logo--desktop" width="148" height="40">
               <use xlink:href="#icon-pink-white-desktop"></use>
@@ -266,9 +267,8 @@
           </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <img class="contacts__map-item" src="img/bg-map-mobile@1x.png" width="320" height="421" alt="map">
-          <div class="marker"></div>
+        <div id="map" class="map">
+          <div id="marker" class="marker"></div>
         </div>
       </section>
     </main>
@@ -277,11 +277,13 @@
       <div class="wrapper">
         <div class="footer-main__logo">
           <a class="logo-link" href="index.html">
-            <svg class="logo logo--mobile footer-logo" width="75" height="23">
-              <use xlink:href="#icon-pink-blue-mobile"></use>
+            <svg class="logo logo--mobile footer-logo" width="148" height="40">
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
             <svg class="logo logo--tablet footer-logo" width="148" height="40">
-              <use xlink:href="#icon-pink-blue-mobile"></use>
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
             <svg class="logo logo--desktop footer-logo" width="148" height="40">
               <use xlink:href="#icon-pink-blue-desktop"></use>
@@ -318,5 +320,20 @@
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.js"></script>
     <script src="js/modernizr-custom.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLEj8o3O_cDSfK1gChBGZ_UARiM1trXG4&callback=initMap"></script>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.75300866, lng: 37.61890411};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: '#marker'
+        });
+      }
+    </script>
   </body>
 </html>
