@@ -1,0 +1,119 @@
+.logo-link {
+  .icon-pink-blue-mobile__part1 {
+    fill: #283645;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo-link:hover {
+  .icon-pink-blue-mobile__part1 {
+    fill: #d4335f;
+    transition: 0.3s;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo-link:active {
+  opacity: 0.3;
+
+  .icon-pink-blue-mobile__part1 {
+    fill: #283645;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo-link__header {
+  .icon-pink-blue-mobile__part1 {
+    fill: #ffffff;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #ffffff;
+  }
+}
+
+.logo-link__header:hover {
+  .icon-pink-blue-mobile__part1 {
+    fill: #d4335f;
+    transition: 0.1s;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo-link__header:active {
+  opacity: 0.3;
+
+  .icon-pink-blue-mobile__part1 {
+    fill: #6c7682;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #6c7682;
+  }
+}
+
+.logo--mobile {
+  width: 75px;
+  height: 23px;
+}
+
+.logo--tablet {
+  display: none;
+  width: 148px;
+  height: 40px;
+}
+
+.logo--desktop {
+  display: none;
+  width: 148px;
+  height: 40px;
+}
+
+.footer-logo {
+  width: 148px;
+  height: 40px;
+}
+
+@media (min-width: $widthTabletBody) {
+  .logo--mobile {
+    display: none;
+  }
+
+  .logo--tablet {
+    display: block;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .logo--mobile {
+    display: none;
+  }
+
+  .logo--tablet {
+    display: none;
+  }
+
+  .logo--desktop {
+    display: block;
+  }
+}

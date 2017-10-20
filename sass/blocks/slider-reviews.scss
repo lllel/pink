@@ -96,6 +96,19 @@
     right: 0;
     top: 50%;
     cursor: pointer;
+
+    &:hover {
+      border-color: #7e868f;
+    }
+
+    &:active {
+      border-color: #e9ebec;
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .slider-reviews__btn-left {
@@ -111,6 +124,18 @@
     top: 50%;
     left: 0;
     cursor: pointer;
+
+    &:hover {
+      border-color: #7e868f;
+    }
+
+    &:active {
+      border-color: #e9ebec;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .slider-reviews__title {

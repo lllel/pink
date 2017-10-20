@@ -33,6 +33,7 @@
     background-image: url("../img/icon-yes-form.svg");
     background-position: center;
     background-repeat: no-repeat;
+    border-color: #d22856;
   }
 }
 
@@ -55,6 +56,10 @@
     bottom: -8px;
     left: -70px;
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
 }
 
 @media (min-width: $widthTabletBody) {
@@ -72,7 +77,7 @@
     margin-top: 52px;
 
     &:first-child {
-      margin-top: 43px;
+      margin-top: 58px;
     }
   }
 
@@ -92,7 +97,11 @@
   .achievements__item {
     width: 22%;
     margin-left: 103px;
-    margin-top: 41px;
+    margin-top: 46px;
+
+    &:first-child {
+      margin-top: 46px;
+    }
   }
 
   .achievements__label {

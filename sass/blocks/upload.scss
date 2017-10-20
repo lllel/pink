@@ -30,13 +30,31 @@
   width: 44px;
   height: 44px;
   cursor: pointer;
-  background-image: url("../img/icon-editor-crop.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.upload-tools__label-img {
+  width: 44px;
+  height: 44px;
+  fill: #b5b9be;
+
+  &:hover {
+    fill: #8d949b;
+  }
+}
+
+.upload-tools__label-img--grayscale {
+  width: 40px;
+  height: 40px;
+}
+
 .upload-tools__input {
   display: none;
+}
+
+.upload-tools__input:checked + .upload-tools__label-img {
+  fill: #d22856;
 }
 
 .upload-tools__label-fill {
@@ -44,17 +62,15 @@
   width: 44px;
   height: 44px;
   cursor: pointer;
-  background-image: url("../img/icon-editor-fill.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .upload-tools__label-grayscale {
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
-  background-image: url("../img/icon-editor-contrast.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -103,6 +119,10 @@
   width: 14px;
   height: 14px;
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .upload__tool-line--hidden {
@@ -120,22 +140,7 @@
 @media (min-width: $widthTabletBody) {
   .upload {
     padding-top: 40px;
-  }
-
-  .upload-tools__label-crop {
-    background-image: url("../img/icon-editor-crop-small.svg");
-  }
-
-  .upload-tools__input {
-    display: none;
-  }
-
-  .upload-tools__label-fill {
-    background-image: url("../img/icon-editor-fill-small.svg");
-  }
-
-  .upload-tools__label-grayscale {
-    background-image: url("../img/icon-editor-contrast-small.svg");
+    padding-bottom: 50px;
   }
 
   .upload-tools {
@@ -243,6 +248,7 @@
 
   .upload .wrapper {
     justify-content: space-around;
+    width: 930px;
   }
 
   .upload__tool-line {
@@ -287,28 +293,13 @@
     }
   }
 
-  .upload-tools__label-crop {
-    background-image: url("../img/icon-editor-crop.svg");
-  }
-
-  .upload-tools__input {
-    display: none;
-  }
-
-  .upload-tools__label-fill {
-    background-image: url("../img/icon-editor-fill.svg");
-  }
-
-  .upload-tools__label-grayscale {
-    background-image: url("../img/icon-editor-contrast.svg");
-  }
-
   .upload__buttons-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    min-height: 65px;
-    margin-right: 35px;
+    min-height: 70px;
+    margin-right: 70px;
   }
 
   .upload__tool-line-container {
@@ -325,7 +316,7 @@
   .upload__img {
     width: 300px;
     height: 419px;
-    margin-left: 25px;
+    margin-left: 27px;
     margin-top: 0;
   }
 

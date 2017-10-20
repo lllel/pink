@@ -7,15 +7,23 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header-main">
       <div class="header-main__logo header-main__logo--position">
         <div class="wrapper">
-          <a class="logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="logo" src="img/logo-pink-white-mobile.svg" width="148" height="40" alt="logo">
-            </picture>
+          <a class="logo-link logo-link__header" href="index.html">
+            <svg class="logo logo--mobile" width="75" height="23">
+              <use xlink:href="#icon-pink-white-mobile"></use>
+            </svg>
+            <svg class="logo logo--tablet footer-logo" width="148" height="40">
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
+            </svg>
+            <svg class="logo logo--desktop" width="148" height="40">
+              <use xlink:href="#icon-pink-white-desktop"></use>
+            </svg>
           </a>
 
           <nav class="header-main__nav">
@@ -23,7 +31,7 @@
               <li class="header-main__item"><a class="header-main__link" href="index.html">главная</a></li>
               <li class="header-main__item"><a class="header-main__link" href="photo.html">фотографии</a></li>
               <li class="header-main__item"><a class="header-main__link">конкурс</a></li>
-              <li class="header-main__item"><a class="header-main__link">HTML academy</a></li>
+              <li class="header-main__item"><a class="header-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
             </ul>
           </nav>
           <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
@@ -37,7 +45,7 @@
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
           <li class="main-nav__item"><a class="main-nav__link">конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">html academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </nav>
 
@@ -75,7 +83,7 @@
 
           <div class="form__items achievements">
             <fieldset class="form__fieldset form__fieldset--achievements">
-              <legend class="form__fieldset-legend">ваши безбашенные достижения в путешествии</legend>
+              <legend class="form__fieldset-legend form__fieldset-legend--achievements">ваши безбашенные достижения в путешествии</legend>
               <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
               <div class="achievements__container">
                 <p class="achievements__item achievements__item-selfie">
@@ -124,7 +132,7 @@
 
           <div class="form__items os-select">
             <fieldset class="form__fieldset form__fieldset--os-select">
-              <legend class="form__fieldset-legend">С каким приложением путешествовали</legend>
+              <legend class="form__fieldset-legend form__fieldset-legend--os-select">С каким приложением путешествовали</legend>
               <h2 class="os-select__title">С каким приложением путешествовали?</h2>
               <p class="os-select__item">
                 <input class="os-select__input" id="choice-ios" type="radio" name="form__choice">
@@ -150,7 +158,7 @@
           </div>
           <div class="form__container-submit">
             <div class="wrapper">
-              <button class="form__submit button" type="submit">отправить форму</button>
+              <button class="button form__submit" type="submit">отправить форму</button>
               <span class="form__require"><span class="star">*</span> - обязательные поля <span class="form__require-hidden">для заполнения</span></span>
             </div>
           </div>
@@ -161,21 +169,42 @@
     <footer class="footer-main footer-main--form">
       <div class="wrapper">
         <div class="footer-main__logo">
-          <a class="logo-link" href="index.html">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-blue-mobile.svg">
-              <img class="logo footer-logo" src="img/logo-pink-blue-mobile.svg" width="148" height="40" alt="logo">
-            </picture>
+          <a class="logo-link" href="index.html"><span class="hidden-title">логотип</span>
+            <svg class="logo logo--mobile footer-logo" width="148" height="40">
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
+            </svg>
+            <svg class="logo logo--tablet footer-logo" width="148" height="40">
+              <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+              <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
+            </svg>
+            <svg class="logo logo--desktop footer-logo" width="148" height="40">
+              <use xlink:href="#icon-pink-blue-desktop"></use>
+            </svg>
           </a>
         </div>
 
         <ul class="footer-main__links links-social">
-          <li class="links-social__item"><a href="#" class="link-social link-social--twitter"></a></li>
-          <li class="links-social__item"><a href="#" class="link-social link-social--facebook"></a></li>
-          <li class="links-social__item"><a href="#" class="link-social link-social--youtube"></a></li>
+          <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
+            <svg class="link-social__twitter" width="17.5" height="14.663">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a></li>
+          <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
+            <svg class="link-social__facebook" width="8.673" height="18.944">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+          </a></li>
+          <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
+            <svg class="link-social__youtube" width="14.64" height="13.96">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a></li>
         </ul>
-        <a class="footer-main__address" href="#">Разработано<svg class="footer-main__logo-academy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg></a>
+        <a class="footer-main__address" href="#">Разработано
+          <svg class="footer-main__logo-academy">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg></a>
       </div>
     </footer>
 
@@ -199,5 +228,7 @@
 
     <script src="js/modal.js"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script src="js/modernizr-custom.js"></script>
   </body>
 </html>

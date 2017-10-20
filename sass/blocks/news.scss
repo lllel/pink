@@ -31,6 +31,17 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: #e9ebec;
+  }
 }
 
 @media (min-width: $widthTabletBody) {
@@ -57,7 +68,7 @@
   .news__img {
     width: 240px;
     height: 278px;
-    background-image: url("../img/icon-timer.svg");
+    background-image: url("../img/timer.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -82,8 +93,9 @@
       font-weight: 700;
       color: #d22856;
       position: absolute;
-      top: 87px;
-      left: 68px;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -127,8 +139,6 @@
       content: "24";
       font-size: 120px;
       position: absolute;
-      top: 110px;
-      left: 79px;
     }
   }
 

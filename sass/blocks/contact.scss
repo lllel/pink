@@ -37,6 +37,17 @@
   margin: 0 auto;
   padding: 0 10px;
   font-size: 18px;
+
+  &:hover {
+    border-color: #283645;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+    transition: 0.3s;
+  }
 }
 
 .contact__input::placeholder {
@@ -54,6 +65,7 @@
 
   .contact__container {
     padding: 8px 0 25px;
+    margin-top: 31px;
   }
 
   .contact__item {
@@ -63,7 +75,9 @@
   }
 
   .contact__input {
-    width: 480px;
+    width: 420px;
+    padding-right: 70px;
+    padding-left: 10px;
   }
 
   .contact__label {
@@ -79,7 +93,7 @@
       display: block;
       width: 60px;
       height: 60px;
-      background-image: url("../img/icon-phone.svg");
+      background-image: url("../img/phone.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e5e5e5;
@@ -97,20 +111,19 @@
       display: block;
       width: 60px;
       height: 60px;
-      background-image: url("../img/icon-mail.svg");
+      background-image: url("../img/mail.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
       top: -67px;
-      right: -385px;
+      right: -384px;
     }
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .contact .form__fieldset {
-    //display: flex;
     order: 3;
     flex-direction: row;
   }
@@ -127,10 +140,11 @@
     justify-content: space-around;
     padding: 8px 0 15px;
     width: 100%;
+    margin-top: 32px;
   }
 
   .contact__input {
-    width: 350px;
+    width: 290px;
   }
 
   .contact__label {
@@ -144,7 +158,7 @@
       content: "";
       position: absolute;
       top: -67px;
-      right: -226px;
+      right: -224px;
     }
   }
 
@@ -155,7 +169,7 @@
       content: "";
       position: absolute;
       top: -67px;
-      right: -258px;
+      right: -254px;
     }
   }
 }

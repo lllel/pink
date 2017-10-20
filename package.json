@@ -4,13 +4,26 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
     "browser-sync": "2.18.x",
+    "del": "^3.0.0",
     "gulp": "3.9.x",
+    "gulp-cheerio": "^0.6.2",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "3.1.x",
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^2.3.0",
+    "posthtml-include": "^1.1.0",
+    "pump": "^1.0.2",
+    "remove-svg-properties": "^0.3.3",
+    "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -18,8 +31,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,5 +49,8 @@
   ],
   "engines": {
     "node": "8.2"
+  },
+  "dependencies": {
+    "remove-svg-properties": "^0.3.3"
   }
 }

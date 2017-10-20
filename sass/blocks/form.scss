@@ -22,10 +22,6 @@
   padding: 0 15px;
 }
 
-.form__submit {
-  margin-top: 8px;
-}
-
 .form__require-hidden {
   display: none;
 }
@@ -48,10 +44,14 @@
     padding-top: 9px;
   }
 
+  .form__items {
+    margin-bottom: 47px;
+  }
+
   .form__container-submit {
     order: 6;
     width: 620px;
-    margin-top: 37px;
+    margin-top: 15px;
     padding: 0;
   }
 
@@ -74,6 +74,7 @@
   .form__fieldset {
     border: 3px solid #e5e5e5;
     margin: 0;
+    position: relative;
   }
 
   .form__fieldset-legend {
@@ -84,13 +85,19 @@
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
-    margin-left: 40px;
     padding: 0 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: #ffffff;
   }
 
   .form__fieldset--os-select {
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 41px;
     width: 613px;
     margin-top: 20px;
   }
@@ -131,6 +138,7 @@
 
   .form__items {
     padding-bottom: 0;
+    margin-bottom: 53px;
   }
 
   .form__container-submit {
@@ -145,12 +153,14 @@
   .form__fieldset--os-select {
     width: 430px;
     margin-left: 20px;
-    padding-bottom: 50px;
+    margin-top: 33px;
+    padding-bottom: 38px;
   }
 
   .form__fieldset--contact {
     width: 940px;
     justify-content: space-around;
+    margin-top: 9px;
   }
 
   .form__fieldset--achievements {
@@ -160,7 +170,7 @@
 
   .form__fieldset--textarea {
     width: 940px;
-    margin: 21px auto 37px;
+    margin: 21px auto 5px;
   }
 
   .form__fieldset-legend {

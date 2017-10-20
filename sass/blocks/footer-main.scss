@@ -13,11 +13,21 @@
 
 .footer-main__logo-academy {
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   position: absolute;
-  top: -13px;
-  left: 190px;
+  top: -11px;
+  left: 195px;
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+    transition: 0.3s;
+  }
+
+  &:active {
+    fill: #bec2c7;
+  }
 }
 
 .footer-main--index-mobile {
@@ -30,6 +40,26 @@
 
 .footer-main__logo {
   text-align: center;
+}
+
+.footer-logo {
+  .footer-logo__part1 {
+    fill: #d22856;
+  }
+
+  .footer-logo__part2 {
+    fill: #d22856;
+  }
+}
+
+.logo-link:hover {
+  .footer-logo__part1 {
+    fill: #d22856;
+  }
+
+  .footer-logo__part2 {
+    fill: #d22856;
+  }
 }
 
 .footer-main__address {
@@ -58,11 +88,11 @@
   }
 
   .footer-main--photo {
-    margin-top: 29px;
+    margin-top: 10px;
   }
 
   .footer-main--index-mobile {
-    margin-top: 16px;
+    margin-top: 30px;
     padding-top: 0;
     padding-bottom: 30px;
   }
@@ -87,6 +117,8 @@
   }
 
   .footer-main__logo-academy {
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: -9px;
     left: 92px;
@@ -110,7 +142,7 @@
   }
 
   .footer-main--photo {
-    padding-top: 92px;
+    padding-top: 84px;
     margin-top: 0;
   }
 
