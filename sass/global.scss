@@ -46,4 +46,14 @@ body {
   body {
     min-width: 100%;
   }
+
+  .map {
+    height: 365px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .map {
+    height: 485px;
+  }
 }

@@ -18,6 +18,7 @@
   padding: 10px;
   padding-top: 17px;
   font-size: 18px;
+  overflow: hidden;
 
   &::placeholder {
     color: $base-font-color-content;
@@ -25,6 +26,17 @@
     font-weight: 400;
     line-height: 30px;
     padding: 3px 8px;
+  }
+
+  &:hover {
+    border-color: #283645;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #d22856;
+    transition: 0.3s;
   }
 }
 
@@ -34,7 +46,7 @@
   }
 
   .textarea__description {
-    margin: 30px auto 50px;
+    margin: 39px auto 45px;
     width: 480px;
     height: 170px;
 

@@ -65,6 +65,7 @@
 
   .contact__container {
     padding: 8px 0 25px;
+    margin-top: 31px;
   }
 
   .contact__item {
@@ -74,7 +75,9 @@
   }
 
   .contact__input {
-    width: 480px;
+    width: 420px;
+    padding-right: 70px;
+    padding-left: 10px;
   }
 
   .contact__label {
@@ -137,10 +140,11 @@
     justify-content: space-around;
     padding: 8px 0 15px;
     width: 100%;
+    margin-top: 32px;
   }
 
   .contact__input {
-    width: 350px;
+    width: 290px;
   }
 
   .contact__label {

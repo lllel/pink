@@ -22,6 +22,7 @@
   overflow: hidden;
   padding: 20px 0 20px;
   border: 2px solid #e5e5e5;
+  outline: 1px solid #e5e5e5;
 }
 
 .slider-price__title {
@@ -232,7 +233,7 @@
   .slider-price {
     display: flex;
     flex-direction: column;
-    padding: 65px 0 46px;
+    padding: 65px 0;
   }
 
   .slider-price__title {

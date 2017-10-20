@@ -49,6 +49,10 @@
   height: 40px;
 }
 
+.upload-tools__input {
+  display: none;
+}
+
 .upload-tools__input:checked + .upload-tools__label-img {
   fill: #d22856;
 }
