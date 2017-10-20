@@ -121,6 +121,7 @@ gulp.task("build", function (done) {
     "style",
     "uglify",
     "sprite",
+    "webp",
     "html",
     done
   );

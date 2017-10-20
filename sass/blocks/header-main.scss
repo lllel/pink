@@ -72,7 +72,7 @@
 }
 
 .header-main__logo .logo {
-  padding: 17px 0 25px 20px;
+  padding: 17px 0 18px 19px;
 }
 
 .webp .header-main__intro {
@@ -200,6 +200,7 @@
   border: 0;
   position: relative;
   background-color: transparent;
+  margin-bottom: 9px;
 
   &::after {
     content: "";
@@ -240,6 +241,7 @@
   display: block;
   border: 0;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   position: relative;
   background-color: transparent;
