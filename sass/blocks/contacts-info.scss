@@ -27,3 +27,28 @@
     }
   }
 }
+
+
+@media (min-width: $widthTabletBody) {
+  .contacts-info__title--mail {
+    margin-left: 38px;
+  }
+
+  .contacts-info__title--bell {
+    margin-right: 42px;
+  }
+
+  .contacts-info__description--mail {
+    margin-left: 40px;
+  }
+
+  .contacts-info__description--bell {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: $widthDesktopBody) {
+  .map {
+    height: 485px;
+  }
+}

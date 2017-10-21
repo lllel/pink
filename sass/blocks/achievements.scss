@@ -1,4 +1,6 @@
 .achievements {
+  margin-top: 11px;
+  padding-bottom: 22px;
   background-color: #f2f2f2;
 }
 
@@ -19,7 +21,7 @@
   text-align: center;
   margin: 0;
   text-transform: uppercase;
-  padding: 40px 35px;
+  padding: 29px 35px 40px;
 }
 
 .achievements__input {
@@ -33,8 +35,16 @@
     background-image: url("../img/icon-yes-form.svg");
     background-position: center;
     background-repeat: no-repeat;
-    border-color: #d22856;
+    border-color: #e5e5e5;
   }
+}
+
+.achievements__input:checked + .achievements__label:hover::before {
+  border-color: #283645;
+}
+
+.achievements__input:active + .achievements__label::before {
+  border-color: #d22856;
 }
 
 .achievements__label {

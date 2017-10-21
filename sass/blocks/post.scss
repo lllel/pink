@@ -1,9 +1,11 @@
 .post__img-container {
-  margin-top: 12px;
+  margin-top: 14px;
+  font-size: 0;
 }
 
 .post__img-container--panorama {
   position: relative;
+  font-size: 0;
 }
 
 .post__feature--panorama {
@@ -56,7 +58,7 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
 }
 
 .post__user-name {
@@ -65,7 +67,7 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-  padding-top: 12px;
+  padding-top: 20px;
 }
 
 .post__time {
@@ -74,6 +76,7 @@
   font-weight: 300;
   line-height: 24px;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .post__like {
@@ -103,13 +106,13 @@
 
 @media (min-width: $widthTabletBody) {
   .post__img-container {
-    height: 306px;
+    height: 304px;
     margin-top: 0;
   }
 
   .post__img-container--panorama {
     width: 100%;
-    height: 528px;
+    height: 508px;
     margin-top: 13px;
   }
 
@@ -125,7 +128,7 @@
 
   .post__card--panorama {
     width: 590px;
-    margin: -19px auto 0;
+    margin: 0 auto;
     min-height: 120px;
   }
 
