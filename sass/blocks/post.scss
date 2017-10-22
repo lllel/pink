@@ -1,5 +1,4 @@
 .post__img-container {
-  margin-top: 14px;
   font-size: 0;
 }
 
@@ -37,7 +36,7 @@
 .post__card--panorama {
   margin: 0 20px;
   padding: 0;
-  padding-left: 12px;
+  padding-left: 18px;
   padding-bottom: 15px;
 }
 
@@ -67,7 +66,7 @@
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 19px;
 }
 
 .post__time {
@@ -113,7 +112,7 @@
   .post__img-container--panorama {
     width: 100%;
     height: 508px;
-    margin-top: 13px;
+    margin-top: 0;
   }
 
   .posts__item-container {
