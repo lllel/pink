@@ -25,7 +25,6 @@
               <use xlink:href="#icon-pink-white-desktop"></use>
             </svg>
           </a>
-
           <nav class="header-main__nav">
             <ul class="header-main__items">
               <li class="header-main__item"><a class="header-main__link" href="index.html">главная</a></li>
@@ -37,9 +36,7 @@
           <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
         </div>
       </div>
-
       <!--NAV-POPUP-->
-
       <nav class="main-nav main-nav--opened">
         <ul class="main-nav__items">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">главная</a></li>
@@ -48,20 +45,17 @@
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </nav>
-
-      <div class="header-main__intro header-main__intro--bg-position">
+      <div class="header-main__intro header-main__intro--bg-position header-main__intro--padding">
         <div class="header-main__bg-hand--padding header-main__bg-hand--no-padding">
           <h1 class="header-main__title header-main__title--padding">Фотографии<br> пользователей</h1>
         </div>
       </div>
     </header>
-
     <main class="main">
       <section class="presentation">
         <h2 class="hidden-title">Презентация</h2>
         <p class="presentation__description presentation__description--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
-
       <section class="posts">
         <h2 class="hidden-title">Комментарии</h2>
 
@@ -91,7 +85,6 @@
             </div>
           </blockquote>
         </div>
-
         <div class="wrapper">
           <div class="posts__item-container">
             <div class="posts__item post">
@@ -117,7 +110,6 @@
                 <p class="post__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </blockquote>
             </div>
-
             <div class="posts__item post">
               <div class="post__img-container">
                 <a class="post__link" href="#"><picture>
@@ -141,7 +133,6 @@
                 <p class="post__user-text">Соседи будут рады!</p>
               </blockquote>
             </div>
-
             <div class="posts__item post">
               <div class="post__img-container">
                 <a class="post__link" href="#"><picture>
@@ -165,7 +156,6 @@
                 <p class="post__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               </blockquote>
             </div>
-
             <div class="posts__item post">
               <div class="post__img-container">
                 <a class="post__link" href="#"><picture>
@@ -189,7 +179,6 @@
                 <p class="post__user-text">Самая кубанская в мире!</p>
               </blockquote>
             </div>
-
             <div class="posts__item post">
               <div class="post__img-container">
                 <a class="post__link" href="#"><picture>
@@ -213,7 +202,6 @@
                 <p class="post__user-text">Где снег-то?</p>
               </blockquote>
             </div>
-
             <div class="posts__item post">
               <div class="post__img-container">
                 <a class="post__link" href="#"><picture>
@@ -240,13 +228,11 @@
           </div>
         </div>
       </section>
-
       <section class="presentation">
         <h2 class="hidden-title">Презентация</h2>
         <p class="presentation__description presentation__description--padding">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
-
       <form class="upload" action="https://echo.htmlacademy.ru">
         <div class="wrapper">
           <div class="upload__img">
@@ -265,50 +251,43 @@
                     srcset="img/photo-road-mobile@2x.jpg 2x" alt="arm">
             </picture>
           </div>
-
           <div class="upload__instruments">
             <div class="upload__line-container">
               <div class="upload-tools">
                 <input class="upload-tools__input" id="upload-tools-crop" type="checkbox">
                 <label class="upload-tools__label-crop" for="upload-tools-crop"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img">
+                  <svg class="upload-tools__label-img upload-tools__label-img--crop-checked">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
-
                 <input class="upload-tools__input" id="upload-tools-fill" type="checkbox">
                 <label class="upload-tools__label-fill" for="upload-tools-fill"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img">
+                  <svg class="upload-tools__label-img upload-tools__label-img--fill-checked">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
-
                 <input class="upload-tools__input" id="upload-tools-grayscale" type="checkbox">
                 <label class="upload-tools__label-grayscale" for="upload-tools-grayscale"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img upload-tools__label-img--grayscale">
+                  <svg class="upload-tools__label-img upload-tools__label-img--grayscale-checked">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
               </div>
-
               <div class="upload__tool-line-container">
                 <div class="upload__tool-line">
                   <div class="upload__line"></div>
                   <div class="upload__circle upload__circle--crop"></div>
                 </div>
-
                 <div class="upload__tool-line upload__tool-line--hidden">
                   <div class="upload__line"></div>
                   <div class="upload__circle upload__circle--fill"></div>
                 </div>
-
                 <div class="upload__tool-line upload__tool-line--hidden">
                   <div class="upload__line"></div>
                   <div class="upload__circle upload__circle--grayscale"></div>
                 </div>
               </div>
             </div>
-
             <div class="upload__buttons-container">
               <button class="upload__send button-transparent button-transparent--red" type="submit">Запостить</button>
               <button class="upload__annulment button-transparent button-transparent--cancel" type="reset">Отмена</button>
@@ -317,7 +296,6 @@
         </div>
       </form>
     </main>
-
     <footer class="footer-main footer-main--photo">
       <div class="wrapper">
         <div class="footer-main__logo">
@@ -335,7 +313,6 @@
             </svg>
           </a>
         </div>
-
         <ul class="footer-main__links links-social">
           <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
             <svg class="link-social__twitter" width="17.5" height="14.663">
@@ -359,8 +336,7 @@
           </svg></a>
       </div>
     </footer>
-
-    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.js"></script>
     <script src="js/modernizr-custom.js"></script>

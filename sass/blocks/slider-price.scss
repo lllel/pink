@@ -68,6 +68,7 @@
   padding: 3px;
   color: $colorFont;
   font-weight: 400;
+  text-transform: uppercase;
   background-color: $base-font-color-title;
   margin: 0;
 }
@@ -233,7 +234,7 @@
   .slider-price {
     display: flex;
     flex-direction: column;
-    padding: 65px 0;
+    padding: 63px 0;
   }
 
   .slider-price__title {
@@ -394,8 +395,8 @@
   .slider-price__feature {
     transform: rotate(-45deg);
     position: absolute;
-    top: 1px;
-    right: 59px;
+    top: 4px;
+    right: 55px;
   }
 
   .slider-price__column-hidden {
@@ -418,7 +419,7 @@
 
 @media (min-width: $widthDesktopBody) {
   .slider-price {
-    padding: 65px 0 97px;
+    padding: 69px 0 97px;
   }
 
   .slider-price__title {

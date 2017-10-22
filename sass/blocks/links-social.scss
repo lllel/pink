@@ -46,13 +46,14 @@
 
 @media (min-width: $widthTabletBody) {
   .links-social {
-    margin-right: 36px;
-    margin-top: 10px;
+    margin-right: 24px;
+    margin-top: 15px;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .links-social {
     margin-right: 0;
+    margin-left: 10px;
   }
 }

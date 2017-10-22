@@ -15,7 +15,7 @@
 
 .os-select__item {
   margin-left: 75px;
-  margin-top: 43px;
+  margin-top: 42px;
 }
 
 .os-select__input {
@@ -31,8 +31,16 @@
     background-image: url("../img/icon-map-marker-form.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-color: #d22856;
+    border-color: #e5e5e5;
   }
+}
+
+.os-select__input:checked + .os-select__label:hover::before {
+  border-color: #283645;
+}
+
+.os-select__input:active + .os-select__label::before {
+  border-color: #d22856;
 }
 
 .os-select__label {
@@ -71,7 +79,7 @@
 
   .os-select__item {
     margin-left: 112px;
-    margin-top: 48px;
+    margin-top: 49px;
   }
 
   .os-select .wrapper {

@@ -18,14 +18,15 @@
 
 @media (min-width: $widthTabletBody) {
   .presentation__description {
-    padding: 87px 0 63px;
+    padding: 90px 0 64px;
     font-size: 18px;
     width: 500px;
     margin: 0 auto;
   }
 
   .presentation__description--padding {
-    padding-top: 34px;
+    padding-top: 44px;
+    padding-bottom: 70px;
   }
 
   .presentation__description-desktop {
@@ -41,7 +42,7 @@
   }
 
   .presentation__description--padding {
-    padding: 8px 0 67px;
+    padding: 3px 0 67px;
   }
 
   .presentation__description-desktop {

@@ -4,12 +4,13 @@
 }
 
 .contact__container {
-  margin-top: 21px;
+  margin-top: 0;
+  padding-bottom: 4px;
 }
 
 .contact__item {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 0;
   margin: 0;
   margin-top: 20px;
@@ -26,7 +27,7 @@
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
-  margin-left: 40px;
+  margin-left: 29px;
 }
 
 .contact__input {
@@ -54,7 +55,7 @@
   color: #283645;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 60px;
   padding-left: 10px;
 }
 
@@ -69,7 +70,7 @@
   }
 
   .contact__item {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     margin-top: 35px;
   }
@@ -82,7 +83,7 @@
 
   .contact__label {
     margin-left: 75px;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .contact__label--tel {
@@ -98,9 +99,17 @@
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -67px;
+      top: -72px;
       right: -354px;
     }
+  }
+
+  .contact__input:hover + .contact__label::after {
+    border-right: 2px solid #283645;
+  }
+
+  .contact__input:focus + .contact__label::after {
+    border-right: 2px solid #d22856;
   }
 
   .contact__label--mail {
@@ -116,7 +125,7 @@
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -67px;
+      top: -72px;
       right: -384px;
     }
   }
@@ -129,9 +138,13 @@
   }
 
   .contact__item {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     margin: 0;
+
+    &:first-child {
+      margin-left: 10px;
+    }
   }
 
   .contact__container {
@@ -157,7 +170,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -67px;
+      top: -72px;
       right: -224px;
     }
   }
@@ -168,8 +181,12 @@
     &::after {
       content: "";
       position: absolute;
-      top: -67px;
+      top: -72px;
       right: -254px;
     }
+  }
+
+  .contact__item--mail {
+    margin-right: 19px;
   }
 }

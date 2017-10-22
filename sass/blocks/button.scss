@@ -6,7 +6,7 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 50px;
+  padding: 15px 15px;
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
@@ -15,7 +15,7 @@
 }
 
 .button.form__submit {
-  margin-top: 8px;
+  margin-top: 4px;
 
   &:hover {
     background-color: #1c9b5e;
@@ -59,8 +59,9 @@
 .button-transparent--red {
   display: block;
   text-align: center;
-  width: 271px;
-  padding: 15px 0;
+  width: 275px;
+  padding: 15px 15px;
+  margin-top: 41px;
   color: $base-font-color-title;
   font-size: 18px;
   font-weight: 700;
@@ -85,8 +86,9 @@
 .button-transparent--cancel {
   display: block;
   text-align: center;
-  width: 271px;
-  padding: 15px 0;
+  width: 275px;
+  padding: 15px 15px;
+  margin-top: 8px;
   color: #dddfe0;
   font-size: 18px;
   font-weight: 700;
@@ -119,7 +121,8 @@
   .button-transparent--red {
     width: 259px;
     margin-left: 0;
-    margin-top: 83px;
+    margin-top: 0;
+    margin-bottom: 26px;
   }
 
   .button-transparent--cancel {
@@ -144,6 +147,10 @@
     width: 180px;
     height: 54px;
     margin-left: 0;
+    margin-top: 0;
+  }
+
+  .button.form__submit {
     margin-top: 0;
   }
 }

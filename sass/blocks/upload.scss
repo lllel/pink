@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
   text-align: center;
   padding-bottom: 40px;
-  padding-top: 24px;
+  padding-top: 29px;
 }
 
 .upload__img {
@@ -44,16 +44,28 @@
   }
 }
 
-.upload-tools__label-img--grayscale {
-  width: 40px;
+.upload-tools__label-img--grayscale-checked {
+  width: 34px;
   height: 40px;
+}
+
+.upload-tools__label-img--crop-checked {
+  fill: #d22856;
 }
 
 .upload-tools__input {
   display: none;
 }
 
-.upload-tools__input:checked + .upload-tools__label-img {
+.upload-tools__input:checked + .upload-tools__label-crop > .upload-tools__label-img {
+  fill: #d22856;
+}
+
+.upload-tools__input:checked + .upload-tools__label-fill > .upload-tools__label-img {
+  fill: #d22856;
+}
+
+.upload-tools__input:checked + .upload-tools__label-grayscale > .upload-tools__label-img {
   fill: #d22856;
 }
 
@@ -204,6 +216,30 @@
     height: 401px;
   }
 
+  .upload-tools__label-img {
+    width: 25px;
+    height: 39px;
+  }
+
+  .upload-tools__label-img--grayscale-checked {
+    width: 17px;
+    height: 31px;
+    fill: #d22856;
+  }
+
+  .upload-tools__label-img--crop-checked {
+    fill: #d22856;
+  }
+
+  .upload-tools__label-img--fill-checked {
+    fill: #d22856;
+  }
+
+  .upload-tools__label-grayscale {
+    width: 45px;
+    height: 35px;
+  }
+
   .upload__tool-line--hidden {
     display: block;
   }
@@ -225,8 +261,8 @@
   .upload__tool-line-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-top: 70px;
+    justify-content: space-between;
+    margin-top: 17px;
   }
 
   .upload__buttons-container {
@@ -270,27 +306,37 @@
   }
 
   .upload__line {
-    width: 278px;
+    width: 288px;
   }
 
   .upload__circle {
     &--crop {
       position: absolute;
       top: 0;
-      right: 200px;
+      right: 197px;
     }
 
     &--fill {
       position: absolute;
       top: 0;
-      right: 30px;
+      right: 17px;
     }
 
     &--grayscale {
       position: absolute;
       top: 0;
-      right: 100px;
+      right: 103px;
     }
+  }
+
+  .upload-tools__label-img {
+    width: 47px;
+    height: 47px;
+  }
+
+  .upload-tools__label-img--grayscale-checked {
+    width: 47px;
+    height: 33px;
   }
 
   .upload__buttons-container {
@@ -305,12 +351,13 @@
   .upload__tool-line-container {
     margin-right: 60px;
     margin-top: auto;
-    padding-top: 16px;
+    padding-top: 14px;
+    min-height: 225px;
   }
 
   .upload__line-container {
     justify-content: space-around;
-    margin-top: 4px;
+    margin-top: 0;
   }
 
   .upload__img {
