@@ -3,8 +3,14 @@
   margin: 0 auto;
 }
 
+.posts__item--panorama {
+  margin-top: 15px;
+}
+
 .posts__item {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
 
   &:last-child {
     margin-bottom: 0;
@@ -19,7 +25,7 @@
 
   .posts__item--panorama {
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 49px;
   }
 
   .posts__item-container {
@@ -34,6 +40,7 @@
 @media (min-width: $widthDesktopBody) {
   .posts__item {
     width: 32%;
+    margin-top: 0;
     margin-bottom: 59px;
   }
 
