@@ -100,14 +100,14 @@
   &::after {
     content: "";
     display: block;
-    width: 17px;
-    height: 14px;
+    width: 36px;
+    height: 32px;
     background-image: url("../img/icon-heart.svg");
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 4px;
-    right: 247px;
+    top: -8px;
+    right: 241px;
   }
 }
 
@@ -167,8 +167,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      right: 35px;
+      top: -4px;
+      right: 26px;
     }
   }
 
@@ -180,14 +180,14 @@
     &::after {
       content: "";
       display: block;
-      width: 15px;
-      height: 12px;
+      width: 36px;
+      height: 32px;
       background-image: url("../img/icon-heart.svg");
-      background-position: left;
+      background-position: center;
       background-repeat: no-repeat;
       position: absolute;
-      top: 5px;
-      right: -21px;
+      top: -4px;
+      right: -36px;
     }
   }
 
@@ -224,13 +224,22 @@
     width: 880px;
   }
 
+  .post__like {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      right: 23px;
+    }
+  }
+
   .post__like--panorama {
     margin-top: 14px;
 
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
+      top: -5px;
       right: -35px;
     }
   }
