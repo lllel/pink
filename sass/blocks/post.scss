@@ -92,13 +92,13 @@
   &::after {
     content: "";
     display: block;
-    width: 15px;
-    height: 12px;
+    width: 17px;
+    height: 14px;
     background-image: url("../img/icon-heart.svg");
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: 247px;
   }
 }
@@ -113,6 +113,8 @@
     width: 100%;
     height: 508px;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .posts__item-container {
@@ -131,6 +133,8 @@
     margin: 0 auto;
     min-height: 109px;
     padding-left: 13px;
+    display: flex;
+    flex-direction: column;
   }
 
   .post__img--panorama {
@@ -163,6 +167,7 @@
   .post__like--panorama {
     order: 0;
     margin-right: 43px;
+    margin-top: 17px;
 
     &::after {
       content: "";
@@ -208,6 +213,8 @@
   }
 
   .post__like--panorama {
+    margin-top: 14px;
+
     &::after {
       content: "";
       position: absolute;
