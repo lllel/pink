@@ -33,6 +33,14 @@
   margin: 0 auto;
   padding: 50px;
   min-width: 300px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #7abc98;
+  }
 }
 
 @media (min-width: $widthTabletBody) {
