@@ -32,21 +32,6 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
 });
 
-// gulp.task("sprite", function () {
-//   return gulp.src("img/icon-*.svg")
-//     .pipe(cheerio({
-//       run: function ($) {
-//         $('[fill]').removeAttr('fill');
-//       },
-//       parserOptions: { xmlMode: true }
-//     }))
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("build/img"))
-// });
-
 gulp.task("sprite", function () {
   return gulp.src("img/icon-*.svg")
     .pipe(svgstore({
@@ -90,6 +75,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task('copyFiles', function() {
+// copy any html files in source/ to build/
+  gulp.src('./fonts/**/*').pipe(gulp.dest('./build/fonts'));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "font/**/*.{woff/woff2}",
@@ -122,6 +112,7 @@ gulp.task("build", function (done) {
     "uglify",
     "sprite",
     "webp",
+    "copyFiles",
     "html",
     done
   );
