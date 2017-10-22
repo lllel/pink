@@ -49,7 +49,7 @@
         </ul>
       </nav>
 
-      <div class="header-main__intro header-main__intro--bg-position">
+      <div class="header-main__intro header-main__intro--bg-position header-main__intro--padding">
         <div class="header-main__bg-hand--padding header-main__bg-hand--no-padding">
           <h1 class="header-main__title header-main__title--padding">Фотографии<br> пользователей</h1>
         </div>
@@ -271,21 +271,21 @@
               <div class="upload-tools">
                 <input class="upload-tools__input" id="upload-tools-crop" type="checkbox">
                 <label class="upload-tools__label-crop" for="upload-tools-crop"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img">
+                  <svg class="upload-tools__label-img upload-tools__label-img--crop-checked">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
 
                 <input class="upload-tools__input" id="upload-tools-fill" type="checkbox">
                 <label class="upload-tools__label-fill" for="upload-tools-fill"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img">
+                  <svg class="upload-tools__label-img upload-tools__label-img--fill-checked">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
 
                 <input class="upload-tools__input" id="upload-tools-grayscale" type="checkbox">
                 <label class="upload-tools__label-grayscale" for="upload-tools-grayscale"><span class="hidden-title">инструменты</span>
-                  <svg class="upload-tools__label-img upload-tools__label-img--grayscale">
+                  <svg class="upload-tools__label-img upload-tools__label-img--grayscale-checked">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
@@ -360,7 +360,7 @@
       </div>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
     <script src="js/svg4everybody.js"></script>
     <script src="js/modernizr-custom.js"></script>

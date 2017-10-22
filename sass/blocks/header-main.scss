@@ -109,6 +109,14 @@
   }
 }
 
+.webp .header-main__intro--padding {
+  min-height: 173px;
+}
+
+.header-main__intro--padding {
+  min-height: 173px;
+}
+
 .webp .header-main__intro--bg-position {
   background-position: center -68px;
 }
@@ -128,11 +136,13 @@
   background-repeat: no-repeat;
   background-position: left 176px;
   padding-top: 66px;
+  //padding-top: 0;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .webp .header-main__bg-hand {
       background-image: url("../img/iphone-hand-mobile@2x.webp");
       background-position: top;
+      //padding-top: 0;
     }
   }
 }
@@ -143,6 +153,7 @@
 }
 
 .header-main__bg-hand--padding {
+  padding-top: 0;
   background-position: left 108px;
 }
 
@@ -339,23 +350,25 @@
   }
 
   .webp .header-main__intro {
-    min-height: 330px;
+    min-height: 440px;
     background-image: url("../img/bg-back-tablet@1x.webp");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .webp .header-main__intro {
         background-image: url("../img/bg-back-tablet@2x.webp");
+        min-height: 440px;
       }
     }
   }
 
   .header-main__intro {
-    min-height: 330px;
+    min-height: 440px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .header-main__intro {
         background-image: url("../img/bg-back-tablet@2x.jpg");
+        min-height: 440px;
       }
     }
   }
@@ -400,7 +413,7 @@
     background-position: center 71px;
   }
 
-  .header-main__bg-hand--no-padding {
+  .webp .header-main__bg-hand--no-padding {
     padding-top: 0;
   }
 
@@ -418,6 +431,14 @@
 
   .header-main__popup-button {
     margin-right: 0;
+  }
+
+  .webp .header-main__intro--padding {
+    min-height: 334px;
+  }
+
+  .header-main__intro--padding {
+    min-height: 334px;
   }
 }
 

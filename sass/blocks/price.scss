@@ -2,6 +2,14 @@
   padding-top: 18px;
 }
 
+.price .slider-controls__label--checked {
+  border-radius: 50%;
+  border: 3px solid #283645;
+  background-color: #ffffff;
+  width: 6px;
+  height: 6px;
+}
+
 .price {
   width: 320px;
   overflow: hidden;

@@ -117,19 +117,21 @@
   }
 
   .posts__item-container {
-    margin-top: 35px;
+    margin-top: 47px;
   }
 
   .post__card {
     margin-top: 0;
     padding-top: 0;
+    padding-left: 30px;
     min-height: 129px;
   }
 
   .post__card--panorama {
-    width: 590px;
+    width: 609px;
     margin: 0 auto;
-    min-height: 120px;
+    min-height: 109px;
+    padding-left: 13px;
   }
 
   .post__img--panorama {
@@ -143,13 +145,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 7px;
+    padding-left: 17px;
     padding-top: 8px;
     width: 584px;
   }
 
   .post__like {
-    margin: auto 0 0 11px;
+    margin-left: 0;
 
     &::after {
       content: "";
@@ -161,7 +163,7 @@
 
   .post__like--panorama {
     order: 0;
-    margin-right: 50px;
+    margin-right: 43px;
 
     &::after {
       content: "";
@@ -173,7 +175,7 @@
       background-repeat: no-repeat;
       position: absolute;
       top: 5px;
-      right: -25px;
+      right: -21px;
     }
   }
 
@@ -191,15 +193,15 @@
   }
 
   .post__feature--panorama {
-    top: 59px;
-    right: 19px;
+    top: 60px;
+    right: 22px;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .post__feature--panorama {
     top: 56px;
-    right: 9px;
+    right: 12px;
   }
 
   .post__user-text--panorama {
@@ -211,17 +213,18 @@
       content: "";
       position: absolute;
       top: 5px;
-      right: -47px;
+      right: -35px;
     }
   }
 
   .post__card {
     margin-top: 0;
+    min-height: 135px;
   }
 
   .post__card--panorama {
-    width: 940px;
-    margin: -4px auto 0;
+    width: 925px;
+    min-height: 80px;
   }
 
   .post__card--panorama .wrapper {
@@ -232,6 +235,10 @@
 
   .post__user-name {
     padding-top: 21px;
+  }
+
+  .post__user-name--panorama {
+    padding-top: 13px;
   }
 
   .post__img-container {

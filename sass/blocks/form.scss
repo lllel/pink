@@ -51,7 +51,7 @@
   .form__container-submit {
     order: 6;
     width: 620px;
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 0;
   }
 
@@ -112,13 +112,13 @@
     padding: 0;
     padding-bottom: 34px;
     width: 619px;
-    margin-top: 22px;
+    margin-top: 3px;
   }
 
   .form__fieldset--textarea {
     padding: 0;
     width: 619px;
-    margin: 21px auto 0;
+    margin: 0 auto;
   }
 }
 
@@ -144,6 +144,7 @@
   .form__container-submit {
     margin: 0;
     padding: 0;
+    margin-top: 6px;
   }
 
   .form__container-submit .wrapper {
@@ -165,12 +166,13 @@
 
   .form__fieldset--achievements {
     width: 940px;
-    margin: 20px auto 0;
+    margin: 0 auto;
+    padding-bottom: 58px;
   }
 
   .form__fieldset--textarea {
     width: 940px;
-    margin: 21px auto 5px;
+    margin: 10px auto 5px;
   }
 
   .form__fieldset-legend {
@@ -179,5 +181,9 @@
 
   .form__require-hidden {
     display: inline;
+  }
+
+  .form__submit {
+    margin-top: 0;
   }
 }
