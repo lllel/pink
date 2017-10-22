@@ -107,6 +107,7 @@
 
   .news__link {
     font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -140,6 +141,10 @@
       font-size: 120px;
       position: absolute;
     }
+  }
+
+  .news__title {
+    line-height: 30px;
   }
 
   .news__title br {

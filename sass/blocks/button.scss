@@ -1,6 +1,7 @@
 .button {
   display: block;
   color: $colorFont;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -38,12 +39,14 @@
   margin: 28px auto 0;
   padding: 13px 0;
   color: $colorFont;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
   border: 4px solid #ffffff;
   border-radius: 30px;
+
 
   &:hover {
     background-color: #ffffff;
@@ -63,6 +66,7 @@
   padding: 15px 15px;
   margin-top: 41px;
   color: $base-font-color-title;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -90,6 +94,7 @@
   padding: 15px 15px;
   margin-top: 8px;
   color: #dddfe0;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -132,10 +137,6 @@
 }
 
 @media (min-width: $widthDesktopBody) {
-  .button-transparent {
-    font-size: 21px;
-  }
-
   .button-transparent--red {
     width: 180px;
     height: 54px;

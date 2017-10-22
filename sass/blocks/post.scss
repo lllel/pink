@@ -7,10 +7,14 @@
   font-size: 0;
 }
 
+.post__user-name--panorama {
+  margin-right: auto;
+}
+
 .post__feature--panorama {
   position: absolute;
-  top: 5px;
-  right: 21px;
+  top: -137px;
+  right: 3px;
   text-align: center;
   width: 130px;
   font-weight: 400;
@@ -38,6 +42,10 @@
   padding: 0;
   padding-left: 18px;
   padding-bottom: 15px;
+}
+
+.post__card--panorama .wrapper {
+  position: relative;
 }
 
 .post__card .wrapper {
@@ -92,14 +100,14 @@
   &::after {
     content: "";
     display: block;
-    width: 17px;
-    height: 14px;
+    width: 36px;
+    height: 32px;
     background-image: url("../img/icon-heart.svg");
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    top: 4px;
-    right: 247px;
+    top: -8px;
+    right: 241px;
   }
 }
 
@@ -159,8 +167,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      right: 35px;
+      top: -4px;
+      right: 26px;
     }
   }
 
@@ -172,14 +180,14 @@
     &::after {
       content: "";
       display: block;
-      width: 15px;
-      height: 12px;
+      width: 36px;
+      height: 32px;
       background-image: url("../img/icon-heart.svg");
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
-      top: 5px;
-      right: -21px;
+      top: -4px;
+      right: -36px;
     }
   }
 
@@ -197,19 +205,32 @@
   }
 
   .post__feature--panorama {
-    top: 60px;
-    right: 22px;
+    top: -450px;
+    right: 14px;
+  }
+
+  .post__user-name--panorama {
+    margin-right: auto;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .post__feature--panorama {
-    top: 56px;
-    right: 12px;
+    top: -453px;
+    right: -11px;
   }
 
   .post__user-text--panorama {
     width: 880px;
+  }
+
+  .post__like {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      right: 23px;
+    }
   }
 
   .post__like--panorama {
@@ -218,7 +239,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
+      top: -5px;
       right: -35px;
     }
   }
@@ -245,6 +266,7 @@
 
   .post__user-name--panorama {
     padding-top: 13px;
+    margin-right: auto;
   }
 
   .post__img-container {

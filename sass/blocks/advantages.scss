@@ -13,8 +13,9 @@
   color: #000000;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 10px;
   text-align: center;
+  padding-top: 14px;
 }
 
 .advantages__description {
@@ -43,14 +44,15 @@
   .advantages__title {
     text-align: left;
     margin: 0;
-    padding-top: 11px;
-    line-height: 30px;
+    padding-top: 25px;
+    line-height: 10px;
   }
 
   .advantages__description {
     text-align: left;
     margin: 0;
     padding-top: 17px;
+    line-height: 24px;
   }
 }
 
@@ -71,14 +73,15 @@
 
   .advantages__title {
     margin-top: 58px;
-    padding: 0 42px;
+    padding: 0 39px;
     font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 
   .advantages__description {
     margin-top: 22px;
-    padding: 0 37px;
+    padding: 0 30px;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
@@ -98,7 +101,7 @@
       height: 17px;
       background-image: url("../img/shadow-decoration.png");
       position: absolute;
-      bottom: 253px;
+      top: 291px;
       left: 7px;
       opacity: 0.3;
     }
