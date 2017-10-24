@@ -6,7 +6,7 @@
 
 .advantages__item {
   list-style-type: none;
-  margin-top: 37px;
+  margin-top: 46px;
 }
 
 .advantages__title {
@@ -15,7 +15,8 @@
   font-weight: 700;
   line-height: 10px;
   text-align: center;
-  padding-top: 14px;
+  //padding-top: 14px;
+  padding-bottom: 6px;
 }
 
 .advantages__description {
@@ -28,8 +29,9 @@
 
 @media (min-width: $widthTabletBody) {
   .advantages {
-    margin-left: 38px;
+    margin-right: 7px;
     padding: 0;
+    width: 303px;
   }
 
   .advantages__item:first-child {
@@ -38,7 +40,7 @@
 
   .advantages__item {
     margin: 0;
-    padding-top: 21px;
+    padding-top: 13px;
   }
 
   .advantages__title {
@@ -61,7 +63,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: -70px;
+    width: auto;
+    margin: -70px auto 0;
     padding: 0;
   }
 
@@ -81,7 +84,7 @@
 
   .advantages__description {
     margin-top: 22px;
-    padding: 0 30px;
+    padding: 0 34px;
     text-align: center;
     font-size: 18px;
     line-height: 30px;
@@ -119,7 +122,8 @@
 
   .webp .advantages__img-pink-smile {
     background-image: url("../img/iphone-screen-3-desktop@1x.webp");
-    background-position: center;
+    background-position: -14px 0;
+    width: 234px;
   }
 
   .advantages__img-black-white {
@@ -134,7 +138,8 @@
 
   .advantages__img-pink-smile {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-position: center;
+    background-position: -14px 0;
+    width: 234px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -150,7 +155,8 @@
 
     .webp .advantages__img-pink-smile {
       background-image: url("../img/iphone-screen-3-desktop@2x.webp");
-      background-position: center;
+      background-position: -14px 0;
+      width: 234px;
     }
   }
 
@@ -167,7 +173,8 @@
 
     .advantages__img-pink-smile {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
-      background-position: center;
+      background-position: -14px 0;
+      width: 234px;
     }
   }
 }

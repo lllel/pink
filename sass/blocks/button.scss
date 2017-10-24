@@ -17,6 +17,8 @@
 
 .button.form__submit {
   margin-top: 4px;
+  background-color: #2aab6d;
+  cursor: pointer;
 
   &:hover {
     background-color: #1c9b5e;
@@ -26,11 +28,6 @@
     color: #7abc98;
   }
 }
-
-.button.form__submit--disabled {
-  background-color: #e5e5e5;
-}
-
 
 .button-transparent {
   display: block;
@@ -118,6 +115,11 @@
   }
 }
 
+.button.form__submit:disabled {
+  background-color: #e5e5e5;
+  cursor: auto;
+}
+
 @media (min-width: $widthTabletBody) {
   .button-transparent {
     padding: 14px 10px;
@@ -139,16 +141,15 @@
 @media (min-width: $widthDesktopBody) {
   .button-transparent--red {
     width: 180px;
-    height: 54px;
     margin-left: 0;
     margin-top: 0;
   }
 
   .button-transparent--cancel {
     width: 180px;
-    height: 54px;
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 24px;
   }
 
   .button.form__submit {

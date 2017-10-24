@@ -33,7 +33,7 @@
           <li class="header-main__item"><a class="header-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </nav>
-      <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
+      <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button" aria-label="Menu"></button>
     </div>
   </div>
   <!--NAV-POPUP-->
@@ -105,7 +105,7 @@
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <div class="information__img"></div>
+        <!--<div class="information__img"></div>-->
       </div>
     </div>
   </section>
@@ -114,7 +114,7 @@
       <div class="news__container">
         <h2 class="hidden-title">Новости</h2>
         <div class="news__description">
-          <p class="news__title">Эффект<br> на 24 часа!</p>
+          <p class="news__title"><span>Эффект</span> на 24 часа!</p>
           <p class="news__text">
             Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
           </p>
@@ -258,7 +258,10 @@
           <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
         </svg>
         <svg class="logo logo--desktop footer-logo" width="148" height="40">
-          <use xlink:href="#icon-pink-blue-desktop"></use>
+          <use class="icon-pink-blue-desktop__part1" xlink:href="#icon-pink-blue-desktop__part1"></use>
+          <use class="icon-pink-blue-desktop__part2" xlink:href="#icon-pink-blue-desktop__part2"></use>
+          <use class="icon-pink-blue-desktop__part3" xlink:href="#icon-pink-blue-desktop__part3"></use>
+          <use class="icon-pink-blue-desktop__part4" xlink:href="#icon-pink-blue-desktop__part4"></use>
         </svg>
       </a>
     </div>

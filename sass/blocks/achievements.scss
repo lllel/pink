@@ -47,6 +47,10 @@
   border-color: #d22856;
 }
 
+.achievements__input:focus + .achievements__label::before {
+  border-color: #d22856;
+}
+
 .achievements__label {
   position: relative;
   color: $base-font-color-content;

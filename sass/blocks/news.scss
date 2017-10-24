@@ -54,7 +54,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 0 0;
+    padding: 55px 0 0;
   }
 
   .news__container {
@@ -63,6 +63,10 @@
 
   .news__title {
     margin-top: 0;
+  }
+
+  .news__title span {
+    display: block;
   }
 
   .news__img {
@@ -118,7 +122,7 @@
 
   .news__container {
     width: auto;
-    margin-top: 65px;
+    margin-top: 58px;
   }
 
   .news__img {
@@ -147,13 +151,13 @@
     line-height: 30px;
   }
 
-  .news__title br {
-    display: none;
+  .news__title span {
+    display: inline;
   }
 
   .news .wrapper {
     justify-content: flex-end;
-    padding: 59px 0 85px;
+    padding: 48px 0 85px;
   }
 
   .news__description {

@@ -485,6 +485,10 @@
     margin-top: -31px;
   }
 
+  .header-main__title--photo-width {
+    width: 655px;
+  }
+
   .header-main__nav {
     display: block;
   }
@@ -527,7 +531,7 @@
   .header-main__item {
     margin: 0;
     padding: 0;
-    margin-left: 83px;
+    margin-left: 79px;
 
     &:first-child {
       margin-left: 0;

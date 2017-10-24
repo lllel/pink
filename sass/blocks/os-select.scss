@@ -20,10 +20,6 @@
 }
 
 .os-select__input {
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-
   &:checked + .os-select__label::before {
     content: "";
     display: block;
