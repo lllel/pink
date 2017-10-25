@@ -25,10 +25,6 @@
 }
 
 .achievements__input {
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-
   &:checked + .achievements__label::before {
     content: "";
     display: block;
@@ -44,6 +40,10 @@
 }
 
 .achievements__input:active + .achievements__label::before {
+  border-color: #d22856;
+}
+
+.achievements__input:focus + .achievements__label::before {
   border-color: #d22856;
 }
 

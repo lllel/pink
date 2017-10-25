@@ -33,7 +33,7 @@
               <li class="header-main__item"><a class="header-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
             </ul>
           </nav>
-          <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button"></button>
+          <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--none" type="button" aria-label="Menu"></button>
         </div>
       </div>
       <!--NAV-POPUP-->
@@ -47,7 +47,7 @@
       </nav>
       <div class="header-main__intro header-main__intro--bg-position header-main__intro--padding">
         <div class="header-main__bg-hand--padding header-main__bg-hand--no-padding">
-          <h1 class="header-main__title header-main__title--padding">Фотографии<br> пользователей</h1>
+          <h1 class="header-main__title header-main__title--padding header-main__title--photo-width">Фотографии пользователей</h1>
         </div>
       </div>
     </header>
@@ -59,9 +59,11 @@
       <section class="posts">
         <h2 class="hidden-title">Комментарии</h2>
 
-        <div class="posts__item posts__item--panorama post">
+        <div class="post posts__item posts__item--panorama">
           <div class="post__img-container post__img-container--panorama">
-            <a><picture>
+            <span class="feature post__feature--panorama">панорама дня</span>
+            <a>
+              <picture>
               <source media="(min-width: 960px)" type="image/webp"
                       srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source media="(min-width: 960px)"
@@ -74,23 +76,25 @@
                       srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
               <img class="post__img post__img--panorama" src="img/panorama-mobile@1x.jpg"
                     srcset="img/panorama-mobile@2x.jpg 2x" alt="arm">
-            </picture></a>
+            </picture>
+            </a>
 
           </div>
           <blockquote class="post__card post__card--panorama">
             <div class="wrapper">
-              <span class="feature post__feature--panorama">панорама дня</span>
               <p class="post__user-name post__user-name--panorama">Анна <span class="post__time post__time--panorama">(5 минут назад)</span></p>
-              <p class="post__like post__like--panorama">нравится: <span class="post__counter">215</span></p>
+              <p class="post__like post__like--panorama">нравится: <span class="post__counter">215</span>
+                <a class="post__heart post__heart--panorama" href="#"><span class="hidden-title"></span></a></p>
               <p class="post__user-text post__user-text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             </div>
           </blockquote>
         </div>
         <div class="wrapper">
           <div class="posts__item-container">
-            <div class="posts__item post">
+            <div class="post posts__item">
               <div class="post__img-container">
-                  <a class="post__link" href="#"><picture>
+                  <a class="post__link" href="#">
+                    <picture>
                     <source media="(min-width: 960px)" type="image/webp"
                             srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                     <source media="(min-width: 960px)"
@@ -103,17 +107,20 @@
                             srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp 2x">
                     <img class="post__img" src="img/photo-car-mobile@1x.jpg"
                           srcset="img/photo-car-mobile@2x.jpg 2x" alt="arm">
-                  </picture></a>
+                  </picture>
+                  </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Левон <span class="post__time">(5 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">356</span></p>
+                <p class="post__user-name">Левон <time class="post__time" datetime="2017-08-15T15:15">(5 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">356</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </blockquote>
             </div>
             <div class="posts__item post">
               <div class="post__img-container">
-                <a class="post__link" href="#"><picture>
+                <a class="post__link" href="#">
+                  <picture>
                   <source media="(min-width: 960px)" type="image/webp"
                           srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                   <source media="(min-width: 960px)"
@@ -126,17 +133,20 @@
                           srcset="img/photo-drumset-mobile@1x.webp, img/photo-drumset-mobile@2x.webp 2x">
                 <img class="post__img" src="img/photo-drumset-mobile@1x.jpg"
                       srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="arm">
-              </picture></a>
+              </picture>
+                </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Антон <span class="post__time">(12 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">666</span></p>
+                <p class="post__user-name">Антон <time class="post__time" datetime="2017-08-15T15:15">(12 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">666</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Соседи будут рады!</p>
               </blockquote>
             </div>
-            <div class="posts__item post">
+            <div class="post posts__item">
               <div class="post__img-container">
-                <a class="post__link" href="#"><picture>
+                <a class="post__link" href="#">
+                  <picture>
                   <source media="(min-width: 960px)" type="image/webp"
                           srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                   <source media="(min-width: 960px)"
@@ -149,17 +159,20 @@
                           srcset="img/photo-window-mobile@1x.webp, img/photo-window-mobile@2x.webp 2x">
                   <img class="post__img" src="img/photo-window-mobile@1x.jpg"
                         srcset="img/photo-window-mobile@2x.jpg 2x" alt="arm">
-                </picture></a>
+                </picture>
+                </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Борис <span class="post__time">(20 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">215</span></p>
+                <p class="post__user-name">Борис <time class="post__time" datetime="2017-08-15T15:15">(20 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">215</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               </blockquote>
             </div>
-            <div class="posts__item post">
+            <div class="post posts__item">
               <div class="post__img-container">
-                <a class="post__link" href="#"><picture>
+                <a class="post__link" href="#">
+                  <picture>
                   <source media="(min-width: 960px)" type="image/webp"
                           srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                   <source media="(min-width: 960px)"
@@ -172,17 +185,20 @@
                           srcset="img/photo-fair-mobile@1x.webp, img/photo-fair-mobile@2x.webp 2x">
                   <img class="post__img" src="img/photo-fair-mobile@1x.jpg"
                         srcset="img/photo-fair-mobile@2x.jpg 2x" alt="arm">
-                </picture></a>
+                </picture>
+                </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Сергей <span class="post__time">(25 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">4</span></p>
+                <p class="post__user-name">Сергей <time class="post__time" datetime="2017-08-15T15:15">(25 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">4</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Самая кубанская в мире!</p>
               </blockquote>
             </div>
-            <div class="posts__item post">
+            <div class="post posts__item">
               <div class="post__img-container">
-                <a class="post__link" href="#"><picture>
+                <a class="post__link" href="#">
+                  <picture>
                   <source media="(min-width: 960px)" type="image/webp"
                           srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source media="(min-width: 960px)"
@@ -195,17 +211,20 @@
                           srcset="img/photo-pov-mobile@1x.webp, img/photo-pov-mobile@2x.webp 2x">
                   <img class="post__img" src="img/photo-pov-mobile@1x.jpg"
                         srcset="img/photo-pov-mobile@2x.jpg 2x" alt="arm">
-                </picture></a>
+                </picture>
+                </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Максим <span class="post__time">(40 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">150</span></p>
+                <p class="post__user-name">Максим <time class="post__time" datetime="2017-08-15T15:15">(40 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">150</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Где снег-то?</p>
               </blockquote>
             </div>
-            <div class="posts__item post">
+            <div class="post posts__item">
               <div class="post__img-container">
-                <a class="post__link" href="#"><picture>
+                <a class="post__link" href="#">
+                  <picture>
                   <source media="(min-width: 960px)" type="image/webp"
                           srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                   <source media="(min-width: 960px)"
@@ -218,11 +237,13 @@
                           srcset="img/photo-wing-mobile@1x.webp, img/photo-wing-mobile@2x.webp 2x">
                   <img class="post__img" src="img/photo-wing-mobile@1x.jpg"
                         srcset="img/photo-wing-mobile@2x.jpg 2x" alt="arm">
-                </picture></a>
+                </picture>
+                </a>
               </div>
               <blockquote class="post__card">
-                <p class="post__user-name">Надежда <span class="post__time">(45 часов назад)</span></p>
-                <p class="post__like">нравится: <span class="post__counter">2560</span></p>
+                <p class="post__user-name">Надежда <time class="post__time" datetime="2017-08-15T15:15">(45 часов назад)</time></p>
+                <p class="post__like">нравится: <span class="post__counter">2560</span>
+                  <a class="post__heart" href="#"><span class="hidden-title"></span></a></p>
                 <p class="post__user-text">Всем GM и взаимные лайки!</p>
               </blockquote>
             </div>
@@ -231,7 +252,7 @@
       </section>
       <section class="presentation">
         <h2 class="hidden-title">Презентация</h2>
-        <p class="presentation__description presentation__description--padding">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+        <p class="presentation__description presentation__description--padding"><span>Затмите их всех!</span> Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
       <form class="upload" action="https://echo.htmlacademy.ru">
@@ -301,20 +322,23 @@
       <div class="wrapper">
         <div class="footer-main__logo">
           <a class="logo-link" href="index.html"><span class="hidden-title">логотип</span>
-            <svg class="logo logo--mobile footer-logo" width="148" height="23">
+            <svg class="logo footer-logo logo--mobile" width="148" height="23">
               <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
               <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
-            <svg class="logo logo--tablet footer-logo" width="148" height="40">
+            <svg class="logo footer-logo logo--tablet" width="148" height="40">
               <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
               <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
-            <svg class="logo logo--desktop footer-logo" width="148" height="40">
-              <use xlink:href="#icon-pink-blue-desktop"></use>
+            <svg class="logo footer-logo logo--desktop" width="148" height="40">
+              <use class="icon-pink-blue-desktop__part1" xlink:href="#icon-pink-blue-desktop__part1"></use>
+              <use class="icon-pink-blue-desktop__part2" xlink:href="#icon-pink-blue-desktop__part2"></use>
+              <use class="icon-pink-blue-desktop__part3" xlink:href="#icon-pink-blue-desktop__part3"></use>
+              <use class="icon-pink-blue-desktop__part4" xlink:href="#icon-pink-blue-desktop__part4"></use>
             </svg>
           </a>
         </div>
-        <ul class="footer-main__links links-social">
+        <ul class="links-social footer-main__links">
           <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
             <svg class="link-social__twitter" width="17.5" height="14.663">
               <use xlink:href="#icon-twitter"></use>

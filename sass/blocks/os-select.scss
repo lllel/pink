@@ -20,10 +20,6 @@
 }
 
 .os-select__input {
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-
   &:checked + .os-select__label::before {
     content: "";
     display: block;
@@ -41,6 +37,10 @@
 }
 
 .os-select__input:active + .os-select__label::before {
+  border-color: #d22856;
+}
+
+.os-select__input:focus + .os-select__label::before {
   border-color: #d22856;
 }
 

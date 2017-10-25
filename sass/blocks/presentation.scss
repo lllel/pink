@@ -1,11 +1,19 @@
 .presentation__description {
-  padding: 42px 20px 35px;
+  padding: 42px 20px 5px;
   color: $base-font-color-content;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
   margin: 0;
+}
+
+.presentation__description--padding {
+  padding: 42px 20px 35px;
+}
+
+.presentation__description span {
+  display: block;
 }
 
 .presentation__description--photo {
@@ -52,5 +60,13 @@
 
   .presentation__description--photo {
     width: 630px;
+  }
+
+  .presentation__description span {
+    display: inline;
+  }
+
+  .presentation__description--padding span {
+    display: block;
   }
 }

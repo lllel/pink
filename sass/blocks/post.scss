@@ -13,8 +13,8 @@
 
 .post__feature--panorama {
   position: absolute;
-  top: -137px;
-  right: 3px;
+  top: 0;
+  right: 23px;
   text-align: center;
   width: 130px;
   font-weight: 400;
@@ -96,19 +96,19 @@
   margin: auto 0 0 30px;
   order: 1;
   position: relative;
+}
 
-  &::after {
-    content: "";
-    display: block;
-    width: 36px;
-    height: 32px;
-    background-image: url("../img/icon-heart.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -8px;
-    right: 241px;
-  }
+.post__heart {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 2px;
+  right: 248px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -119,10 +119,11 @@
 
   .post__img-container--panorama {
     width: 100%;
-    height: 508px;
+    height: auto;
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .posts__item-container {
@@ -140,15 +141,16 @@
     width: 609px;
     margin: 0 auto;
     min-height: 109px;
-    padding-left: 13px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
   }
 
   .post__img--panorama {
-    width: 100%;
-    height: 508px;
+    width: 106%;
+    height: auto;
     min-height: 50px;
+    transform: translateX(-20px);
   }
 
   .post__card--panorama .wrapper {
@@ -163,36 +165,33 @@
 
   .post__like {
     margin-left: 0;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: -4px;
-      right: 26px;
-    }
+  .post__heart {
+    position: absolute;
+    top: 2px;
+    right: 33px;
   }
 
   .post__like--panorama {
     order: 0;
-    margin-right: 43px;
+    margin-right: 51px;
     margin-top: 17px;
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      width: 36px;
-      height: 32px;
-      background-image: url("../img/icon-heart.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: -4px;
-      right: -36px;
-    }
+  .post__heart--panorama {
+    position: absolute;
+    top: 2px;
+    right: -30px;
   }
 
   .post__user-name {
     padding-top: 18px;
+  }
+
+  .post__user-name--panorama {
+    padding-top: 16px;
+    margin-right: auto;
   }
 
   .post__user-text {
@@ -205,43 +204,26 @@
   }
 
   .post__feature--panorama {
-    top: -450px;
-    right: 14px;
-  }
-
-  .post__user-name--panorama {
-    margin-right: auto;
+    top: 59px;
+    right: 22px;
+    z-index: 2;
   }
 }
 
 @media (min-width: $widthDesktopBody) {
   .post__feature--panorama {
-    top: -453px;
-    right: -11px;
+    top: 56px;
+    right: 11px;
+    z-index: 2;
   }
 
   .post__user-text--panorama {
     width: 880px;
   }
 
-  .post__like {
-    &::after {
-      content: "";
-      position: absolute;
-      top: -8px;
-      right: 23px;
-    }
-  }
-
   .post__like--panorama {
-    margin-top: 14px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -5px;
-      right: -35px;
-    }
+    margin-top: 15px;
+    margin-right: 43px;
   }
 
   .post__card {
@@ -261,7 +243,7 @@
   }
 
   .post__user-name {
-    padding-top: 21px;
+    padding-top: 24px;
   }
 
   .post__user-name--panorama {
@@ -275,7 +257,14 @@
 
   .post__img-container--panorama {
     margin: 43px auto 0;
-    height: 509px;
+    height: auto;
     max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .post__img--panorama {
+    width: 125%;
+    height: auto;
+    transform: translateX(-121px);
   }
 }
