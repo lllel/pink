@@ -40,6 +40,10 @@
   border-color: #d22856;
 }
 
+.os-select__input:focus + .os-select__label::before {
+  border-color: #d22856;
+}
+
 .os-select__label {
   color: $base-font-color-content;
   font-size: 18px;

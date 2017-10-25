@@ -13,8 +13,8 @@
 
 .post__feature--panorama {
   position: absolute;
-  top: -137px;
-  right: 3px;
+  top: 0;
+  right: 23px;
   text-align: center;
   width: 130px;
   font-weight: 400;
@@ -101,7 +101,7 @@
 .post__heart {
   display: block;
   width: 15px;
-  height: 14px;
+  height: 15px;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -119,10 +119,11 @@
 
   .post__img-container--panorama {
     width: 100%;
-    height: 508px;
+    height: auto;
     margin-top: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .posts__item-container {
@@ -140,15 +141,16 @@
     width: 609px;
     margin: 0 auto;
     min-height: 109px;
-    padding-left: 13px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
   }
 
   .post__img--panorama {
-    width: 100%;
-    height: 508px;
+    width: 106%;
+    height: auto;
     min-height: 50px;
+    transform: translateX(-20px);
   }
 
   .post__card--panorama .wrapper {
@@ -187,6 +189,10 @@
     padding-top: 18px;
   }
 
+  .post__user-name--panorama {
+    padding-top: 16px;
+  }
+
   .post__user-text {
     width: 265px;
   }
@@ -197,8 +203,9 @@
   }
 
   .post__feature--panorama {
-    top: -450px;
-    right: 14px;
+    top: 59px;
+    right: 22px;
+    z-index: 2;
   }
 
   .post__user-name--panorama {
@@ -208,8 +215,9 @@
 
 @media (min-width: $widthDesktopBody) {
   .post__feature--panorama {
-    top: -453px;
-    right: -11px;
+    top: 56px;
+    right: 11px;
+    z-index: 2;
   }
 
   .post__user-text--panorama {
@@ -217,8 +225,8 @@
   }
 
   .post__like--panorama {
-    margin-top: 14px;
-    margin-right: 38px;
+    margin-top: 15px;
+    margin-right: 43px;
   }
 
   .post__card {
@@ -238,7 +246,7 @@
   }
 
   .post__user-name {
-    padding-top: 21px;
+    padding-top: 24px;
   }
 
   .post__user-name--panorama {
@@ -252,7 +260,14 @@
 
   .post__img-container--panorama {
     margin: 43px auto 0;
-    height: 509px;
+    height: auto;
     max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .post__img--panorama {
+    width: 125%;
+    height: auto;
+    transform: translateX(-121px);
   }
 }

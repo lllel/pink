@@ -60,7 +60,7 @@
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="wrapper">
-          <div class="form__items user-info">
+          <div class="user-info form__items">
             <p class="user-info__item">
               <label class="user-info__label" for="user-lastname">фамилия:</label>
               <input class="user-info__input" id="user-lastname" type="text" required placeholder="Укажите фамилию *">
@@ -74,14 +74,14 @@
               <input class="user-info__input" id="user-middlename" type="text" placeholder="Ну и отчество тоже">
             </p>
           </div>
-          <div class="form__items achievements">
+          <div class="achievements form__items">
             <fieldset class="form__fieldset form__fieldset--achievements">
               <legend class="form__fieldset-legend form__fieldset-legend--achievements">ваши безбашенные достижения в путешествии</legend>
               <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
               <div class="achievements__container">
                 <p class="achievements__item achievements__item-selfie">
                   <input class="achievements__input hidden-title" id="achievements-selfie" type="checkbox" checked>
-                  <label class="achievements__label" for="achievements-selfie" tabindex="0">Сделал селфи с акулой</label>
+                  <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
                 </p>
                 <p class="achievements__item achievements__item-scorched">
                   <input class="achievements__input hidden-title" id="achievements-scorched" type="checkbox" checked>
@@ -89,24 +89,24 @@
                 </p>
                 <p class="achievements__item achievements__item-chuck">
                   <input class="achievements__input hidden-title" id="achievements-chuck" type="checkbox">
-                  <label class="achievements__label" for="achievements-chuck" tabindex="0">Видел Чака Норриса</label>
+                  <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
                 </p>
                 <p class="achievements__item achievements__item-souvenirs">
                   <input class="achievements__input hidden-title" id="achievements-souvenirs" type="checkbox">
-                  <label class="achievements__label" for="achievements-souvenirs" tabindex="0">Накупил сувениров</label>
+                  <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
                 </p>
                 <p class="achievements__item achievements__item-tower">
                   <input class="achievements__input hidden-title" id="achievements-tower" type="checkbox" checked>
-                  <label class="achievements__label" for="achievements-tower" tabindex="0">Удержал башню</label>
+                  <label class="achievements__label" for="achievements-tower">Удержал башню</label>
                 </p>
                 <p class="achievements__item achievements__item-hotel">
                   <input class="achievements__input hidden-title" id="achievements-hotel" type="checkbox">
-                  <label class="achievements__label" for="achievements-hotel" tabindex="0">Разгромил отель</label>
+                  <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
                 </p>
               </div>
             </fieldset>
           </div>
-          <div class="form__items contact">
+          <div class="contact form__items">
             <fieldset class="form__fieldset form__fieldset--contact">
               <legend class="form__fieldset-legend">контактная информация</legend>
               <div class="contact__container">
@@ -121,25 +121,25 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__items os-select">
+          <div class="os-select form__items">
             <fieldset class="form__fieldset form__fieldset--os-select">
               <legend class="form__fieldset-legend form__fieldset-legend--os-select">С каким приложением путешествовали</legend>
               <h2 class="os-select__title">С каким приложением путешествовали?</h2>
               <p class="os-select__item">
-                <input class="os-select__input hidden-title" id="choice-ios" type="radio" name="form__choice">
-                <label class="os-select__label" for="choice-ios" tabindex="0">Pink для IOS</label>
+                <input class="os-select__input hidden-title" id="choice-ios" type="radio" name="form__choice" checked>
+                <label class="os-select__label" for="choice-ios">Pink для IOS</label>
               </p>
               <p class="os-select__item">
                 <input class="os-select__input hidden-title" id="choice-android" type="radio" name="form__choice">
-                <label class="os-select__label" for="choice-android" tabindex="0">Pink на Android</label>
+                <label class="os-select__label" for="choice-android">Pink на Android</label>
               </p>
               <p class="os-select__item">
                 <input class="os-select__input hidden-title" id="choice-window" type="radio" name="form__choice">
-                <label class="os-select__label" for="choice-window" tabindex="0">Windows Phone</label>
+                <label class="os-select__label" for="choice-window">Windows Phone</label>
               </p>
             </fieldset>
           </div>
-          <div class="form__items textarea">
+          <div class="textarea form__items">
             <fieldset class="form__fieldset form__fieldset--textarea">
               <legend class="form__fieldset-legend">опишите свои эмоции</legend>
               <p class="textarea__heading">Опишите свои эмоции</p>
@@ -159,15 +159,15 @@
       <div class="wrapper">
         <div class="footer-main__logo">
           <a class="logo-link" href="index.html"><span class="hidden-title">логотип</span>
-            <svg class="logo logo--mobile footer-logo" width="148" height="40">
+            <svg class="logo footer-logo logo--mobile" width="148" height="40">
               <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
               <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
-            <svg class="logo logo--tablet footer-logo" width="148" height="40">
+            <svg class="logo footer-logo logo--tablet" width="148" height="40">
               <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
               <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
             </svg>
-            <svg class="logo logo--desktop footer-logo" width="148" height="40">
+            <svg class="logo footer-logo logo--desktop" width="148" height="40">
               <use class="icon-pink-blue-desktop__part1" xlink:href="#icon-pink-blue-desktop__part1"></use>
               <use class="icon-pink-blue-desktop__part2" xlink:href="#icon-pink-blue-desktop__part2"></use>
               <use class="icon-pink-blue-desktop__part3" xlink:href="#icon-pink-blue-desktop__part3"></use>
@@ -175,7 +175,7 @@
             </svg>
           </a>
         </div>
-        <ul class="footer-main__links links-social">
+        <ul class="links-social footer-main__links">
           <li class="links-social__item"><a href="#" class="link-social"><span class="hidden-title">соц.сеть</span>
             <svg class="link-social__twitter" width="17.5" height="14.663">
               <use xlink:href="#icon-twitter"></use>

@@ -25,10 +25,6 @@
 }
 
 .achievements__input {
-  visibility: hidden;
-  position: absolute;
-  opacity: 0;
-
   &:checked + .achievements__label::before {
     content: "";
     display: block;

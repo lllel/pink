@@ -25,7 +25,7 @@
 }
 
 
-.logo-link:hover {
+.logo--mobile:hover {
   .icon-pink-blue-mobile__part1 {
     fill: #d4335f;
     transition: 0.3s;
@@ -36,19 +36,19 @@
   }
 }
 
-.logo-link:hover .icon-pink-blue-desktop__part1 {
+.logo--mobile:hover .icon-pink-blue-desktop__part1 {
   fill: #d4335f;
 }
 
-.logo-link:hover .icon-pink-blue-desktop__part2 {
+.logo--mobile:hover .icon-pink-blue-desktop__part2 {
   fill: #d4335f;
 }
 
-.logo-link:hover .icon-pink-blue-desktop__part3 {
+.logo--mobile:hover .icon-pink-blue-desktop__part3 {
   fill: #d4335f;
 }
 
-.logo-link:active {
+.logo--mobile:active {
   opacity: 0.3;
 
   .icon-pink-blue-mobile__part1 {
@@ -60,21 +60,78 @@
   }
 }
 
-.logo-link:active .icon-pink-blue-desktop__part1 {
+.logo--tablet:hover {
+  .icon-pink-blue-mobile__part1 {
+    fill: #d4335f;
+    transition: 0.3s;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo--tablet:hover .icon-pink-blue-desktop__part1 {
+  fill: #d4335f;
+}
+
+.logo--tablet:hover .icon-pink-blue-desktop__part2 {
+  fill: #d4335f;
+}
+
+.logo--tablet:hover .icon-pink-blue-desktop__part3 {
+  fill: #d4335f;
+}
+
+.logo--tablet:active {
+  opacity: 0.3;
+
+  .icon-pink-blue-mobile__part1 {
+    fill: #283645;
+  }
+
+  .icon-pink-blue-mobile__part2 {
+    fill: #d4335f;
+  }
+}
+
+.logo--desktop:hover {
+  .icon-pink-blue-desktop__part1 {
+    fill: #d4335f;
+  }
+
+  .icon-pink-blue-desktop__part2 {
+    fill: #d4335f;
+  }
+
+  .icon-pink-blue-desktop__part4 {
+    fill: #d4335f;
+  }
+}
+
+.logo--desktop:hover .icon-pink-blue-desktop__part3 {
+  fill: #d4335f;
+}
+
+.logo--desktop:hover .icon-pink-blue-desktop__part4 {
+  fill: #d4335f;
+}
+
+.logo--desktop:active .icon-pink-blue-desktop__part1 {
   opacity: 0.3;
   fill: #283645;
 }
 
-.logo-link:active .icon-pink-blue-desktop__part2 {
+.logo--desktop:active .icon-pink-blue-desktop__part2 {
   opacity: 0.3;
 }
 
-.logo-link:active .icon-pink-blue-desktop__part3 {
+.logo--desktop:active .icon-pink-blue-desktop__part3 {
   opacity: 0.3;
   fill: #283645;
 }
 
-.logo-link:active .icon-pink-blue-desktop__part4 {
+.logo--desktop:active .icon-pink-blue-desktop__part4 {
   opacity: 0.3;
 }
 
