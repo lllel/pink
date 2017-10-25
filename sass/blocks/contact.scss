@@ -33,11 +33,10 @@
 .contact__input {
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
-  height: 60px;
   width: 250px;
   border: 2px solid #e5e5e5;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 18px 10px;
   font-size: 18px;
 
   &:hover {
@@ -80,6 +79,8 @@
     width: 420px;
     padding-right: 70px;
     padding-left: 10px;
+    background-color: transparent;
+    z-index: 5;
   }
 
   .contact__label {
@@ -93,14 +94,14 @@
     &::after {
       content: "";
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 61px;
+      height: 62px;
       background-image: url("../img/phone.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -72px;
+      top: -74px;
       right: -354px;
     }
   }
@@ -111,14 +112,14 @@
     &::after {
       content: "";
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 61px;
+      height: 62px;
       background-image: url("../img/mail.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-color: #e5e5e5;
       position: absolute;
-      top: -72px;
+      top: -74px;
       right: -384px;
     }
   }
@@ -163,7 +164,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -72px;
+      top: -74px;
       right: -224px;
     }
   }
@@ -174,7 +175,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -72px;
+      top: -74px;
       right: -255px;
     }
   }
