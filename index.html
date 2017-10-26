@@ -241,7 +241,22 @@
         </div>
       </div>
     </div>
-    <div id="map" class="map"></div>
+    <div id="map" class="map">
+      <picture>
+        <source media="(min-width: 960px)" type="image/webp"
+                srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source media="(min-width: 960px)"
+                srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 660px)" type="image/webp"
+                srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source media="(min-width: 660px)"
+                srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <source media="(min-width: 320px)" type="image/webp"
+                srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+        <img class="map__img" src="img/bg-map-mobile@1x.png"
+                srcset="img/bg-map-mobile@2x.jpg 2x">
+      </picture>
+    </div>
   </section>
 </main>
 <footer class="footer-main footer-main--index-mobile">

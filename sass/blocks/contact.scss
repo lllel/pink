@@ -33,10 +33,10 @@
 .contact__input {
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 250px;
+  width: 235px;
   border: 2px solid #e5e5e5;
   margin: 0 auto;
-  padding: 18px 10px;
+  padding: 18px 20px;
   font-size: 18px;
   line-height: normal;
 
@@ -57,7 +57,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  padding-left: 10px;
 }
 
 @media (min-width: $widthTabletBody) {
@@ -77,9 +76,9 @@
   }
 
   .contact__input {
-    width: 420px;
+    width: 407px;
     padding-right: 70px;
-    padding-left: 10px;
+    padding-left: 20px;
     background-color: transparent;
     z-index: 5;
   }
@@ -138,21 +137,30 @@
     margin: 0;
 
     &:first-child {
-      margin-left: 10px;
+      margin-left: 0;
     }
+  }
+
+  .contact__item:nth-child(2n + 1) {
+    margin-left: 54px;
+  }
+
+  .contact__item:nth-child(2n + 2) {
+    margin-right: 61px;
   }
 
   .contact__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 8px 0 15px;
     width: 100%;
     margin-top: 32px;
   }
 
   .contact__input {
-    width: 290px;
+    width: 279px;
   }
 
   .contact__label {
@@ -179,9 +187,5 @@
       top: -74px;
       right: -255px;
     }
-  }
-
-  .contact__item--mail {
-    margin-right: 19px;
   }
 }
