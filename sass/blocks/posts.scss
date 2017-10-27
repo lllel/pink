@@ -21,6 +21,10 @@
   .posts__item {
     width: 49%;
     margin-bottom: 26px;
+
+    &:last-child {
+      margin-bottom: 26px;
+    }
   }
 
   .posts__item--panorama {
@@ -42,6 +46,10 @@
     width: 32%;
     margin-top: 0;
     margin-bottom: 59px;
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
   }
 
   .posts__item--panorama {

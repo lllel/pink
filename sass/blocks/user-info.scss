@@ -9,9 +9,9 @@
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   margin: 3px auto 0;
-  width: 255px;
+  width: 235px;
   border: 2px solid #e5e5e5;
-  padding: 18px 10px;
+  padding: 18px 20px;
   font-size: 18px;
   line-height: normal;
 
@@ -28,11 +28,11 @@
 }
 
 .user-info__input::placeholder {
+  display: inline;
   color: #283645;
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  padding-left: 10px;
 }
 
 .user-info__item {
@@ -75,13 +75,14 @@
 
   .user-info__label {
     margin: 0;
-    margin-right: 15px;
+    margin-right: 19px;
   }
 
   .user-info__input {
     flex-grow: 1;
     width: initial;
     margin: 1px auto 0;
+    padding: 18px 20px;
   }
 }
 
@@ -99,9 +100,18 @@
     margin-top: 37px;
   }
 
+  .user-info__label {
+    margin-right: 16px;
+  }
+
   .user-info__item {
-    width: 435px;
+    width: 432px;
     margin-left: 0;
+    margin-bottom: 51px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .user-info__input {

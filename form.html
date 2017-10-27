@@ -63,15 +63,15 @@
           <div class="user-info form__items">
             <p class="user-info__item">
               <label class="user-info__label" for="user-lastname">фамилия:</label>
-              <input class="user-info__input" id="user-lastname" type="text" required placeholder="Укажите фамилию *">
+              <input class="user-info__input" id="user-lastname" type="text" name="text" required placeholder="Укажите фамилию *">
             </p>
             <p class="user-info__item">
               <label class="user-info__label" for="user-firstname">имя:</label>
-              <input class="user-info__input" id="user-firstname" type="text" required placeholder="Введите ваше имя *">
+              <input class="user-info__input" id="user-firstname" type="text" name="text" required placeholder="Введите ваше имя *">
             </p>
             <p class="user-info__item">
               <label class="user-info__label" for="user-middlename">отчество:</label>
-              <input class="user-info__input" id="user-middlename" type="text" placeholder="Ну и отчество тоже">
+              <input class="user-info__input" id="user-middlename" type="text" name="text" placeholder="Ну и отчество тоже">
             </p>
           </div>
           <div class="achievements form__items">
@@ -80,27 +80,27 @@
               <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
               <div class="achievements__container">
                 <p class="achievements__item achievements__item-selfie">
-                  <input class="achievements__input hidden-title" id="achievements-selfie" type="checkbox" checked>
+                  <input class="achievements__input hidden-title" name="achievements-selfie" id="achievements-selfie" type="checkbox" checked>
                   <label class="achievements__label" for="achievements-selfie">Сделал селфи с акулой</label>
                 </p>
                 <p class="achievements__item achievements__item-scorched">
-                  <input class="achievements__input hidden-title" id="achievements-scorched" type="checkbox" checked>
+                  <input class="achievements__input hidden-title" name="achievements-scorched" id="achievements-scorched" type="checkbox" checked>
                   <label class="achievements__label" for="achievements-scorched">Обгорел на пляже</label>
                 </p>
                 <p class="achievements__item achievements__item-chuck">
-                  <input class="achievements__input hidden-title" id="achievements-chuck" type="checkbox">
+                  <input class="achievements__input hidden-title" name="achievements-chuck" id="achievements-chuck" type="checkbox">
                   <label class="achievements__label" for="achievements-chuck">Видел Чака Норриса</label>
                 </p>
                 <p class="achievements__item achievements__item-souvenirs">
-                  <input class="achievements__input hidden-title" id="achievements-souvenirs" type="checkbox">
+                  <input class="achievements__input hidden-title" name="achievements-souvenirs" id="achievements-souvenirs" type="checkbox">
                   <label class="achievements__label" for="achievements-souvenirs">Накупил сувениров</label>
                 </p>
                 <p class="achievements__item achievements__item-tower">
-                  <input class="achievements__input hidden-title" id="achievements-tower" type="checkbox" checked>
+                  <input class="achievements__input hidden-title" name="achievements-tower" id="achievements-tower" type="checkbox" checked>
                   <label class="achievements__label" for="achievements-tower">Удержал башню</label>
                 </p>
                 <p class="achievements__item achievements__item-hotel">
-                  <input class="achievements__input hidden-title" id="achievements-hotel" type="checkbox">
+                  <input class="achievements__input hidden-title" name="achievements-hotel" id="achievements-hotel" type="checkbox">
                   <label class="achievements__label" for="achievements-hotel">Разгромил отель</label>
                 </p>
               </div>
@@ -111,11 +111,11 @@
               <legend class="form__fieldset-legend">контактная информация</legend>
               <div class="contact__container">
                 <p class="contact__item contact__item--phone">
-                  <input class="contact__input" id="contact-number" type="tel" placeholder="Номер, пожалуйста">
+                  <input class="contact__input" id="contact-number" type="tel" name="tel" placeholder="Номер, пожалуйста">
                   <label class="contact__label contact__label--tel" for="contact-number">номер телефона</label>
                 </p>
                 <p class="contact__item contact__item--mail">
-                  <input class="contact__input" id="contact-email" type="email" required placeholder="Введите почту *">
+                  <input class="contact__input" id="contact-email" type="email" name="email" required placeholder="Введите почту *">
                   <label class="contact__label contact__label--mail" for="contact-email">адрес почты</label>
                 </p>
               </div>
@@ -143,7 +143,7 @@
             <fieldset class="form__fieldset form__fieldset--textarea">
               <legend class="form__fieldset-legend">опишите свои эмоции</legend>
               <p class="textarea__heading">Опишите свои эмоции</p>
-              <textarea class="textarea__description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="textarea__description" name="placeholder" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
           <div class="form__container-submit">

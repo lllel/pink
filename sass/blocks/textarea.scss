@@ -9,15 +9,16 @@
 }
 
 .textarea__description {
-  width: 256px;
   font-family: "Open Sans", "Arial", sans-serif;
-  height: 177px;
+  max-width: 256px;
+  min-width: 256px;
+  height: 161px;
+  min-height: 55px;
   margin: 7px auto 0;
   text-align: left;
   display: block;
   border: 2px solid #e5e5e5;
-  padding: 10px;
-  padding-top: 17px;
+  padding: 17px 10px 21px;
   font-size: 18px;
   overflow: hidden;
 
@@ -26,7 +27,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding: 3px 8px;
   }
 
   &:hover {
@@ -47,9 +47,11 @@
   }
 
   .textarea__description {
-    margin: 39px auto 45px;
-    width: 480px;
-    height: 165px;
+    margin: 43px auto 47px;
+    padding-left: 18px;
+    max-width: 468px;
+    min-width: 468px;
+    height: 154px;
 
     &::placeholder {
       font-size: 19px;
@@ -64,8 +66,9 @@
 
 @media (min-width: $widthDesktopBody) {
   .textarea__description {
-    width: 800px;
-    height: 103px;
+    max-width: 790px;
+    min-width: 790px;
+    height: 88px;
     margin: 41px auto 39px;
   }
 }
