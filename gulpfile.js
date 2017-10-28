@@ -6,6 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var autoprefixer = require("autoprefixer");
+var htmlmin = require("gulp-htmlmin");
 var minify = require("gulp-csso");
 var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
@@ -30,6 +31,12 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+});
+
+gulp.task("htmlmin", function () {
+  return gulp.src("*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("sprite", function () {
@@ -75,9 +82,9 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task('copyFiles', function() {
+gulp.task("copyFiles", function() {
 // copy any html files in source/ to build/
-  gulp.src('./fonts/**/*').pipe(gulp.dest('./build/fonts'));
+  gulp.src("./fonts/**/*").pipe(gulp.dest("./build/fonts"));
 });
 
 gulp.task("copy", function () {
@@ -114,6 +121,7 @@ gulp.task("build", function (done) {
     "webp",
     "copyFiles",
     "html",
+    "htmlmin",
     done
   );
 });
