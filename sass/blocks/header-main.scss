@@ -51,7 +51,8 @@
 }
 
 .header-main__logo {
-  background-color: #283645;
+  //background-color: #283645;
+  background-color: rgba(29, 38, 49, 0.7);
   width: 100%;
   z-index: 2;
   position: relative;
@@ -290,6 +291,10 @@
     width: 100%;
   }
 
+  .header-main .wrapper {
+    position: relative;
+  }
+
   .header-main__popup-button--opened {
     width: 26px;
     margin-bottom: 0;
@@ -416,6 +421,10 @@
 @media (min-width: $widthDesktopBody) {
   .header-main {
     width: 100%;
+  }
+
+  .header-main .wrapper {
+    position: relative;
   }
 
   .webp .header-main__bg-hand {
