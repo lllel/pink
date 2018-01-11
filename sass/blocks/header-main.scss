@@ -1,5 +1,5 @@
 .header-main {
-  background-color: #2a3a4a;
+  background-color: rgba(29, 38, 49, 0.7);
   position: relative;
   width: 320px;
   margin: 0 auto;
@@ -51,10 +51,12 @@
 }
 
 .header-main__logo {
-  background-color: rgba(29, 38, 49, 0.7);
+  //background-color: rgba(29, 38, 49, 0.7);
+  background-color: #283645;
   width: 100%;
   z-index: 2;
-  position: absolute;
+  //position: absolute;
+  position: relative;
   top: 0;
 }
 
@@ -65,11 +67,11 @@
   justify-content: space-between;
 }
 
-.header-main__logo--position {
-  position: relative;
-  border-bottom: 1px solid #000000;
-  background-color: #283645;
-}
+//.header-main__logo--position {
+//  position: relative;
+//  border-bottom: 1px solid #000000;
+//  background-color: rgba(29, 38, 49, 0.7);
+//}
 
 .header-main__logo .logo {
   padding: 23px 0 20px 19px;
@@ -94,6 +96,7 @@
 
 .header-main__intro {
   width: 100%;
+  margin-top: - 75px;
   min-height: 170px;
   font-size: 0;
   background-color: $colorPage;
@@ -109,25 +112,25 @@
   }
 }
 
-.webp .header-main__intro--padding {
-  min-height: 173px;
-}
-
-.header-main__intro--padding {
-  min-height: 173px;
-}
+//.webp .header-main__intro--padding {
+//  min-height: 173px;
+//}
+//
+//.header-main__intro--padding {
+//  min-height: 173px;
+//}
 
 .webp .header-main__intro--bg-position {
-  background-position: center -68px;
+  background-position: center 0;
 }
 
 .header-main__intro--bg-position {
-  background-position: center -68px;
+  background-position: center 0;
 }
 
-.header-main__intro .wrapper {
-  position: relative;
-}
+//.header-main__intro .wrapper {
+//  position: relative;
+//}
 
 .webp .header-main__bg-hand {
   width: 100%;
@@ -168,23 +171,23 @@
   }
 }
 
-.webp .header-main__bg-hand--padding {
-  padding-top: 0;
-  background-position: left 108px;
-}
-
-.header-main__bg-hand--padding {
-  padding-top: 0;
-  background-position: left 108px;
-}
-
-.webp .header-main__bg-hand--no-padding {
-  padding-top: 0;
-}
-
-.header-main__bg-hand--no-padding {
-  padding-top: 0;
-}
+//.webp .header-main__bg-hand--padding {
+//  padding-top: 0;
+//  background-position: left 108px;
+//}
+//
+//.header-main__bg-hand--padding {
+//  padding-top: 0;
+//  background-position: left 108px;
+//}
+//
+//.webp .header-main__bg-hand--no-padding {
+//  padding-top: 0;
+//}
+//
+//.header-main__bg-hand--no-padding {
+//  padding-top: 0;
+//}
 
 .header-main__title {
   color: $colorFont;
@@ -198,7 +201,7 @@
 }
 
 .header-main__title--padding {
-  padding: 30px 25px 50px;
+  padding: 90px 25px 37px;
 }
 
 .header-main__popup-button {
@@ -368,12 +371,14 @@
 
   .header-main__intro {
     min-height: 440px;
+    margin-top: -145px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .header-main__intro {
         background-image: url("../img/bg-back-tablet@2x.jpg");
         min-height: 440px;
+        margin-top: -145px;
       }
     }
   }
@@ -427,11 +432,13 @@
   }
 
   .webp .header-main__intro--bg-position {
-    background-position: center -112px;
+    padding-top: 126px;
+    background-position: center 15px;
   }
 
   .header-main__intro--bg-position {
-    background-position: center -112px;
+    padding-top: 126px;
+    background-position: center 15px;
   }
 
   .header-main__popup-button {
