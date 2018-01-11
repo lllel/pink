@@ -23,31 +23,43 @@ var introBgPosition = document.querySelector('.header-main__intro--bg-position')
 var bgHeadPadding = document.querySelector('.header-main__bg-hand--padding');
 var introPadding = document.querySelector(".header-main__intro--padding");
 
-
 mainNav.classList.remove('main-nav--opened');
 headerMainBtn.classList.remove('header-main__popup-button--none');
+headerMainBtn.classList.remove('header-main__popup-button--opened'); // Не удалять класс header-main__popup-button--opened у кнопки
 logoMain.style.backgroundColor = 'rgba(29, 38, 49, 0.7)';
 
-headerMainBtn.addEventListener('click', function () {
-  mainNav.classList.contains('main-nav--opened') ? onPopupCloseClick() : onPopupOpenClick();
-});
+function isEscPressEvent(e, action) {
+  if(e.keyCode === 27) {
+    action();
+  }
+}
 
+function onEscPressClick(e) {
+  isEscPressEvent(e, onPopupCloseClick)
+}
+
+document.addEventListener('keydown', onEscPressClick);
+
+// MODAL MENU
 function onPopupOpenClick() {
   mainNav.classList.add('main-nav--opened');
   headerMainBtn.classList.remove('header-main__popup-button--closed');
   headerMainBtn.classList.add('header-main__popup-button--opened');
   logoMain.style.backgroundColor = '#283645';
+
+  headerMainBtn.removeEventListener('keydown', onEscPressClick);
 }
 
 function onPopupCloseClick() {
   mainNav.classList.remove('main-nav--opened');
-  headerMainBtn.classList.add('header-main__popup-button--closed');
   headerMainBtn.classList.remove('header-main__popup-button--opened');
+  headerMainBtn.classList.add('header-main__popup-button--closed');
   logoMain.style.backgroundColor = 'rgba(29, 38, 49, 0.7)';
 }
 
-// headerMainBtn.addEventListener('click', onPopupOpenClick);
-
+headerMainBtn.addEventListener('click', function () {
+  mainNav.classList.contains('main-nav--opened') ? onPopupCloseClick() : onPopupOpenClick();
+});
 
 // logoMain.classList.remove('header-main__logo--position');
 // // titlePadding.classList.remove('header-main__title--padding');
@@ -83,17 +95,17 @@ function onPopupCloseClick() {
 //   headerMainBtn.addEventListener('click', modalMenu);
 // }
 
-// // MODAL MESSAGE
-// function modalMessage(btn, cls, modal) {
-//   btn.addEventListener('click', function () {
-//     if (btn.classList.contains(cls + '__button')) {
-//       modal.classList.remove(cls + '--closed')
-//     }
-//   });
-// }
-// if (doneBtn) {
-//   modalMessage(doneBtn, 'popup-done', popupDone);
-// }
-// if (errorBtn) {
-//   modalMessage(errorBtn, 'popup-error', popupError);
-// }
+// MODAL MESSAGE
+function modalMessage(btn, cls, modal) {
+  btn.addEventListener('click', function () {
+    if (btn.classList.contains(cls + '__button')) {
+      modal.classList.remove(cls + '--closed')
+    }
+  });
+}
+if (doneBtn) {
+  modalMessage(doneBtn, 'popup-done', popupDone);
+}
+if (errorBtn) {
+  modalMessage(errorBtn, 'popup-error', popupError);
+}

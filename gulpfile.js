@@ -89,7 +89,7 @@ gulp.task('html', function () {
 gulp.task('js-optimization', function (cd) {
   pump([gulp.src('js/*.js'),
     uglify(),
-    concat('all.js'),
+    // concat('all.js'),
     gulp.dest('build/js')], cd)
 });
 
