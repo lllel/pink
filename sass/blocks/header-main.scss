@@ -51,7 +51,6 @@
 }
 
 .header-main__logo {
-  //background-color: #283645;
   background-color: rgba(29, 38, 49, 0.7);
   width: 100%;
   z-index: 2;
@@ -300,6 +299,10 @@
     margin-bottom: 0;
   }
 
+  .header-main__popup-button--closed {
+    margin-bottom: 0;
+  }
+
   .header-main__logo .logo {
     padding: 27px 0 44px;
   }
@@ -335,7 +338,7 @@
 
   .header-main__intro {
     min-height: 440px;
-    margin-top: -145px;
+    margin-top: -108px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -352,7 +355,7 @@
     background-image: url("../img/iphone-hand-tablet@1x.webp");
     background-repeat: no-repeat;
     background-position: center 180px;
-    padding-top: 331px;
+    padding-top: 330px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .webp .header-main__bg-hand {
@@ -367,7 +370,7 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center 180px;
-    padding-top: 314px;
+    padding-top: 330px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .header-main__bg-hand {
@@ -378,44 +381,18 @@
   }
 
   .webp .header-main__bg-hand--padding {
-    padding-top: 222px;
+    padding-top: 172px;
     background-position: center 71px;
   }
 
   .header-main__bg-hand--padding {
-    padding-top: 222px;
+    padding-top: 172px;
     background-position: center 71px;
   }
-
-  //.webp .header-main__bg-hand--no-padding {
-  //  padding-top: 0;
-  //}
-  //
-  //.header-main__bg-hand--no-padding {
-  //  padding-top: 0;
-  //}
-
-  //.webp .header-main__intro--bg-position {
-  //  padding-top: 126px;
-  //  background-position: center 15px;
-  //}
-  //
-  //.header-main__intro--bg-position {
-  //  padding-top: 126px;
-  //  background-position: center 15px;
-  //}
 
   .header-main__popup-button {
     margin-right: 0;
   }
-
-  //.webp .header-main__intro--padding {
-  //  min-height: 334px;
-  //}
-  //
-  //.header-main__intro--padding {
-  //  min-height: 334px;
-  //}
 }
 
 @media (min-width: $widthDesktopBody) {
@@ -425,6 +402,10 @@
 
   .header-main .wrapper {
     position: relative;
+  }
+
+  .header-main__bg-hand--padding {
+    padding-top: 132px;
   }
 
   .webp .header-main__bg-hand {
@@ -463,7 +444,7 @@
     width: 760px;
     padding: 0;
     margin-top: -170px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
   }
 
   .header-main__title--photo-width {
