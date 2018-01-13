@@ -19,18 +19,18 @@ var sliderPriceTable = document.querySelector('.slider-price__table');
 var currentEl = 0;
 
 // КАРТА
-// function initMap() {
-//   var uluru = {lat: 59.936143, lng: 30.321058};
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 16,
-//     center: uluru
-//   });
-//   var marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//     icon: 'img/marker-map.png'
-//   });
-// }
+function initMap() {
+  var uluru = {lat: 59.936143, lng: 30.321058};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    icon: 'img/marker-map.png'
+  });
+}
 
 function isEscPressEvent(e, action) {
   if(e.keyCode === 27) {
