@@ -110,6 +110,7 @@
 }
 
 .upload__line {
+  width: 240px;
   height: 2px;
   background-color: $colorPage2;
   margin: 0 auto;
@@ -169,6 +170,7 @@
 
   .upload__line {
     width: 200px;
+    margin-left: 0;
   }
 
   .upload__tool-line {
