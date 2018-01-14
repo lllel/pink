@@ -16,6 +16,8 @@ var btnLeft = document.querySelector('.slider-reviews__btn-left');
 var btnRight = document.querySelector('.slider-reviews__btn-right');
 var sliderDescriptionBtns = document.querySelector('.slider-reviews__description');
 var sliderPriceTable = document.querySelector('.slider-price__table');
+var mediaQueryList660 = window.matchMedia("(min-width: 660px)");
+var mediaQueryList320 = window.matchMedia("(max-width: 659px)");
 var currentEl = 0;
 
 // КАРТА
@@ -156,14 +158,29 @@ function getLabelsDataPrice() {
       getInputsRemoveChecked(inputsBtnPrice);
 
       sliderPriceTable.style.transform = obj[e.target.data];
-
-      // if (document.querySelector('body').style.minWidth > '659px') {
-      //   sliderPriceTable.style.transform = 'translateX(-42.4%)';      // Починить (ставить по умолч.)
-      // }
     })
   });
 }
 getLabelsDataPrice();
+
+function isWidthChange320(mql) {
+  if(mql.matches) {
+    getInputsRemoveChecked(inputsBtnPrice);
+
+    sliderPriceTable.style.transform = 'translateX(-42.4%)';
+    inputsBtnPrice[1].checked = true;
+  }
+}
+mediaQueryList320.addListener(isWidthChange320);
+isWidthChange320(mediaQueryList320);
+
+function isWidthChange660(mql) {
+  if(mql.matches) {
+    sliderPriceTable.style.transform = 'translateX(0)';
+  }
+}
+mediaQueryList660.addListener(isWidthChange660);
+isWidthChange660(mediaQueryList660);
 
 // UPLOAD CIRCLE
 var uploadCircle = document.querySelectorAll('.upload__circle');
