@@ -52,7 +52,7 @@ function onPopupOpenClick() {
   mainNav.classList.add('main-nav--opened');
   headerMainBtn.classList.remove('header-main__popup-button--closed');
   headerMainBtn.classList.add('header-main__popup-button--opened');
-  logoMain.style.backgroundColor = '#283645';
+  logoMain.classList.add('header-main__logo--change-color');
 
   headerMainBtn.removeEventListener('keydown', onEscPressClick);
 }
@@ -61,12 +61,17 @@ function onPopupCloseClick() {
   mainNav.classList.remove('main-nav--opened');
   headerMainBtn.classList.remove('header-main__popup-button--opened');
   headerMainBtn.classList.add('header-main__popup-button--closed');
-  logoMain.style.backgroundColor = 'rgba(29, 38, 49, 0.7)';
+  logoMain.classList.remove('header-main__logo--change-color');
 }
 
 headerMainBtn.addEventListener('click', function () {
   mainNav.classList.contains('main-nav--opened') ? onPopupCloseClick() : onPopupOpenClick();
 });
+
+mainNav.classList.remove('main-nav--opened');
+headerMainBtn.classList.remove('header-main__popup-button--none');
+headerMainBtn.classList.remove('header-main__popup-button--opened'); // Не удалять класс header-main__popup-button--opened у кнопки
+logoMain.classList.remove('header-main__logo--change-color');
 
 // ПОПАП В ФОРМЕ
 function modalMessage(btn, cls, modal) {
@@ -76,17 +81,14 @@ function modalMessage(btn, cls, modal) {
     }
   });
 }
+
 if (doneBtn) {
   modalMessage(doneBtn, 'popup-done', popupDone);
 }
+
 if (errorBtn) {
   modalMessage(errorBtn, 'popup-error', popupError);
 }
-
-mainNav.classList.remove('main-nav--opened');
-headerMainBtn.classList.remove('header-main__popup-button--none');
-headerMainBtn.classList.remove('header-main__popup-button--opened'); // Не удалять класс header-main__popup-button--opened у кнопки
-logoMain.style.backgroundColor = 'rgba(29, 38, 49, 0.7)';
 
 // CЛАЙДЕР - ОТЗЫВЫ
 function getSlidesHidden() {
@@ -167,8 +169,13 @@ function isWidthChange320(mql) {
   if(mql.matches) {
     getInputsRemoveChecked(inputsBtnPrice);
 
-    sliderPriceTable.style.transform = 'translateX(-42.4%)';
-    inputsBtnPrice[1].checked = true;
+    if(sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(-42.4%)';
+    }
+
+    if(inputsBtnPrice[1]) {
+      inputsBtnPrice[1].checked = true;
+    }
   }
 }
 mediaQueryList320.addListener(isWidthChange320);
@@ -176,7 +183,10 @@ isWidthChange320(mediaQueryList320);
 
 function isWidthChange660(mql) {
   if(mql.matches) {
-    sliderPriceTable.style.transform = 'translateX(0)';
+
+    if(sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(0)';
+    }
   }
 }
 mediaQueryList660.addListener(isWidthChange660);
