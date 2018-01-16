@@ -17,19 +17,22 @@
 <header class="header-main">
   <div class="header-main__logo header-main__logo--position header-main__logo--change-color">
     <div class="wrapper">
-      <a class="logo-link logo-link__header" href="index.html">
-        <svg class="logo logo--mobile" width="75" height="23">
-          <use xlink:href="#icon-pink-white-mobile"></use>
-        </svg>
-        <svg class="logo logo--tablet footer-logo" width="148" height="40">
-          <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
-          <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
-        </svg>
-        <svg class="logo logo--desktop" width="148" height="40">
-          <use xlink:href="#icon-pink-white-desktop"></use>
-        </svg>
-      </a>
-      <nav class="header-main__nav">
+      <div class="header-main__container">
+        <a class="logo-link logo-link__header" href="index.html">
+          <svg class="logo logo--mobile" width="75" height="23">
+            <use xlink:href="#icon-pink-white-mobile"></use>
+          </svg>
+          <svg class="logo logo--tablet footer-logo" width="148" height="40">
+            <use class="icon-pink-blue-mobile__part1" xlink:href="#icon-pink-blue-mobile__part1"></use>
+            <use class="icon-pink-blue-mobile__part2" xlink:href="#icon-pink-blue-mobile__part2"></use>
+          </svg>
+          <svg class="logo logo--desktop" width="148" height="40">
+            <use xlink:href="#icon-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--opened header-main__popup-button--none" type="button" aria-label="Menu"></button>
+      </div>
+      <nav class="header-main__nav main-nav--opened">
         <ul class="header-main__items">
           <li class="header-main__item"><a class="header-main__link">главная</a></li>
           <li class="header-main__item"><a class="header-main__link" href="photo.html">фотографии</a></li>
@@ -37,18 +40,17 @@
           <li class="header-main__item"><a class="header-main__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
         </ul>
       </nav>
-      <button class="header-main__popup-button header-main__popup-button--closed header-main__popup-button--opened header-main__popup-button--none" type="button" aria-label="Menu"></button>
     </div>
   </div>
   <!--NAV-POPUP-->
-  <nav class="main-nav main-nav--opened">
-    <ul class="main-nav__items">
-      <li class="main-nav__item"><a class="main-nav__link">главная</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>
-    </ul>
-  </nav>
+  <!--<nav class="main-nav main-nav&#45;&#45;opened">-->
+    <!--<ul class="main-nav__items">-->
+      <!--<li class="main-nav__item"><a class="main-nav__link">главная</a></li>-->
+      <!--<li class="main-nav__item"><a class="main-nav__link" href="photo.html">фотографии</a></li>-->
+      <!--<li class="main-nav__item"><a class="main-nav__link" href="form.html">конкурс</a></li>-->
+      <!--<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a></li>-->
+    <!--</ul>-->
+  <!--</nav>-->
   <div class="header-main__intro">
     <div class="wrapper">
       <div class="header-main__bg-hand">

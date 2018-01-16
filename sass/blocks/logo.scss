@@ -6,6 +6,8 @@
   .icon-pink-blue-mobile__part2 {
     fill: #d4335f;
   }
+
+  //margin-right: auto;
 }
 
 .icon-pink-blue-desktop__part1 {
@@ -205,6 +207,10 @@
 }
 
 @media (min-width: $widthDesktopBody) {
+  .logo-link {
+    margin-left: 30px;
+  }
+
   .logo--mobile {
     display: none;
   }

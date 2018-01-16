@@ -1,7 +1,8 @@
 'use strict';
 
 var headerMainBtn = document.querySelector('.header-main__popup-button');
-var mainNav = document.querySelector('.main-nav');
+// var mainNav = document.querySelector('.main-nav');
+var headerMain = document.querySelector('.header-main__nav');
 var logoMain = document.querySelector('.header-main__logo');
 var popupError = document.querySelector('.popup-error');
 var popupDone = document.querySelector('.popup-done');
@@ -49,7 +50,7 @@ document.addEventListener('keydown', onEscPressClick);
 
 // ПОПАП МЕНЮ
 function onPopupOpenClick() {
-  mainNav.classList.add('main-nav--opened');
+  headerMain.classList.add('main-nav--opened');
   headerMainBtn.classList.remove('header-main__popup-button--closed');
   headerMainBtn.classList.add('header-main__popup-button--opened');
   logoMain.classList.add('header-main__logo--change-color');
@@ -58,17 +59,17 @@ function onPopupOpenClick() {
 }
 
 function onPopupCloseClick() {
-  mainNav.classList.remove('main-nav--opened');
+  headerMain.classList.remove('main-nav--opened');
   headerMainBtn.classList.remove('header-main__popup-button--opened');
   headerMainBtn.classList.add('header-main__popup-button--closed');
   logoMain.classList.remove('header-main__logo--change-color');
 }
 
 headerMainBtn.addEventListener('click', function () {
-  mainNav.classList.contains('main-nav--opened') ? onPopupCloseClick() : onPopupOpenClick();
+  headerMain.classList.contains('main-nav--opened') ? onPopupCloseClick() : onPopupOpenClick();
 });
 
-mainNav.classList.remove('main-nav--opened');
+headerMain.classList.remove('main-nav--opened');
 headerMainBtn.classList.remove('header-main__popup-button--none');
 headerMainBtn.classList.remove('header-main__popup-button--opened'); // Не удалять класс header-main__popup-button--opened у кнопки
 logoMain.classList.remove('header-main__logo--change-color');
@@ -231,4 +232,3 @@ var uploadCircle = document.querySelectorAll('.upload__circle');
     document.addEventListener('mouseup', onMouseUp);
   });
 });
-
