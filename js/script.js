@@ -1,7 +1,6 @@
 'use strict';
 
 var headerMainBtn = document.querySelector('.header-main__popup-button');
-// var mainNav = document.querySelector('.main-nav');
 var headerMain = document.querySelector('.header-main__nav');
 var logoMain = document.querySelector('.header-main__logo');
 var popupError = document.querySelector('.popup-error');
@@ -116,7 +115,7 @@ function getLabelsData() {
       getSlidesHidden();
       getInputsRemoveChecked(inputsBtnRewievs);
 
-      slides[e.target.data].style.display = 'block';
+      slides[e.target.data].style.display = 'flex';
     })
   });
 }
@@ -142,7 +141,7 @@ if(sliderDescriptionBtns) {
   sliderDescriptionBtns.addEventListener('click', onBtnArrowClick);  // Починить (событие срабатывает только 1 раз).
                                                                       // Плавное переключение слайдов
 
-  slides[0].style.display = 'block';
+  slides[0].style.display = 'flex';
   inputsBtnRewievs[0].checked = true;
 }
 
