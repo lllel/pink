@@ -12,13 +12,85 @@ var labelsBtnRewievs = document.querySelectorAll('.reviews__slider .slider-contr
 var inputsBtnRewievs = document.querySelectorAll('.reviews__slider .slider-controls__input');
 var labelsBtnPrice = document.querySelectorAll('.price__slider .slider-controls__label');
 var inputsBtnPrice = document.querySelectorAll('.price__slider .slider-controls__input');
-var btnLeft = document.querySelector('.slider-reviews__btn-left');
-var btnRight = document.querySelector('.slider-reviews__btn-right');
+var btnLeftAll = document.querySelectorAll('.slider-reviews__btn-left');
+var btnRightAll = document.querySelectorAll('.slider-reviews__btn-right');
 var sliderDescriptionBtns = document.querySelector('.slider-reviews__description');
 var sliderPriceTable = document.querySelector('.slider-price__table');
-var mediaQueryList660 = window.matchMedia("(min-width: 660px)");
-var mediaQueryList320 = window.matchMedia("(max-width: 659px)");
+var mediaQueryList960 = window.matchMedia("(min-width: 960px)");
+var mediaQueryList660 = window.matchMedia("(min-width: 660px) and (max-width: 959px)");
+var mediaQueryList320 = window.matchMedia("(min-width: 320px) and (max-width: 659px)");
 var currentEl = 0;
+
+// БРЕЙКПОИНТЫ
+function isWidthChange320(mql) {
+  if(mql.matches) {
+    getInputsRemoveChecked(inputsBtnPrice);
+    getSlidesHidden();
+
+    if(sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(-42.4%)';
+    }
+
+    if(inputsBtnPrice[1]) {
+      inputsBtnPrice[1].checked = true;
+    }
+
+    if(inputsBtnRewievs[0]) {
+      inputsBtnRewievs[0].checked = true;
+    }
+
+    if(slides[0]) {
+      slides[0].style.display = 'flex';
+    }
+    currentEl = 0;
+  }
+}
+mediaQueryList320.addListener(isWidthChange320);
+isWidthChange320(mediaQueryList320);
+
+function isWidthChange660(mql) {
+  if(mql.matches) {
+    getInputsRemoveChecked(inputsBtnRewievs);
+    getSlidesHidden();
+
+    if(sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(0)';
+    }
+
+    if(inputsBtnRewievs[0]) {
+      inputsBtnRewievs[0].checked = true;
+    }
+
+    if(slides[0]) {
+      slides[0].style.display = 'flex';
+    }
+    currentEl = 0;
+  }
+}
+mediaQueryList660.addListener(isWidthChange660);
+isWidthChange660(mediaQueryList660);
+
+function isWidthChange960(mql) {
+  if(mql.matches) {
+    getInputsRemoveChecked(inputsBtnRewievs);
+    getSlidesHidden();
+
+    if(sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(0)';
+    }
+
+    if(inputsBtnRewievs[0]) {
+      inputsBtnRewievs[0].checked = true;
+    }
+
+    if(slides[0]) {
+      slides[0].style.display = 'flex';
+    }
+    currentEl = 0;
+  }
+}
+mediaQueryList960.addListener(isWidthChange960);
+isWidthChange960(mediaQueryList960);
 
 // КАРТА
 function initMap() {
@@ -121,26 +193,41 @@ function getLabelsData() {
 }
 getLabelsData();
 
-function onBtnArrowClick(e) {
-  getSlidesHidden();
-  getLabelsData();
-
-  if (e.target === btnRight) {
-    currentEl++;
-    slides[currentEl].style.display = 'block';
-
-  } else if (e.target === btnLeft) {
-    currentEl--;
-    slides[currentEl].style.display = 'block';
+function onBtnArrowRightClick() {
+  if(btnRightAll[slides.length - 1]) {
+    btnRightAll[slides.length - 1].style.display = 'none';
   }
 
-  sliderDescriptionBtns.removeEventListener('click', onBtnArrowClick);
+  [].forEach.call(btnRightAll, function (it) {
+    it.addEventListener('click', function () {
+      getSlidesHidden();
+      getLabelsData();
+
+      currentEl++;
+      slides[currentEl].style.display = 'flex';
+    })
+  });
 }
+onBtnArrowRightClick();
+
+function onBtnArrowLeftClick() {
+  if(btnLeftAll[0]) {
+    btnLeftAll[0].style.display = 'none';
+  }
+
+  [].forEach.call(btnLeftAll, function (it) {
+    it.addEventListener('click', function () {
+      getSlidesHidden();
+      getLabelsData();
+
+      currentEl--;
+      slides[currentEl].style.display = 'flex';
+    })
+  });
+}
+onBtnArrowLeftClick();
 
 if(sliderDescriptionBtns) {
-  sliderDescriptionBtns.addEventListener('click', onBtnArrowClick);  // Починить (событие срабатывает только 1 раз).
-                                                                      // Плавное переключение слайдов
-
   slides[0].style.display = 'flex';
   inputsBtnRewievs[0].checked = true;
 }
@@ -164,33 +251,6 @@ function getLabelsDataPrice() {
   });
 }
 getLabelsDataPrice();
-
-function isWidthChange320(mql) {
-  if(mql.matches) {
-    getInputsRemoveChecked(inputsBtnPrice);
-
-    if(sliderPriceTable) {
-      sliderPriceTable.style.transform = 'translateX(-42.4%)';
-    }
-
-    if(inputsBtnPrice[1]) {
-      inputsBtnPrice[1].checked = true;
-    }
-  }
-}
-mediaQueryList320.addListener(isWidthChange320);
-isWidthChange320(mediaQueryList320);
-
-function isWidthChange660(mql) {
-  if(mql.matches) {
-
-    if(sliderPriceTable) {
-      sliderPriceTable.style.transform = 'translateX(0)';
-    }
-  }
-}
-mediaQueryList660.addListener(isWidthChange660);
-isWidthChange660(mediaQueryList660);
 
 // UPLOAD CIRCLE
 var uploadCircle = document.querySelectorAll('.upload__circle');
