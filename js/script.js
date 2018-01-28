@@ -42,7 +42,8 @@ function isWidthChange320(mql) {
     }
 
     if(slides[0]) {
-      slides[0].style.display = 'flex';
+      slides[0].style.order = '-1';
+      slides[0].style.transform = 'translateX(0)';
     }
     currentEl = 0;
   }
@@ -64,7 +65,8 @@ function isWidthChange660(mql) {
     }
 
     if(slides[0]) {
-      slides[0].style.display = 'flex';
+      slides[0].style.order = '-1';
+      slides[0].style.transform = 'translateX(0)';
     }
     currentEl = 0;
   }
@@ -86,7 +88,8 @@ function isWidthChange960(mql) {
     }
 
     if(slides[0]) {
-      slides[0].style.display = 'flex';
+      slides[0].style.order = '-1';
+      slides[0].style.transform = 'translateX(0)';
     }
     currentEl = 0;
   }
@@ -168,7 +171,6 @@ if (errorBtn) {
 function getSlidesHidden() {
   [].forEach.call(slides, function (it, i) {
     it.data = i;
-    // it.style.display = 'none';
 
     if(targetLabel === 0) {
       sing = '+';
@@ -182,8 +184,6 @@ function getSlidesHidden() {
 
   });
 }
-// getSlidesHidden();
-
 
 function getInputsRemoveChecked(el) {
   [].forEach.call(el, function (it, i) {
@@ -197,39 +197,33 @@ function getLabelsData() {
     it.data = i;
 
     it.addEventListener('click', function (e) {
-      // getSlidesHidden();
       getInputsRemoveChecked(inputsBtnRewievs);
 
-      // slides[e.target.data].style.display = 'flex';
-      // getSlidesHidden();
+      getSlidesHidden();
 
       if(targetLabel > e.target.data) {
         targetLabel = e.target.data;
         sing = '-';
+        slides[e.target.data].style.order = '1';
         slides[targetLabel].style.transform = 'translateX('+ sing +'900px)';
 
         for (var i = e.target.data; i < slides.length; i++) {
+          slides[i].style.order = '1';
           slides[i].style.transform = 'translateX(900px)';
         }
-
-
-
-
-        // getSlidesHidden();
 
       } else {
         targetLabel = e.target.data;
         sing = '+';
+        slides[e.target.data].style.order = '1';
         slides[targetLabel].style.transform = 'translateX('+ sing +'900px)';
-        // slides[e.target.data - 1].style.transform = 'translateX(-900px)';
 
         for (var j = 0; j <= e.target.data; j++) {
+          slides[j].style.order = '1';
           slides[j].style.transform = 'translateX(-900px)';
         }
-
-        // getSlidesHidden();
       }
-
+      slides[e.target.data].style.order = '-1';
       slides[e.target.data].style.transform = 'translateX(0)';
     })
   });
@@ -237,7 +231,6 @@ function getLabelsData() {
 getLabelsData();
 
 if(sliderDescriptionBtns) {
-  // slides[0].style.display = 'flex';
   slides[0].style.transform = 'translateX(0)';
   inputsBtnRewievs[0].checked = true;
 }

@@ -2,6 +2,12 @@
   padding-bottom: 28px;
 }
 
+.reviews__slider .wrapper {
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+}
+
 .reviews .slider-controls {
   padding-bottom: 8px;
   margin-top: -4px;
@@ -14,6 +20,12 @@
 
   .reviews__slider {
     padding-bottom: 20px;
+  }
+
+  .reviews__slider .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
   }
 
   .reviews__decoration {

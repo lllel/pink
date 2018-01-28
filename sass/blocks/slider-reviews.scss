@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  transition: 0.4s ease 0.2s;
 }
 
 .slider-reviews__title {
@@ -51,7 +52,7 @@
   .slider-reviews__item {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 44px;
+    margin-top: 200px;
   }
 
   .slider-reviews__age {
