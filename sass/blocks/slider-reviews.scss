@@ -49,10 +49,13 @@
 }
 
 @media (min-width: $widthTabletBody) {
+  .slider-reviews {
+    padding-top: 80px;
+  }
+
   .slider-reviews__item {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 200px;
   }
 
   .slider-reviews__age {
