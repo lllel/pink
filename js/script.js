@@ -8,8 +8,8 @@ var popupDone = document.querySelector('.popup-done');
 var errorBtn = document.querySelector('.popup-error__button');
 var doneBtn = document.querySelector('.popup-done__button');
 var slides = document.querySelectorAll('.slider-reviews__item');
-var labelsBtnRewievs = document.querySelectorAll('.reviews__slider .slider-controls__label');
-var inputsBtnRewievs = document.querySelectorAll('.reviews__slider .slider-controls__input');
+var labelsBtnReviews = document.querySelectorAll('.reviews__slider .slider-controls__label');
+var inputsBtnReviews = document.querySelectorAll('.reviews__slider .slider-controls__input');
 var labelsBtnPrice = document.querySelectorAll('.price__slider .slider-controls__label');
 var inputsBtnPrice = document.querySelectorAll('.price__slider .slider-controls__input');
 var btnLeftAll = document.querySelectorAll('.slider-reviews__btn-left');
@@ -21,11 +21,13 @@ var mediaQueryList660 = window.matchMedia("(min-width: 660px) and (max-width: 95
 var mediaQueryList320 = window.matchMedia("(min-width: 320px) and (max-width: 659px)");
 var currentEl = 0;
 var targetLabel = 0;
-var sing = '+';
 
 // БРЕЙКПОИНТЫ
 function isWidthChange320(mql) {
   if(mql.matches) {
+    currentEl = 0;
+    targetLabel = 0;
+
     getInputsRemoveChecked(inputsBtnPrice);
     getSlidesHidden();
 
@@ -37,19 +39,14 @@ function isWidthChange320(mql) {
       inputsBtnPrice[1].checked = true;
     }
 
-    if(inputsBtnRewievs[0]) {
-      inputsBtnRewievs[0].checked = true;
+    if(inputsBtnReviews[0]) {
+      inputsBtnReviews[0].checked = true;
     }
 
     if(slides[0]) {
       slides[0].style.order = '-1';
       slides[0].style.transform = 'translateX(0)';
-      slides[0].style.position = 'absolute';
-      slides[0].style.top = '0';
-      slides[0].style.left = '0';
-      slides[0].style.right = '0';
     }
-    currentEl = 0;
   }
 }
 mediaQueryList320.addListener(isWidthChange320);
@@ -57,26 +54,24 @@ isWidthChange320(mediaQueryList320);
 
 function isWidthChange660(mql) {
   if(mql.matches) {
-    getInputsRemoveChecked(inputsBtnRewievs);
+    currentEl = 0;
+    targetLabel = 0;
+
+    getInputsRemoveChecked(inputsBtnReviews);
     getSlidesHidden();
 
     if(sliderPriceTable) {
       sliderPriceTable.style.transform = 'translateX(0)';
     }
 
-    if(inputsBtnRewievs[0]) {
-      inputsBtnRewievs[0].checked = true;
+    if(inputsBtnReviews[0]) {
+      inputsBtnReviews[0].checked = true;
     }
 
     if(slides[0]) {
       slides[0].style.order = '-1';
       slides[0].style.transform = 'translateX(0)';
-      slides[0].style.position = 'absolute';
-      slides[0].style.top = '0';
-      slides[0].style.left = '0';
-      slides[0].style.right = '0';
     }
-    currentEl = 0;
   }
 }
 mediaQueryList660.addListener(isWidthChange660);
@@ -84,26 +79,24 @@ isWidthChange660(mediaQueryList660);
 
 function isWidthChange960(mql) {
   if(mql.matches) {
-    getInputsRemoveChecked(inputsBtnRewievs);
+    currentEl = 0;
+    targetLabel = 0;
+
+    getInputsRemoveChecked(inputsBtnReviews);
     getSlidesHidden();
 
     if(sliderPriceTable) {
       sliderPriceTable.style.transform = 'translateX(0)';
     }
 
-    if(inputsBtnRewievs[0]) {
-      inputsBtnRewievs[0].checked = true;
+    if(inputsBtnReviews[0]) {
+      inputsBtnReviews[0].checked = true;
     }
 
     if(slides[0]) {
       slides[0].style.order = '-1';
       slides[0].style.transform = 'translateX(0)';
-      slides[0].style.position = 'absolute';
-      slides[0].style.top = '0';
-      slides[0].style.left = '0';
-      slides[0].style.right = '0';
     }
-    currentEl = 0;
   }
 }
 mediaQueryList960.addListener(isWidthChange960);
@@ -132,9 +125,7 @@ function isEscPressEvent(e, action) {
 function onEscPressClick(e) {
   isEscPressEvent(e, onPopupCloseClick)
 }
-
 document.addEventListener('keydown', onEscPressClick);
-
 
 // ПОПАП МЕНЮ
 function onPopupOpenClick() {
@@ -142,7 +133,6 @@ function onPopupOpenClick() {
   headerMainBtn.classList.remove('header-main__popup-button--closed');
   headerMainBtn.classList.add('header-main__popup-button--opened');
   logoMain.classList.add('header-main__logo--change-color');
-
   headerMainBtn.removeEventListener('keydown', onEscPressClick);
 }
 
@@ -185,15 +175,11 @@ function getSlidesHidden() {
     it.data = i;
 
     if(targetLabel === 0) {
-      sing = '+';
-      it.style.transform = 'translateX('+ sing +'900px)';
+      it.style.transform = 'translateX(10000px)';
 
+    } else {
+      it.style.transform = 'translateX(-10000px)';
     }
-    else {
-      sing = '-';
-      it.style.transform = 'translateX('+ sing +'900px)';
-    }
-
   });
 }
 
@@ -205,54 +191,73 @@ function getInputsRemoveChecked(el) {
 }
 
 function getLabelsData() {
-  [].forEach.call(labelsBtnRewievs, function (it, i) {
+  [].forEach.call(labelsBtnReviews, function (it, i) {
     it.data = i;
 
     it.addEventListener('click', function (e) {
-      getInputsRemoveChecked(inputsBtnRewievs);
-
-      getSlidesHidden();
-
       if(targetLabel > e.target.data) {
         targetLabel = e.target.data;
-        sing = '-';
-        slides[e.target.data].style.order = '1';
-        slides[targetLabel].style.transform = 'translateX('+ sing +'900px)';
+        slides[targetLabel].style.transform = 'translateX(-10000px)';
 
         for (var i = e.target.data; i < slides.length; i++) {
           slides[i].style.order = '1';
-          slides[i].style.transform = 'translateX(900px)';
+          slides[i].style.transform = 'translateX(10000px)';
         }
 
       } else {
         targetLabel = e.target.data;
-        sing = '+';
-        slides[e.target.data].style.order = '1';
-        slides[targetLabel].style.transform = 'translateX('+ sing +'900px)';
+        slides[targetLabel].style.transform = 'translateX(10000px)';
 
-        for (var j = 0; j <= e.target.data; j++) {
+        for (var j = 0; j < e.target.data; j++) {
           slides[j].style.order = '1';
-          slides[j].style.transform = 'translateX(-900px)';
+          slides[j].style.transform = 'translateX(-10000px)';
         }
       }
       slides[e.target.data].style.order = '-1';
       slides[e.target.data].style.transform = 'translateX(0)';
-      slides[0].style.position = 'absolute';
-      slides[0].style.top = '0';
-      slides[0].style.left = '0';
-      slides[0].style.right = '0';
     })
   });
 }
 getLabelsData();
 
+function onBtnArrowRightClick() {
+  if(btnRightAll[slides.length - 1]) {
+    btnRightAll[slides.length - 1].style.display = 'none';
+  }
+
+  [].forEach.call(btnRightAll, function (it) {
+    it.addEventListener('click', function () {
+
+      slides[currentEl].style.order = '1';
+      slides[currentEl].style.transform = 'translateX(-10000px)';
+      currentEl = currentEl + 1;
+      slides[currentEl].style.transform = 'translateX(0)';
+      slides[currentEl].style.order = '-1';
+    })
+  })
+}
+onBtnArrowRightClick();
+
+function onBtnArrowLeftClick() {
+  if(btnLeftAll[0]) {
+    btnLeftAll[0].style.display = 'none';
+  }
+
+  [].forEach.call(btnLeftAll, function (it) {
+    it.addEventListener('click', function () {
+      slides[currentEl].style.order = '1';
+      slides[currentEl].style.transform = 'translateX(10000px)';
+      currentEl = currentEl - 1;
+      slides[currentEl].style.transform = 'translateX(0)';
+      slides[currentEl].style.order = '-1';
+    })
+  });
+}
+onBtnArrowLeftClick();
+
 if(sliderDescriptionBtns) {
   slides[0].style.transform = 'translateX(0)';
-  slides[0].style.position = 'absolute';
-  slides[0].style.top = '0';
-  slides[0].style.left = '0';
-  slides[0].style.right = '0';
-  inputsBtnRewievs[0].checked = true;
+  inputsBtnReviews[0].checked = true;
 }
 
 // CЛАЙДЕР - ТАРИФНЫЙ ПЛАН
