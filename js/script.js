@@ -277,6 +277,7 @@ getLabelsDataPrice();
 
 // UPLOAD CIRCLE
 var uploadCircle = document.querySelectorAll('.upload__circle');
+var uploadLine = document.querySelector('.upload__line');
 
 [].forEach.call(uploadCircle, function (it) {
   it.style.left = '0px';
@@ -300,7 +301,7 @@ var uploadCircle = document.querySelectorAll('.upload__circle');
       };
 
       it.offsetLeft < 0 ? it.style.left = '0px' : it.offsetLeft;
-      it.offsetLeft > it.style.width ? it.style.left = it.style.width + 'px' : it.offsetLeft; // Починить (Нет ограничения перемещения круга)
+      it.offsetLeft > parseInt(getComputedStyle(uploadLine).width, 10) ? it.style.left = (parseInt(getComputedStyle(uploadLine).width, 10) - (parseInt(getComputedStyle(it).width, 10) / 2)) + 'px' : it.offsetLeft;
       it.style.left = (it.offsetLeft - shift.x) + 'px';
     }
 
