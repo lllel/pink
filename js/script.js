@@ -170,6 +170,7 @@ if (errorBtn) {
 }
 
 // CЛАЙДЕР - ОТЗЫВЫ
+// Скрывает слайды
 function getSlidesHidden() {
   [].forEach.call(slides, function (it, i) {
     it.data = i;
@@ -183,6 +184,7 @@ function getSlidesHidden() {
   });
 }
 
+// На все инпутах удаляет checked
 function getInputsRemoveChecked(el) {
   [].forEach.call(el, function (it, i) {
     it.data = i;
@@ -190,6 +192,7 @@ function getInputsRemoveChecked(el) {
   });
 }
 
+// Добавляет обработчики по клику на лэйбл
 function getLabelsData() {
   [].forEach.call(labelsBtnReviews, function (it, i) {
     it.data = i;
@@ -220,6 +223,7 @@ function getLabelsData() {
 }
 getLabelsData();
 
+// Нажатие на правую стрелку
 function onBtnArrowRightClick() {
   if(btnRightAll[slides.length - 1]) {
     btnRightAll[slides.length - 1].style.display = 'none';
@@ -238,6 +242,7 @@ function onBtnArrowRightClick() {
 }
 onBtnArrowRightClick();
 
+// Нажатие на левую стрелку
 function onBtnArrowLeftClick() {
   if(btnLeftAll[0]) {
     btnLeftAll[0].style.display = 'none';
@@ -255,6 +260,23 @@ function onBtnArrowLeftClick() {
 }
 onBtnArrowLeftClick();
 
+// Автопереключение слайдов
+var timerId = setTimeout(function f() {
+  if (btnRightAll[currentEl] || labelsBtnReviews[currentEl]) {
+    btnRightAll[currentEl].click();
+    labelsBtnReviews[currentEl].click();
+  }
+
+  setTimeout(function () {
+    if (currentEl <= slides.length - 2) {
+      f();
+
+      clearTimeout(timerId);
+    }
+  }, 6000)
+}, 6000);
+
+// Значения по умолчанию
 if(sliderDescriptionBtns) {
   slides[0].style.transform = 'translateX(0)';
   inputsBtnReviews[0].checked = true;
@@ -267,6 +289,7 @@ var obj = {
   '2': 'translateX(-70.4%)'
 };
 
+// Применяет трансформацию
 function getLabelsDataPrice() {
   [].forEach.call(labelsBtnPrice, function (it, i) {
     it.data = i;
@@ -284,6 +307,7 @@ getLabelsDataPrice();
 var uploadCircle = document.querySelectorAll('.upload__circle');
 var uploadLine = document.querySelector('.upload__line');
 
+// Реализовывает перемещение пина слайдера редактирования фото
 [].forEach.call(uploadCircle, function (it) {
   it.style.left = '0px';
 
