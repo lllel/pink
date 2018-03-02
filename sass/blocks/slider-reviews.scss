@@ -84,6 +84,10 @@
 }
 
 @media (min-width: $widthDesktopBody) {
+  .slider-reviews .wrapper {
+    overflow-x: hidden;
+  }
+
   .slider-reviews__item {
     margin: 0 auto;
   }

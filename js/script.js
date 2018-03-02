@@ -1,5 +1,7 @@
 'use strict';
 
+var TIMER_DELAY = 6000;
+
 var headerMainBtn = document.querySelector('.header-main__popup-button');
 var headerMain = document.querySelector('.header-main__nav');
 var logoMain = document.querySelector('.header-main__logo');
@@ -261,20 +263,32 @@ function onBtnArrowLeftClick() {
 onBtnArrowLeftClick();
 
 // Автопереключение слайдов
-var timerId = setTimeout(function f() {
-  if (btnRightAll[currentEl] || labelsBtnReviews[currentEl]) {
-    btnRightAll[currentEl].click();
+setTimeout(function f() {
+
+  // ДОРАБОТАТЬ!!!
+
+  // [].forEach.call(inputsBtnReviews, function (it, i) {
+  //   if (it.checked) {
+  //     currentEl = i;
+  //   }
+  // });
+
+  if (currentEl === slides.length - 1) {
+    currentEl = 0;
     labelsBtnReviews[currentEl].click();
   }
 
   setTimeout(function () {
-    if (currentEl <= slides.length - 2) {
-      f();
-
-      clearTimeout(timerId);
+    if (btnRightAll[currentEl] || labelsBtnReviews[currentEl]) {
+      btnRightAll[currentEl].click();
+      labelsBtnReviews[currentEl].click();
     }
-  }, 6000)
-}, 6000);
+  }, TIMER_DELAY / 2);
+
+  setTimeout(function () {
+    f();
+  }, TIMER_DELAY)
+}, TIMER_DELAY);
 
 // Значения по умолчанию
 if(sliderDescriptionBtns) {
