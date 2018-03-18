@@ -23,6 +23,7 @@ var mediaQueryList660 = window.matchMedia("(min-width: 660px) and (max-width: 95
 var mediaQueryList320 = window.matchMedia("(min-width: 320px) and (max-width: 659px)");
 var currentEl = 0;
 var targetLabel = 0;
+var timerId = null;
 
 // БРЕЙКПОИНТЫ
 function isWidthChange320(mql) {
@@ -172,6 +173,7 @@ if (errorBtn) {
 }
 
 // CЛАЙДЕР - ОТЗЫВЫ
+
 // Скрывает слайды
 function getSlidesHidden() {
   [].forEach.call(slides, function (it, i) {
@@ -186,12 +188,55 @@ function getSlidesHidden() {
   });
 }
 
-// На все инпутах удаляет checked
+// На всех инпутах удаляет checked
 function getInputsRemoveChecked(el) {
   [].forEach.call(el, function (it, i) {
     it.data = i;
     it.checked = false;
   });
+}
+
+// Меняет порядковый номер слайда с последнего на первый
+function getEndSlides() {
+  if (currentEl === slides.length - 1) {
+    currentEl = 0;
+    labelsBtnReviews[currentEl].click();
+  }
+}
+
+// Обновляет таймер
+function refreshTimer(cb, ms) {
+  if (timerId) {
+    clearTimeout(timerId);
+  }
+
+  timerId = setTimeout(function () {
+    cb();
+    }, ms);
+}
+
+// Обработчик клика по лэйблу
+function onLabelClick(e) {
+  if(targetLabel > e.target.data) {
+    targetLabel = e.target.data;
+    slides[targetLabel].style.transform = 'translateX(-10000px)';
+
+    for (var i = e.target.data; i < slides.length; i++) {
+      slides[i].style.order = '1';
+      slides[i].style.transform = 'translateX(10000px)';}
+
+  } else {
+    targetLabel = e.target.data;
+    slides[targetLabel].style.transform = 'translateX(10000px)';
+
+    for (var j = 0; j < e.target.data; j++) {
+      slides[j].style.order = '1';
+      slides[j].style.transform = 'translateX(-10000px)';
+    }
+  }
+  slides[e.target.data].style.order = '-1';
+  slides[e.target.data].style.transform = 'translateX(0)';
+  currentEl = e.target.data;
 }
 
 // Добавляет обработчики по клику на лэйбл
@@ -200,27 +245,10 @@ function getLabelsData() {
     it.data = i;
 
     it.addEventListener('click', function (e) {
-      if(targetLabel > e.target.data) {
-        targetLabel = e.target.data;
-        slides[targetLabel].style.transform = 'translateX(-10000px)';
+      onLabelClick(e);
 
-        for (var i = e.target.data; i < slides.length; i++) {
-          slides[i].style.order = '1';
-          slides[i].style.transform = 'translateX(10000px)';
-        }
-
-      } else {
-        targetLabel = e.target.data;
-        slides[targetLabel].style.transform = 'translateX(10000px)';
-
-        for (var j = 0; j < e.target.data; j++) {
-          slides[j].style.order = '1';
-          slides[j].style.transform = 'translateX(-10000px)';
-        }
-      }
-      slides[e.target.data].style.order = '-1';
-      slides[e.target.data].style.transform = 'translateX(0)';
-    })
+      refreshTimer(autoChangeSlides, TIMER_DELAY);
+    });
   });
 }
 getLabelsData();
@@ -233,6 +261,7 @@ function onBtnArrowRightClick() {
 
   [].forEach.call(btnRightAll, function (it) {
     it.addEventListener('click', function () {
+      getEndSlides();
 
       slides[currentEl].style.order = '1';
       slides[currentEl].style.transform = 'translateX(-10000px)';
@@ -262,21 +291,9 @@ function onBtnArrowLeftClick() {
 }
 onBtnArrowLeftClick();
 
-// Автопереключение слайдов
-setTimeout(function f() {
-
-  // ДОРАБОТАТЬ!!!
-
-  // [].forEach.call(inputsBtnReviews, function (it, i) {
-  //   if (it.checked) {
-  //     currentEl = i;
-  //   }
-  // });
-
-  if (currentEl === slides.length - 1) {
-    currentEl = 0;
-    labelsBtnReviews[currentEl].click();
-  }
+// Обработчик автопереключения слайдов
+function autoChangeSlides() {
+  getEndSlides();
 
   setTimeout(function () {
     if (btnRightAll[currentEl] || labelsBtnReviews[currentEl]) {
@@ -286,9 +303,12 @@ setTimeout(function f() {
   }, TIMER_DELAY / 2);
 
   setTimeout(function () {
-    f();
+    autoChangeSlides();
   }, TIMER_DELAY)
-}, TIMER_DELAY);
+}
+
+// Первоначально запускает таймер
+timerId = setTimeout(autoChangeSlides, TIMER_DELAY);
 
 // Значения по умолчанию
 if(sliderDescriptionBtns) {
