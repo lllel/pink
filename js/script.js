@@ -1,6 +1,6 @@
 'use strict';
 
-var TIMER_DELAY = 6000;
+var TIMER_DELAY = 3000;
 
 var headerMainBtn = document.querySelector('.header-main__popup-button');
 var headerMain = document.querySelector('.header-main__nav');
@@ -317,13 +317,15 @@ if (errorBtn) {
 // }
 
 function Slider() {
-  // this.timerDelay = TIMER_DELAY;
+  this.timerDelay = TIMER_DELAY;
   this.current = 0;
   this.last = 0;
   this.allSlides = Array.from(slides);
   this.lengthSlides = Array.from(slides).length - 1;
   this.prevBtn = btnLeftAll;
   this.nextBtn = btnRightAll;
+  this.dots = inputsBtnReviews;
+  this.timerId = null;
 
   Object.defineProperties(this, {
     next: {
@@ -353,6 +355,8 @@ function Slider() {
 }
 
 Slider.prototype.init = function () {
+  var self = this;
+
   this.prevBtn.addEventListener('click', this.prevSlide.bind(this));
   this.nextBtn.addEventListener('click', this.nextSlide.bind(this));
 
@@ -360,15 +364,24 @@ Slider.prototype.init = function () {
     it.style.display = 'none';
   });
 
+  [].forEach.call(this.dots, function (it, i) {
+    it.addEventListener('click', function () {
+      self.changeSlide(i);
+    })
+  });
+
   this.changeSlide(0);
+  this.timer();
 };
 
 Slider.prototype.nextSlide = function () {
   this.changeSlide(this.next);
+  this.timer();
 };
 
 Slider.prototype.prevSlide = function () {
   this.changeSlide(this.prev);
+  this.timer();
 };
 
 Slider.prototype.setSlide = function (num) {
@@ -383,6 +396,7 @@ Slider.prototype.setSlide = function (num) {
 Slider.prototype.changeSlide = function (num) {
   this.setSlide(num);
   this.hideSlide(this.last);
+  this.changeDots(num);
   this.showSlide(num);
 };
 
@@ -392,6 +406,21 @@ Slider.prototype.hideSlide = function (num) {
 
 Slider.prototype.showSlide = function (num) {
   this.allSlides[num].style.display = 'block';
+};
+
+Slider.prototype.changeDots = function (num) {
+  this.dots[this.last].checked = false;
+  this.dots[num].checked = true;
+};
+
+Slider.prototype.timer = function () {
+  var self = this;
+
+  clearTimeout(this.timerId);
+
+  this.timerId = setTimeout(function () {
+    self.nextSlide();
+  }, self.timerDelay);
 };
 
 var reviewSlider = new Slider();
