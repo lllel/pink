@@ -9,7 +9,7 @@ var popupError = document.querySelector('.popup-error');
 var popupDone = document.querySelector('.popup-done');
 var errorBtn = document.querySelector('.popup-error__button');
 var doneBtn = document.querySelector('.popup-done__button');
-var slides = document.querySelectorAll('.slider-reviews__item');
+var slidesReview = document.querySelectorAll('.slider-reviews__item');
 var labelsBtnReviews = document.querySelectorAll('.reviews__slider .slider-controls__label');
 var inputsBtnReviews = document.querySelectorAll('.reviews__slider .slider-controls__input');
 var labelsBtnPrice = document.querySelectorAll('.price__slider .slider-controls__label');
@@ -46,9 +46,9 @@ var timerId = null;
 //       inputsBtnReviews[0].checked = true;
 //     }
 //
-//     if(slides[0]) {
-//       slides[0].style.order = '-1';
-//       slides[0].style.transform = 'translateX(0)';
+//     if(slidesReview[0]) {
+//       slidesReview[0].style.order = '-1';
+//       slidesReview[0].style.transform = 'translateX(0)';
 //     }
 //   }
 // }
@@ -71,9 +71,9 @@ var timerId = null;
 //       inputsBtnReviews[0].checked = true;
 //     }
 //
-//     if(slides[0]) {
-//       slides[0].style.order = '-1';
-//       slides[0].style.transform = 'translateX(0)';
+//     if(slidesReview[0]) {
+//       slidesReview[0].style.order = '-1';
+//       slidesReview[0].style.transform = 'translateX(0)';
 //     }
 //   }
 // }
@@ -96,9 +96,9 @@ var timerId = null;
 //       inputsBtnReviews[0].checked = true;
 //     }
 //
-//     if(slides[0]) {
-//       slides[0].style.order = '-1';
-//       slides[0].style.transform = 'translateX(0)';
+//     if(slidesReview[0]) {
+//       slidesReview[0].style.order = '-1';
+//       slidesReview[0].style.transform = 'translateX(0)';
 //     }
 //   }
 // }
@@ -176,7 +176,7 @@ if (errorBtn) {
 
 // // Скрывает слайды
 // function getSlidesHidden() {
-//   [].forEach.call(slides, function (it, i) {
+//   [].forEach.call(slidesReview, function (it, i) {
 //     it.data = i;
 //
 //     if(targetLabel === 0) {
@@ -198,7 +198,7 @@ if (errorBtn) {
 //
 // // Меняет порядковый номер слайда с последнего на первый
 // function getEndSlides() {
-//   if (currentEl === slides.length - 1) {
+//   if (currentEl === slidesReview.length - 1) {
 //     currentEl = 0;
 //     labelsBtnReviews[currentEl].click();
 //   }
@@ -219,23 +219,23 @@ if (errorBtn) {
 // function onLabelClick(e) {
 //   if(targetLabel > e.target.data) {
 //     targetLabel = e.target.data;
-//     slides[targetLabel].style.transform = 'translateX(-10000px)';
+//     slidesReview[targetLabel].style.transform = 'translateX(-10000px)';
 //
-//     for (var i = e.target.data; i < slides.length; i++) {
-//       slides[i].style.order = '1';
-//       slides[i].style.transform = 'translateX(10000px)';}
+//     for (var i = e.target.data; i < slidesReview.length; i++) {
+//       slidesReview[i].style.order = '1';
+//       slidesReview[i].style.transform = 'translateX(10000px)';}
 //
 //   } else {
 //     targetLabel = e.target.data;
-//     slides[targetLabel].style.transform = 'translateX(10000px)';
+//     slidesReview[targetLabel].style.transform = 'translateX(10000px)';
 //
 //     for (var j = 0; j < e.target.data; j++) {
-//       slides[j].style.order = '1';
-//       slides[j].style.transform = 'translateX(-10000px)';
+//       slidesReview[j].style.order = '1';
+//       slidesReview[j].style.transform = 'translateX(-10000px)';
 //     }
 //   }
-//   slides[e.target.data].style.order = '-1';
-//   slides[e.target.data].style.transform = 'translateX(0)';
+//   slidesReview[e.target.data].style.order = '-1';
+//   slidesReview[e.target.data].style.transform = 'translateX(0)';
 //   currentEl = e.target.data;
 // }
 //
@@ -255,19 +255,19 @@ if (errorBtn) {
 //
 // // Нажатие на правую стрелку
 // function onBtnArrowRightClick() {
-//   if(btnRightAll[slides.length - 1]) {
-//     btnRightAll[slides.length - 1].style.display = 'none';
+//   if(btnRightAll[slidesReview.length - 1]) {
+//     btnRightAll[slidesReview.length - 1].style.display = 'none';
 //   }
 //
 //   [].forEach.call(btnRightAll, function (it) {
 //     it.addEventListener('click', function () {
 //       getEndSlides();
 //
-//       slides[currentEl].style.order = '1';
-//       slides[currentEl].style.transform = 'translateX(-10000px)';
+//       slidesReview[currentEl].style.order = '1';
+//       slidesReview[currentEl].style.transform = 'translateX(-10000px)';
 //       currentEl = currentEl + 1;
-//       slides[currentEl].style.transform = 'translateX(0)';
-//       slides[currentEl].style.order = '-1';
+//       slidesReview[currentEl].style.transform = 'translateX(0)';
+//       slidesReview[currentEl].style.order = '-1';
 //     })
 //   })
 // }
@@ -281,11 +281,11 @@ if (errorBtn) {
 //
 //   [].forEach.call(btnLeftAll, function (it) {
 //     it.addEventListener('click', function () {
-//       slides[currentEl].style.order = '1';
-//       slides[currentEl].style.transform = 'translateX(10000px)';
+//       slidesReview[currentEl].style.order = '1';
+//       slidesReview[currentEl].style.transform = 'translateX(10000px)';
 //       currentEl = currentEl - 1;
-//       slides[currentEl].style.transform = 'translateX(0)';
-//       slides[currentEl].style.order = '-1';
+//       slidesReview[currentEl].style.transform = 'translateX(0)';
+//       slidesReview[currentEl].style.order = '-1';
 //     })
 //   });
 // }
@@ -312,19 +312,19 @@ if (errorBtn) {
 //
 // // Значения по умолчанию
 // if(sliderDescriptionBtns) {
-//   slides[0].style.transform = 'translateX(0)';
+//   slidesReview[0].style.transform = 'translateX(0)';
 //   inputsBtnReviews[0].checked = true;
 // }
 
-function Slider() {
-  this.timerDelay = TIMER_DELAY;
+function Slider(slides, arrowLeftAll, arrowRightAll, dots) {
+  this.timerDelay = 6000;
   this.current = 0;
   this.last = 0;
   this.allSlides = Array.from(slides);
   this.lengthSlides = Array.from(slides).length - 1;
-  this.prevBtn = btnLeftAll;
-  this.nextBtn = btnRightAll;
-  this.dots = inputsBtnReviews;
+  this.prevBtn = arrowLeftAll;
+  this.nextBtn = arrowRightAll;
+  this.dots = dots;
   this.timerId = null;
 
   Object.defineProperties(this, {
@@ -360,8 +360,9 @@ Slider.prototype.init = function () {
   this.prevBtn.addEventListener('click', this.prevSlide.bind(this));
   this.nextBtn.addEventListener('click', this.nextSlide.bind(this));
 
-  [].forEach.call(this.allSlides, function (it) {
-    it.style.display = 'none';
+  this.allSlides.forEach(function (it) {
+    it.style.order = '1';
+    it.style.transform = 'translateX(10000px)';
   });
 
   [].forEach.call(this.dots, function (it, i) {
@@ -401,29 +402,46 @@ Slider.prototype.changeSlide = function (num) {
 };
 
 Slider.prototype.hideSlide = function (num) {
-  this.allSlides[num].style.display = 'none';
+  if (this.current > this.last) {
+    for (var j = 0; j < this.current; j++) {
+      num = j;
+      this.allSlides[num].style.order = '1';
+      this.allSlides[num].style.transform = 'translateX(-10000px)';
+    }
+
+  } else {
+    for (var i = this.current; i <= this.lengthSlides; i++) {
+      num = i;
+      this.allSlides[num].style.order = '1';
+      this.allSlides[num].style.transform = 'translateX(10000px)';
+    }
+  }
 };
 
 Slider.prototype.showSlide = function (num) {
-  this.allSlides[num].style.display = 'block';
+  this.allSlides[num].style.transform = 'translateX(0)';
+  this.allSlides[num].style.order = '-1';
 };
 
 Slider.prototype.changeDots = function (num) {
   this.dots[this.last].checked = false;
   this.dots[num].checked = true;
+  this.timer();
 };
 
 Slider.prototype.timer = function () {
   var self = this;
 
-  clearTimeout(this.timerId);
+  if (this.timerId) {
+    clearTimeout(this.timerId);
+  }
 
   this.timerId = setTimeout(function () {
     self.nextSlide();
-  }, self.timerDelay);
+  }, this.timerDelay);
 };
 
-var reviewSlider = new Slider();
+var reviewSlider = new Slider(slidesReview, btnLeftAll, btnRightAll, inputsBtnReviews);
 reviewSlider.init();
 
 // CЛАЙДЕР - ТАРИФНЫЙ ПЛАН
