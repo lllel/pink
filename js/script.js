@@ -329,8 +329,6 @@ SliderUpload.prototype.moveTo = function (evtMove) {
   }
 };
 
-console.log(Array.from(uploadSliders));
-
 for (var i = 0; i < Array.from(uploadSliders).length; i++) {
   new SliderUpload({elem: uploadSliders[i], i: i}).init();
 }
