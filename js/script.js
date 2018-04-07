@@ -263,52 +263,77 @@ var sliderPrice = new SliderPrice(sliderPriceTable, inputsBtnPrice);
 sliderPrice.init();
 
 // UPLOAD CIRCLE
+var uploadSliders = document.querySelectorAll('.upload__tool-line');
 var uploadCircle = document.querySelectorAll('.upload__circle');
-var uploadLine = document.querySelector('.upload__line');
-var uploadIcon = document.querySelectorAll('.upload-tools__input');
+var uploadIcons = document.querySelectorAll('.upload-tools__input');
 
-[].forEach.call(uploadCircle, function (it, i) {
-  it.style.left = '0px';
+function SliderUpload(options) {
+  var self = this;
 
-  it.addEventListener('mousedown', function (e) {
-    e.preventDefault();
+  this.elem = options.elem;
+  this.i = options.i;
+  this._thumb = this.elem.querySelector('.upload__circle');
+  this._line = this.elem.querySelector('.upload__line');
+  this.uploadIcons = uploadIcons;
 
-    var startCoords = {
-      x: e.clientX - it.getBoundingClientRect().left
-    };
+  this.onMouseDown = function (evt) {
+    evt.preventDefault();
 
-    function onMouseMove(moveE) {
-      moveE.preventDefault();
+    self.dragStart(evt);
 
-      var maxWidthLine = uploadLine.offsetWidth - (it.offsetWidth);
+    document.addEventListener('mousemove', self.onMouseMove);
+    document.addEventListener('mouseup', self.onMouseUp);
+  };
 
-      var shift = {
-        x: moveE.clientX - startCoords.x - uploadLine.getBoundingClientRect().left
-      };
+  this.onMouseMove = function (evtMove) {
+    evtMove.preventDefault();
 
-      shift.x = Math.max(shift.x, 0);
-      shift.x = Math.min(shift.x, maxWidthLine);
+    self.moveTo(evtMove);
+  };
 
-      it.style.left = shift.x + 'px';
+  this.onMouseUp = function () {
+    document.removeEventListener('mousemove', self.onMouseMove);
+    document.removeEventListener('mouseup', self.onMouseUp);
+  };
 
-      if (parseInt(it.style.left, 10) > 0) {
-        uploadIcon[i].checked = true;
+  this.init = function () {
+    this._thumb.addEventListener('mousedown', function (evt) {
+      self.onMouseDown(evt);
+    });
+  }
+}
 
-      } else {
-        uploadIcon[i].checked = false;
-      }
-    }
+SliderUpload.prototype.dragStart = function (evt) {
+  this.startCoords = {
+    x: evt.clientX - this._thumb.getBoundingClientRect().left
+  };
+};
 
-    function onMouseUp(upE) {
-      upE.preventDefault();
+SliderUpload.prototype.moveTo = function (evtMove) {
+  var maxWidthLine = this._line.offsetWidth - (this._thumb.offsetWidth);
 
-      document.removeEventListener('mousemove', onMouseMove);
-      document.removeEventListener('mouseup', onMouseUp);
-    }
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
-  });
-});
+  var shift = {
+    x: evtMove.clientX - this.startCoords.x - this._line.getBoundingClientRect().left
+  };
+
+  shift.x = Math.max(shift.x, 0);
+  shift.x = Math.min(shift.x, maxWidthLine);
+
+  this._thumb.style.left = shift.x + 'px';
+
+  if (parseInt(this._thumb.style.left, 10) > 0) {
+    this.uploadIcons[this.i].checked = true;
+
+  } else {
+    this.uploadIcons[this.i].checked = false;
+  }
+};
+
+console.log(Array.from(uploadSliders));
+
+for (var i = 0; i < Array.from(uploadSliders).length; i++) {
+  new SliderUpload({elem: uploadSliders[i], i: i}).init();
+}
 
 // БРЕЙКПОИНТЫ
 var mediaQueryList960 = window.matchMedia("(min-width: 960px)");
@@ -319,7 +344,7 @@ function isWidthChange(mql) {
   if(mql.matches) {
     [].forEach.call(uploadCircle, function (it, i) {
       it.style.left = 0 + 'px';
-      uploadIcon[i].checked = false;
+      uploadIcons[i].checked = false;
     });
   }
 }
