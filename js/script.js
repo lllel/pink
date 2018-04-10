@@ -87,8 +87,8 @@ function Slider(slides, arrowLeftAll, arrowRightAll, dots) {
   this.timerDelay = 6000;
   this.current = 0;
   this.last = 0;
-  this.allSlides = Array.from(slides);
-  this.lengthSlides = Array.from(slides).length - 1;
+  this.allSlides = slides;
+  this.lengthSlides = slides.length - 1;
   this.prevBtn = arrowLeftAll;
   this.nextBtn = arrowRightAll;
   this.dots = dots;
@@ -129,7 +129,7 @@ Slider.prototype.init = function () {
     this.nextBtn.addEventListener('click', this.nextSlide.bind(this));
   }
 
-  this.allSlides.forEach(function (it) {
+  [].forEach.call(this.allSlides, function (it) {
     it.style.order = '1';
     it.style.transform = 'translateX(10000px)';
   });
@@ -227,7 +227,7 @@ var sliderPriceTable = document.querySelector('.slider-price__table');
 function SliderPrice(slider, dots) {
   this.slider = slider;
   this.dots = dots;
-  this.stepLength = Array.from(dots).length - 1;
+  this.stepLength = dots.length - 1;
   this.start = -14.4;
   this.step = -28;
 }
@@ -329,7 +329,7 @@ SliderUpload.prototype.moveTo = function (evtMove) {
   }
 };
 
-for (var i = 0; i < Array.from(uploadSliders).length; i++) {
+for (var i = 0; i < uploadSliders.length; i++) {
   new SliderUpload({elem: uploadSliders[i], i: i}).init();
 }
 
@@ -344,14 +344,32 @@ function isWidthChange(mql) {
       it.style.left = 0 + 'px';
       uploadIcons[i].checked = false;
     });
+
+    if (sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(-42.4%)';
+      inputsBtnPrice[1].checked = true;
+    }
+  }
+}
+
+function isWidthChange660(mql) {
+  if(mql.matches) {
+    [].forEach.call(uploadCircle, function (it, i) {
+      it.style.left = 0 + 'px';
+      uploadIcons[i].checked = false;
+    });
+
+    if (sliderPriceTable) {
+      sliderPriceTable.style.transform = 'translateX(0)';
+    }
   }
 }
 
 isWidthChange(mediaQueryList320);
 mediaQueryList320.addListener(isWidthChange);
 
-isWidthChange(mediaQueryList660);
-mediaQueryList660.addListener(isWidthChange);
+isWidthChange660(mediaQueryList660);
+mediaQueryList660.addListener(isWidthChange660);
 
-isWidthChange(mediaQueryList960);
-mediaQueryList960.addListener(isWidthChange);
+isWidthChange660(mediaQueryList960);
+mediaQueryList960.addListener(isWidthChange660);
